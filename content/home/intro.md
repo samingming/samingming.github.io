@@ -26,4 +26,4 @@ Introduction
 
 아직 부족한 점이 많지만 꾸준히 기록하여 공부기록을 올릴 예정이니 기대해주세요!
 
-[이력서 다운로드](/files/resume.pdf){ .btn .btn-primary }
+[이력서 다운로드](/files/resume.pdf)
