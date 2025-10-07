@@ -17,8 +17,10 @@ author: admin
 #      path:  # enter filename of a video in /assets/media
 #  css_class: fullscreen
 ---
-
-👋 Hi, there! I'm **Alice**, a machine learning researcher at Netflix.
-{style="font-size: 1.2rem; background: #FFB76B; background: linear-gradient(to right, #FFB76B 0%, #FFA73D 30%, #FF7C00 60%, #FF7F04 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"}
-
-Check out my [resumé](/about/) and portfolio below 😍
+title: "소개"
+weight: 10
+active: true
+---
+👋 **안녕하세요! 저는 정사임입니다.**  
+전북대학교 컴퓨터인공지능학부 3학년으로, 웹/데이터 프로젝트와 공부 기록을 공유합니다.
+아직 부족한 점이 많지만 꾸준히 기록하여 공부기록을 올릴 예정이니 기대해주세요!
