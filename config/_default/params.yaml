@@ -95,7 +95,7 @@ features:
       index_name: ''
       show_logo: false
   map:
-    provider: ''
+    provider: openstreetmap
     api_key: ''
     zoom: 15
 
@@ -105,3 +105,4 @@ extensions:
     local_backend: false
   academicons:
     enable: false
+{{< map latitude="35.846" longitude="127.129" zoom="15" >}}
