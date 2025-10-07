@@ -88,7 +88,7 @@ features:
       category: ''
       category_id: ''
   search:
-    provider: ''
+    provider: fuse
     algolia:
       app_id: ''
       api_key: ''
@@ -105,4 +105,3 @@ extensions:
     local_backend: false
   academicons:
     enable: false
-{{< map latitude="35.846" longitude="127.129" zoom="15" >}}
