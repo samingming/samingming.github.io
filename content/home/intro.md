@@ -17,9 +17,7 @@ author: admin
 #      path:  # enter filename of a video in /assets/media
 #  css_class: fullscreen
 ---
-title: "소개"
-weight: 10
-active: true
+Introduction
 ---
 👋 **안녕하세요! 저는 정사임입니다.**  
 전북대학교 컴퓨터인공지능학부 3학년으로, 웹/데이터 프로젝트와 공부 기록을 공유합니다.
