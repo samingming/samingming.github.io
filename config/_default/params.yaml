@@ -10,9 +10,7 @@ appearance:
   theme_night: custom
   font: minimal
   font_size: L
-  logo: "/media/logo-2025.png"
-  logo_dark: "/media/logo-2025.png?v=2"
-  
+
 # SEO
 
 marketing:
@@ -37,7 +35,7 @@ header:
   navbar:
     enable: true
     align: r
-    show_logo: true
+    show_logo: false
     show_language: false
     show_day_night: true
     show_search: true
