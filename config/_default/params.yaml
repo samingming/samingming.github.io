@@ -10,7 +10,7 @@ appearance:
   theme_night: custom
   font: minimal
   font_size: L
-  logo: "/preview.png"
+  logo: "/logo.png"
 
 # SEO
 
