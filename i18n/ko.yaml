@@ -1,0 +1,17 @@
+home:
+  other: "홈"
+
+projects:
+  other: "프로젝트"
+
+gallery:
+  other: "갤러리"
+
+resume:
+  other: "이력"
+
+blog:
+  other: "블로그"
+
+contact:
+  other: "연락처"

@@ -4,10 +4,17 @@
 
 # Default language
 ko:
-  languageCode: ko
+  languageCode: "한국어"
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  contentDir: content
+  contentDir: "content"
   wight: 1
+  languagedirection: "ltr"
+
+en:
+  languageName: "English"
+  weight: 2
+  contentDir: "content"
+  languagedirection: "ltr"
 
 # Uncomment the lines below to configure your website in a second language.
 #zh:

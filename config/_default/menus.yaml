@@ -4,30 +4,30 @@
   #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: 소개
+  - name: home
     url: /
     weight: 10
-  - name: 프로젝트
+  - name: projects
     url: /project/
     weight: 20
     identifier: projects
-  - name: 웹
+  - name: web
     parent: projects
     url: /project/web/
     weight: 21
-  - name: 데이터
+  - name: data
     parent: projects
     url: /project/data/
     weight: 22
-  - name: 갤러리
+  - name: gallery
     url: /gallery/
     weight: 25
-  - name: 이력
+  - name: resume
     url: /resume/
     weight: 30
-  - name: 블로그
+  - name: blog
     url: /blog/
     weight: 40
-  - name: 연락처
+  - name: contact
     url: /contact/
     weight: 50

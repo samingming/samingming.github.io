@@ -1,0 +1,17 @@
+home:
+  other: "Home"
+
+projects:
+  other: "Projects"
+
+gallery:
+  other: "Gallery"
+
+resume:
+  other: "Resume"
+
+blog:
+  other: "Blog"
+
+contact:
+  other: "Contact"
