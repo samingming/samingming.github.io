@@ -11,7 +11,8 @@ appearance:
   font: minimal
   font_size: L
   logo: "/media/logo-2025.png"
-
+  logo_dark: "/media/logo-2025.png?v=2"
+  
 # SEO
 
 marketing:
