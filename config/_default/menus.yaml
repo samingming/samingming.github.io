@@ -11,6 +11,17 @@ main:
     url: /project/
     weight: 20
     identifier: projects
+  - name: 웹
+    parent: projects
+    url: /project/web/
+    weight: 21
+  - name: 데이터
+    parent: projects
+    url: /project/data/
+    weight: 22
+  - name: 갤러리
+    url: /gallery/
+    weight: 25
   - name: 이력
     url: /cv/
     weight: 30
@@ -20,11 +31,3 @@ main:
   - name: 연락처
     url: /contact/
     weight: 50
-  - name: 웹
-    parent: projects
-    url: /project/web/
-    weight: 21
-  - name: 데이터
-    parent: projects
-    url: /project/data/
-    weight: 22
