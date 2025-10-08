@@ -23,10 +23,10 @@ main:
     url: /gallery/
     weight: 25
   - name: 이력
-    url: /cv/
+    url: /resume/
     weight: 30
   - name: 블로그
-    url: /post/
+    url: /blog/
     weight: 40
   - name: 연락처
     url: /contact/
