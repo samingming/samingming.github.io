@@ -1,0 +1,24 @@
+main:
+  - name: 홈
+    url: /
+    weight: 10
+
+  - name: 프로젝트
+    url: /project/
+    weight: 20
+
+  - name: 갤러리
+    url: /gallery/
+    weight: 30
+
+  - name: 이력서
+    url: /resume/
+    weight: 40
+
+  - name: 블로그
+    url: /blog/
+    weight: 50
+
+  - name: 연락처
+    url: /contact/
+    weight: 60
