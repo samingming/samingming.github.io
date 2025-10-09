@@ -24,7 +24,7 @@ blocks:
         - image: "https://source.unsplash.com/1200x500/?laptop,workspace"
           title: "코딩 & 작업 공간"
         - image: "https://source.unsplash.com/1200x500/?neuralnetwork,ml"
-          title: "머신러닝 · 딥러닝" 
+          title: "머신러닝 · 딥러닝"
     design:
       height: 500
       autoplay: true
