@@ -21,6 +21,10 @@ blocks:
           title: "웹 개발 & 데이터 분석"
         - image: "https://source.unsplash.com/1200x500/?university,study"
           title: "전북대학교 · 컴퓨터 & AI 전공"
+        - image: "https://source.unsplash.com/1200x500/?laptop,workspace"
+          title: "코딩 & 작업 공간"
+        - image: "https://source.unsplash.com/1200x500/?neuralnetwork,ml"
+          title: "머신러닝 · 딥러닝" 
     design:
       height: 500
       autoplay: true
