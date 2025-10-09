@@ -1,3 +1,4 @@
+---
 title: "이력"
 summary: "경력/학력/스킬"
 type: page
