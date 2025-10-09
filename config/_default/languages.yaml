@@ -7,7 +7,7 @@ ko:
   languageCode: "한국어"
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
   contentDir: "content"
-  wight: 1
+  weight: 1
   languagedirection: "ltr"
 
 en:
