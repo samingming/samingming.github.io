@@ -3,6 +3,15 @@ title: "정사임(Jeong Saim) | Portfolio"
 type: landing
 
 blocks:
+  # 1) 화면에 뭔가 보이도록 최소 히어로 블록
+  - block: hero
+    content:
+      title: "Introduction"
+      text: |
+        안녕하세요! 저는 정사임입니다.  
+        전북대학교 컴퓨터인공지능학부 3학년으로, 웹/데이터 프로젝트와 공부 기록을 공유합니다.
+
+  # 2) 이미지 슬라이더 블록
   - block: slider
     content:
       slides:
