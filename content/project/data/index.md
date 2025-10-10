@@ -1,7 +1,7 @@
 ---
 title: "Data"
 summary: "데이터 관련 프로젝트 모음"
-tags: ["Data", "Visualization", "Analysis"]
+tags: ["DP"]
 date: 2025-10-09
 featured: true
 draft: false

@@ -12,6 +12,8 @@ content:
   filters:
     folders: ["project"]   # content/project만 표시
     featured_only: false
+  filter_field: "tags"
+  filter_default: 0
   filter_button:
     - name: All
       tag: '*'
@@ -21,7 +23,7 @@ content:
       tag: AI
     - name: Fake Review Detection
       tag: FR
-    - name: Web
+    - name: Web Project
       tag: WP
     - name: Data
       tag: DP

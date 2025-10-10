@@ -1,10 +1,7 @@
 ---
 title: "Fake Review Detection"
 summary: "전자상거래 리뷰 데이터를 분석해 허위 후기 여부를 분류하는 머신러닝 프로젝트"
-tags:
-  - NLP
-  - Data Mining
-  - Machine Learning
+tags: ["FR"]
 date: 2025-10-09
 draft: false
 featured: true
