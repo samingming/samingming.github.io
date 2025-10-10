@@ -36,9 +36,11 @@ content:
       tag: NLP
 
 design:
-  columns: '1'
+  columns: '3'
   view: masonry
   flip_alt_rows: true
   background: {}
   spacing: {padding: [0, 0, 0, 0]}
+content:
+  count: 9
 ---
