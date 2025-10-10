@@ -6,7 +6,7 @@ tags:
   - Deep Learning
   - Computer Vision
 date: 2025-10-09
-draft; false
+draft: false
 featured: true
 image:
   filename: "featured.jpg"
