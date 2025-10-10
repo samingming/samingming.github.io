@@ -1,27 +1,26 @@
 ---
 widget: slider
 headless: true
-weight: 5  # 홈에서 위쪽에 오게
-title: "포트폴리오 미리보기"
+weight: 5
+title: "Featured"
+
 design:
-  height: 420       # 슬라이드 높이 (픽셀 단위)
-  autoplay: true     # 자동전환 활성화
-  interval: 3000     # 3초마다 전환
+  height: 420      # 슬라이드 영역 높이(px)
+  autoplay: true
+  interval: 3000   # 3초 간격
+
 content:
   slides:
-    - image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c"
-      title: "AI 프로젝트 포트폴리오"
-      align: center
-      cta_label: "자세히 보기"
-      cta_url: "/project/ai-game/"
-    - image: "https://images.unsplash.com/photo-1555949963-aa79dcee981d"
-      title: "웹 개발 & 데이터 분석"
-      align: center
+    - image: "/media/slide-1.jpg"
+      title: "AI Game Development"
       cta_label: "보러가기"
-      cta_url: "/project/web/"
-    - image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df"
-      title: "전북대학교 · 컴퓨터 & AI 전공"
-      align: center
-      cta_label: "자세히 보기"
-      cta_url: "/project/data/"
+      cta_url: "/project/game/"
+    - image: "/media/slide-2.jpg"
+      title: "AI Image Generation"
+      cta_label: "보러가기"
+      cta_url: "/project/generation/"
+    - image: "/media/slide-3.jpg"
+      title: "Fake Review Detection"
+      cta_label: "보러가기"
+      cta_url: "/project/review/"
 ---
