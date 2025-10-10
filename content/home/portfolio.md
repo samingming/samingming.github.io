@@ -23,7 +23,7 @@ content:
       tag: AI
     - name: Fake Review Detection
       tag: FR
-    - name: Web Project
+    - name: Web
       tag: WP
     - name: Data
       tag: DP
