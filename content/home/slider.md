@@ -1,3 +1,4 @@
+
 ---
 widget: slider
 headless: true
@@ -34,8 +35,6 @@ content:
         focal_point: "center"
 ---
 
-{{< rawhtml >}}
-<!-- ✅ HTML/CSS/JS 슬라이더 시작 -->
 <section class="slider" aria-label="이미지 슬라이더">
   <div class="slider-track">
     <div class="slide is-active">
@@ -63,13 +62,13 @@ content:
     </div>
   </div>
 
-  <button class="nav prev">❮</button>
-  <button class="nav next">❯</button>
+  <button class="nav prev" aria-label="이전">❮</button>
+  <button class="nav next" aria-label="다음">❯</button>
 
   <div class="dots">
-    <button class="dot is-active"></button>
-    <button class="dot"></button>
-    <button class="dot"></button>
+    <button class="dot is-active" aria-label="1번 슬라이드"></button>
+    <button class="dot" aria-label="2번 슬라이드"></button>
+    <button class="dot" aria-label="3번 슬라이드"></button>
   </div>
 </section>
 
@@ -87,6 +86,7 @@ content:
   .dots{position:absolute;left:50%;bottom:12px;transform:translateX(-50%);display:flex;gap:.4rem}
   .dot{width:10px;height:10px;border-radius:50%;background:#ccc;border:none;cursor:pointer}
   .dot.is-active{background:#fff}
+  @media (max-width:640px){.slide img{height:260px}}
 </style>
 
 <script>
@@ -105,7 +105,6 @@ content:
     track.style.transform = `translateX(${-index * 100}%)`;
     dots.forEach((d,j)=>d.classList.toggle('is-active', j===index));
   }
-
   function next(){ showSlide(index + 1); }
   function prev(){ showSlide(index - 1); }
 
@@ -113,12 +112,12 @@ content:
   slider.querySelector('.prev').addEventListener('click', prev);
   dots.forEach((d,i)=>d.addEventListener('click', ()=>showSlide(i)));
 
-  function startAuto(){ timer=setInterval(next, interval); }
-  function stopAuto(){ clearInterval(timer); }
-  slider.addEventListener('mouseenter', stopAuto);
-  slider.addEventListener('mouseleave', startAuto);
-  startAuto();
+  function start(){ timer=setInterval(next, interval); }
+  function stop(){ clearInterval(timer); }
+  slider.addEventListener('mouseenter', stop);
+  slider.addEventListener('mouseleave', start);
+
+  showSlide(0); start();
 })();
 </script>
-<!-- ✅ 슬라이더 끝 -->
-{{< /rawhtml >}}
+
