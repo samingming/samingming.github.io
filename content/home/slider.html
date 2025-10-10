@@ -36,6 +36,22 @@ title: ""
         </div>
       </div>
 
+      <div class="swiper-slide">
+        <img src="/media/slide-4.jpg" alt="Data" class="slide-img">
+        <div class="slide-caption">
+          <h3>Data</h3>
+          <a href="/project/review/" class="btn-slide">보러가기</a>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="/media/slide-5.jpg" alt="Data" class="slide-img">
+        <div class="slide-caption">
+          <h3>Web</h3>
+          <a href="/project/review/" class="btn-slide">보러가기</a>
+        </div>
+      </div>
+
     </div>
 
     <div class="swiper-button-prev"></div>
@@ -45,94 +61,73 @@ title: ""
 </section>
 
 <style>
-/* 전체 슬라이더 영역 */
+/* 전체 컨테이너: 배경 검정, 가로 넓게 */
 .slider-section{
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 2rem auto;
-  background-color: #000; /* 검정 배경 */
-  overflow: hidden;
+  background: #000 !important;
   position: relative;
+  overflow: hidden;
 }
 
-/* 슬라이드 비율 유지 */
-.swiper{
-  width: 100%;
-  aspect-ratio: 16/9;   /* 16:9 비율 */
-  background-color: #000;
+.slider-section .swiper{
+  width: 100% !important;
+  aspect-ratio: 16/9 !important;   
+  background: #000 !important;
 }
 
-/* 각 슬라이드 */
-.swiper-slide{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #000; /* 여백 검정 처리 */
+.slider-section .swiper-slide{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #000 !important;
 }
 
-/* 사진 비율 유지 + 여백 검정 */
-.slide-img{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;      /* 사진 안 늘림, 여백 검정 */
-  background-color: #000;
+.slider-section .slide-img{
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;   
+  background: #000 !important;
+  display: block !important;
 }
 
-/* 캡션 영역 */
-.slide-caption{
-  position: absolute;
-  left: 5%;
-  bottom: 8%;
-  background: rgba(0,0,0,0.55);
-  padding: 1rem 1.5rem;
-  border-radius: 10px;
-  color: white;
+.slider-section .slide-caption{
+  position: absolute; left: 5%; bottom: 8%;
+  background: rgba(0,0,0,.55); color: #fff;
+  padding: 1rem 1.25rem; border-radius: 10px;
 }
-.slide-caption h3{
-  margin: 0;
-  font-size: 1.5rem;
+.slider-section .slide-caption h3{ margin: 0; font-size: 1.6rem; }
+.slider-section .btn-slide{
+  display:inline-block; margin-top:8px;
+  background:#4ea1f3; color:#fff; padding:6px 14px;
+  border-radius:6px; text-decoration:none; font-size:.9rem;
 }
-.btn-slide{
-  display: inline-block;
-  margin-top: 10px;
-  background: #4ea1f3;
-  color: white;
-  padding: 6px 14px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-size: .9rem;
-}
-.btn-slide:hover{ background: #1f78d1; }
+.slider-section .btn-slide:hover{ background:#1f78d1; }
 
-/* 작고 둥근 버튼 */
-.swiper{
-  --swiper-navigation-size: 18px;
-}
-.swiper-button-prev, .swiper-button-next{
-  width: 34px; height: 34px;
-  background: rgba(0,0,0,0.35);
-  border-radius: 50%;
-  color: white;
+.slider-section .swiper{ --swiper-navigation-size: 18px; }
+.slider-section .swiper-button-prev,
+.slider-section .swiper-button-next{
+  width: 34px; height: 34px; border-radius: 50%;
+  background: rgba(0,0,0,.35); color:#fff;
   transition: background .2s;
 }
-.swiper-button-prev:hover, .swiper-button-next:hover{
-  background: rgba(0,0,0,0.65);
-}
+.slider-section .swiper-button-prev:hover,
+.slider-section .swiper-button-next:hover{ background: rgba(0,0,0,.65); }
 
-/* 페이지 점 */
-.swiper-pagination-bullet{
-  width: 7px; height: 7px;
-  background: #ccc;
-  opacity: .9;
+.slider-section .swiper-pagination-bullet{
+  width:7px; height:7px; background:#ccc; opacity:.9;
 }
-.swiper-pagination-bullet-active{ background: #fff; }
+.slider-section .swiper-pagination-bullet-active{ background:#fff; }
 
-/* 모바일 대응 */
 @media (max-width: 640px){
-  .swiper{ aspect-ratio: 4/3; } /* 모바일에서 약간 세로로 늘림 */
-  .slide-caption{ font-size:.85rem; left:4%; bottom:6%; padding:.7rem 1rem; }
+  .slider-section .swiper{ aspect-ratio: 4/3 !important; }
+  .slider-section .slide-caption{ font-size:.85rem; left:4%; bottom:6%; padding:.7rem 1rem; }
 }
 </style>
+
 
 
 <script src="https://unpkg.com/swiper@10/swiper-bundle.min.js"></script>
