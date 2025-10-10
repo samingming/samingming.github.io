@@ -1,11 +1,9 @@
 ---
-widget: blank
-headless: true
-weight: 60
-title: "Location"
-design:
-  columns: 1
+title: "오시는 길"
+type: page
 ---
+
+## 📍 전북대학교 공대 7호관
 
 <div style="position:relative;padding-bottom:56%;height:0;overflow:hidden;border-radius:12px;">
   <iframe

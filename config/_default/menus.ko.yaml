@@ -22,3 +22,14 @@ main:
   - name: 연락처
     url: /contact/
     weight: 60
+    identifier: contact
+
+  - name: 연락처 정보
+    parent: contact
+    url: /contact/
+    weight: 61
+
+  - name: 오시는 길
+    parent: contact
+    url: /contact/location/
+    weight: 62
