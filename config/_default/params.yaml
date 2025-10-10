@@ -52,7 +52,7 @@ footer:
       share_alike: true
       allow_commercial: false
 logo:
-    image: "static/media/logo.png"
+    image: "logo.png"
     alt_text: "홈으로"        
     link: "/"              
     width: 96
