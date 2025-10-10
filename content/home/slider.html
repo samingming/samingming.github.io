@@ -45,15 +45,74 @@ title: ""
 </section>
 
 <style>
-.slider-section{max-width:1000px;margin:2rem auto;border-radius:16px;overflow:hidden;position:relative}
-.slide-img{width:100%;height:420px;object-fit:cover;display:block}
-.slide-caption{position:absolute;left:5%;bottom:10%;background:rgba(0,0,0,.55);padding:1rem 1.5rem;border-radius:10px;color:#fff}
-.slide-caption h3{margin:0;font-size:1.5rem}
-.btn-slide{display:inline-block;margin-top:10px;background:#4ea1f3;color:#fff;padding:6px 14px;border-radius:6px;text-decoration:none;font-size:.9rem}
-.btn-slide:hover{background:#1f78d1}
-.swiper-button-prev,.swiper-button-next{color:#fff;text-shadow:0 0 5px rgba(0,0,0,.6)}
-@media (max-width:640px){.slide-img{height:260px}.slide-caption{font-size:.85rem;left:4%;bottom:8%;padding:.75rem 1rem}}
+.slider-section{
+  max-width: 1200px;  
+  margin: 1.5rem auto;
+  border-radius: 0;   
+  overflow: hidden;
+  position: relative;
+}
+
+.slide-img{
+  width: 100%;
+  height: 420px;      
+  object-fit: cover;
+  display: block;
+  border-radius: 0;   
+}
+
+.slide-caption{
+  position: absolute;
+  left: 5%;
+  bottom: 10%;
+  background: rgba(0,0,0,.55);
+  padding: 0.9rem 1.25rem;
+  border-radius: 8px;
+  color: #fff;
+}
+.slide-caption h3{ margin: 0; font-size: 1.5rem; }
+.btn-slide{
+  display: inline-block;
+  margin-top: 10px;
+  background: #4ea1f3;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: .9rem;
+}
+.btn-slide:hover{ background: #1f78d1; }
+
+.swiper{
+  --swiper-navigation-size: 18px;    /
+}
+.swiper-button-prev, .swiper-button-next{
+  width: 34px;                       
+  height: 34px;
+  background: rgba(0,0,0,.35);
+  border-radius: 8px;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0,0,0,.6);
+}
+
+.swiper-pagination-bullet{
+  width: 7px; height: 7px;
+  background: #cfcfcf; opacity: .9;
+}
+.swiper-pagination-bullet-active{ background: #fff; }
+
+@media (max-width:640px){
+  .slide-img{ height: 260px; }
+  .slide-caption{ font-size:.85rem; left:4%; bottom:8%; padding:.7rem 1rem; }
+  .swiper{
+    --swiper-navigation-size: 16px;
+  }
+  .swiper-button-prev, .swiper-button-next{
+    width: 30px; height: 30px; border-radius: 6px;
+  }
+}
 </style>
+
 
 <script src="https://unpkg.com/swiper@10/swiper-bundle.min.js"></script>
 <script>
