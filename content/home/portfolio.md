@@ -11,15 +11,21 @@ content:
   filter_default: 0
   filters:
     folders: ["project"]   # content/project만 표시
+    featured_only: false
   filter_button:
     - name: All
       tag: '*'
-    - name: Machine Learning
-      tag: ML
-    - name: Computer Vision
-      tag: CV
-    - name: NLP
-      tag: NLP
+    - name: AI Game Development
+      tag: AG
+    - name: AI Image Generation
+      tag: AI
+    - name: Fake Review Detection
+      tag: FR
+    - name: Web
+      tag: WP
+    - name: Data
+      tag: DP
+
 
 design:
   columns: 3               # 숫자 3
@@ -27,4 +33,6 @@ design:
   flip_alt_rows: false
   background: {}
   spacing: {padding: [0, 0, 0, 0]}
+  options:
+    justify: center
 ---
