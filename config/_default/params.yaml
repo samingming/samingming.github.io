@@ -34,12 +34,13 @@ marketing:
 header:
   navbar:
     enable: true
-    align: 1
+    align: r
     show_logo: true
     show_language: false
     show_day_night: true
     show_search: true
     highlight_active_link: false
+    show_title: false
 
 
 footer:
@@ -51,11 +52,11 @@ footer:
       share_alike: true
       allow_commercial: false
 logo:
-    image: "media/logo.png"  
+    image: "static/media/logo.png"
     alt_text: "홈으로"        
     link: "/"              
-    width: 90
-                     
+    width: 96
+
 # Localization
 
 locale:
