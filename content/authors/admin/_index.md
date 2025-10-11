@@ -43,7 +43,7 @@ avatar:
 social:
   - icon: envelope
     icon_pack: fas
-    link: "mail to:my-juliana@naver.com"   # 연락처 메일
+    link: "mailto:my-juliana@naver.com"   # 연락처 메일
   - icon: github
     icon_pack: fab
     link: "https://github.com/samingming"
