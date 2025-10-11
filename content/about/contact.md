@@ -1,31 +1,16 @@
 ---
-# An instance of the Contact widget.
-# Documentation: https://docs.hugoblox.com/getting-started/page-builder/
 widget: contact
-
-# This file represents a page section.
 headless: true
-
-# Order that this section appears on the page.
 weight: 50
-
-title: Get in touch
-subtitle:
-
+title: "Contact"
+subtitle: "연락하기"
 content:
-  # Automatically link email and phone or display as text?
   autolink: true
-
-  # Email form provider
   form:
-    provider: formspree
-    formspree:
-      id: my-juliana@naver.com
-    netlify:
-      # Enable CAPTCHA challenge to reduce spam?
-      captcha: false
-
+    provider: ""
 design:
   columns: '1'
 ---
-
+📧 **Email:** my-juliana@naver.com  
+🏫 **소속:** 전북대학교 컴퓨터인공지능학부  
+📍 **위치:** 전라북도 전주시 덕진구 백제대로 567  
