@@ -37,8 +37,8 @@ main:
     url: /gallery/
     weight: 30
 
-  - name: resume
-    url: /about/
+  - name: "about"
+    page ref: "about"
     weight: 40
 
   - name: blog
