@@ -22,7 +22,7 @@ main:
     page_ref: project/Review
     weight: 23
 
-    - name: Data
+  - name: Data
     parent: projects
     page_ref: project/data
     weight: 24
