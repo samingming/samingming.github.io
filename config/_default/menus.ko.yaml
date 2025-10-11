@@ -7,6 +7,32 @@ main:
     url: /project/
     weight: 20
 
+  - name: AI Game
+    parent: projects
+    page_ref: project/game
+    weight: 21
+
+  - name: Image Gen
+    parent: projects
+    page_ref: project/AI
+    weight: 22
+
+  - name: Review
+    parent: projects
+    page_ref: project/Review
+    weight: 23
+
+    - name: Data
+    parent: projects
+    page_ref: project/data
+    weight: 24
+
+  - name: Web
+    parent: projects
+    page_ref: project/web
+    weight: 25
+
+
   - name: 갤러리
     url: /gallery/
     weight: 30
