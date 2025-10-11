@@ -12,7 +12,7 @@ main:
     weight: 30
 
   - name: resume
-    url: /resume/
+    url: /about/
     weight: 40
 
   - name: blog

@@ -12,7 +12,7 @@ main:
     weight: 30
 
   - name: 이력서
-    url: /resume/
+    url: /about/
     weight: 40
 
   - name: 블로그
