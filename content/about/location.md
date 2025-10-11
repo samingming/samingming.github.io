@@ -4,6 +4,7 @@ headless: true
 active: true
 weight: 55
 title: "Location"
+lang: ko
 ---
 <iframe
   src="https://www.google.com/maps?q=전북대학교&output=embed"

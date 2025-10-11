@@ -5,6 +5,7 @@ active: true
 weight: 50
 title: "Contact"
 subtitle: "연락하기"
+lang: ko
 content:
   autolink: true
   form:

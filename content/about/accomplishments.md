@@ -5,6 +5,7 @@ active: true
 weight: 20
 title: "Accomplishments"
 subtitle: "수상 및 자격증"
+lang: ko
 ---
 
 - 🏅 **토익 성적 향상** — 2025년  

@@ -5,6 +5,7 @@ active: true
 weight: 25
 title: "Education"
 subtitle: "학력"
+lang: ko
 ---
 
 - 🎓 **전북대학교 (Jeonbuk National University)**  

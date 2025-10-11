@@ -11,7 +11,7 @@ main:
     url: /gallery/
     weight: 30
 
-  - name: 이력서
+  - name: 이력
     url: /about/
     weight: 40
 
