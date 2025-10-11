@@ -116,480 +116,70 @@ ul.network-icon .big-icon {
   font-size: 0.8rem;
 }
 
-/* ==== Resume Clean (Hugo Blox v5) ======================================= */
-section.resume-clean {
-  /* 섹션 최대폭 & 가운데 정렬 */
-  .container, .page-body, .row {
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+/* ===== Compact Resume (Final) — smaller text + no wrap + timeline ===== */
 
-  /* 큰 중앙 제목 */
-  .section-heading, .section-title, h1.section-title {
-    text-align: center !important;
-    margin-bottom: 1.25rem;
-  }
-  .section-title {
-    font-size: clamp(1.75rem, 3.5vw, 2.25rem);
-    font-weight: 800;
-    letter-spacing: 0.2px;
-  }
-  .section-subheading {
-    text-align: center;
-    opacity: .8;
-    margin-top: -.25rem;
-    margin-bottom: 1.25rem;
-  }
-
-  /* 장문의 영어 단어 줄바꿈 방지 (Accomplishments가 줄바꿈되는 문제 해결) */
-  .section-title, .section-subheading {
-    word-break: keep-all;
-    hyphens: auto;
-  }
-
-  /* 카드/아이템 기본 여백 리셋 */
-  .media, .media.stream-item, .card, .article-style {
-    background: transparent !important;
-    border: 0 !important;
-    box-shadow: none !important;
-    margin: 0 0 1.1rem 0;
-    padding: 0;
-  }
-
-  /* ==== 타임라인 (experience 위젯에 맞춤) ==== */
-  /* experience 항목 왼쪽에 점 + 세로선 */
-  .media, .media.stream-item {
-    position: relative;
-    padding-left: 1.75rem; /* 아이콘/점 여백 */
-  }
-  .media::before {
-    content: "";
-    position: absolute;
-    left: 0.5rem;
-    top: 0.45rem;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: currentColor;
-    opacity: .85;
-  }
-  .media::after {
-    content: "";
-    position: absolute;
-    left: 0.88rem;
-    top: 1.1rem;
-    bottom: -0.6rem;
-    width: 2px;
-    background: rgba(255,255,255,.18);
-  }
-
-  /* 아이템 제목/부제/기간 정돈 */
-  .media .article-title, .media .media-heading, .media h3, .media h4 {
-    margin: 0 0 .25rem 0;
-    font-weight: 700;
-    line-height: 1.25;
-  }
-  .media .article-metadata, .media .meta, .media .article-date {
-    opacity: .85;
-    font-size: .95rem;
-    margin-bottom: .25rem;
-  }
-  .media p, .media ul {
-    margin: .25rem 0;
-  }
-  .media ul { padding-left: 1.1rem; }
-
-  /* 수상 리스트 간격 */
-  ul, ol { margin-top: .4rem; margin-bottom: .4rem; }
-  li { margin: .2rem 0; }
-
-  /* 모바일에서 세로선 길이 조정 */
-  @media (max-width: 640px){
-    .media::after { bottom: -0.2rem; }
-  }
-}
-
-/* 섹션 사이 간격 살짝 줄이기(선택) */
-section.resume-clean { padding-top: 2.2rem; padding-bottom: 2.2rem; }
-
-/* ===== Resume Clean — v3 (final polish + color accent + hover) ===== */
-section.resume-clean {
-  .container, .page-body, .row {
-    max-width: 880px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* 중앙 제목 */
-  .section-title {
-    text-align: center !important;
-    font-size: clamp(1.5rem, 2.6vw, 2rem) !important;
-    font-weight: 800;
-    line-height: 1.25;
-    margin: 0 0 1.2rem;
-    letter-spacing: .2px;
-    word-break: keep-all;
-    color: var(--theme-accent, #00b5d8);
-  }
-
-  /* 부제목 */
-  .section-subheading {
-    text-align: center;
-    opacity: .8;
-    margin-top: -.3rem;
-    margin-bottom: 1.2rem;
-  }
-
-  /* 기본 텍스트 조정 */
-  font-size: 0.96rem;
-  line-height: 1.55;
-  color: rgba(255, 255, 255, 0.92);
-
-  /* 아이템 컨테이너 리셋 */
-  .media, .media.stream-item, .card, .article-style {
-    background: transparent !important;
-    border: 0 !important;
-    box-shadow: none !important;
-    margin: 0 0 1.1rem 0;
-    padding: 0 0 0.2rem 0;
-  }
-
-  /* 제목 (항목명) */
-  .media .article-title, .media h3, .media h4 {
-    font-weight: 700;
-    font-size: 1.05rem;
-    margin: 0 0 0.2rem;
-    transition: color 0.2s ease;
-  }
-  .media .article-title:hover {
-    color: var(--theme-accent, #00b5d8); /* hover시 파란색 포인트 */
-  }
-
-  /* 메타(소속/기간) */
-  .media .article-metadata, .media .meta, .media .article-date {
-    opacity: .85;
-    font-size: .9rem;
-    margin-bottom: .25rem;
-  }
-
-  /* 본문 */
-  .media p { margin: .25rem 0; opacity: 0.92; }
-  .media ul { margin: .25rem 0 .25rem 1.2rem; }
-
-  /* === 타임라인 스타일 === */
-  .media, .media.stream-item {
-    position: relative;
-    padding-left: 1.9rem;
-  }
-  .media::before {
-    content: "";
-    position: absolute;
-    left: 0.5rem;
-    top: 0.5rem;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: var(--theme-accent, #00b5d8);
-    box-shadow: 0 0 6px rgba(0,181,216,0.4);
-    transition: transform 0.2s ease;
-  }
-  .media:hover::before {
-    transform: scale(1.3);
-    box-shadow: 0 0 10px rgba(0,181,216,0.6);
-  }
-  .media::after {
-    content: "";
-    position: absolute;
-    left: 0.88rem;
-    top: 1.2rem;
-    bottom: -0.5rem;
-    width: 2px;
-    background: rgba(255,255,255,0.15);
-  }
-
-  /* 수상/리스트 */
-  ul, ol { margin-top: .35rem; margin-bottom: .35rem; }
-  li { margin: .18rem 0; }
-
-  /* 작은 화면 대응 */
-  @media (max-width: 640px) {
-    .media { padding-left: 1.5rem; }
-    .media::after { bottom: -0.2rem; }
-  }
-}
-
-/* 섹션 간격 */
-section.resume-clean { padding-top: 2rem; padding-bottom: 2rem; }
-
-/* 색상 변수 (기본 파랑 accent, 테마에 따라 바꾸려면 이 값만 변경) */
-:root {
-  --theme-accent: #00b5d8; /* 밝은 파랑 */
-}
-.dark {
-  --theme-accent: #38bdf8; /* 다크모드용 시안톤 */
-}
-
-/* ===== Resume Clean — polish v2 (strong overrides) ===== */
-section.resume-clean {
-  /* 중앙 폭 & 여백 */
-  .container, .page-body, .row { max-width: 860px; margin-left: auto; margin-right: auto; }
-
-  /* 섹션 제목(가운데, 더 작게) */
-  .section-title, .section-heading, h1.section-title {
-    text-align: center !important;
-    font-size: clamp(1.5rem, 2.6vw, 2rem) !important;
-    line-height: 1.25;
-    font-weight: 800;
-    margin: 0 0 1.1rem 0;
-    letter-spacing: .2px;
-    word-break: keep-all;   /* 한글 단어 깨짐 방지 */
-  }
-  .section-subheading { text-align: center; opacity:.85; margin: -.2rem 0 1.1rem; }
-
-  /* 본문 기본값(조금 작게/단정하게) */
-  font-size: 0.98rem;   /* 섹션 전체 기본 폰트 축소 */
-  line-height: 1.55;
-
-  /* 항목 카드 리셋 */
-  .media, .media.stream-item, .card, .article-style {
-    background: transparent !important;
-    border: 0 !important;
-    box-shadow: none !important;
-    margin: 0 0 .9rem 0;
-    padding: 0;
-  }
-
-  /* 타이틀/메타/문단 */
-  .media .article-title, .media .media-heading, .media h3, .media h4 {
-    margin: 0 0 .25rem 0;
-    font-weight: 700;
-    line-height: 1.3;
-    font-size: 1.05rem;              /* 항목 제목 크기 축소 */
-    word-break: keep-all;
-  }
-  .media .article-metadata, .media .meta, .media .article-date {
-    opacity: .85; font-size: .92rem; margin-bottom: .15rem;
-  }
-  .media p { margin: .25rem 0; }
-  .media ul { margin: .25rem 0 .25rem 1.1rem; }
-
-  /* ==== 타임라인: 점 + 세로선(강하게 보이도록) ==== */
-  .media, .media.stream-item { position: relative; padding-left: 1.9rem; }
-  .media::before{
-    content: "";
-    position: absolute;
-    left: 0.42rem;
-    top: 0.45rem;
-    width: 10px; height: 10px;
-    border-radius: 50%;
-    background: currentColor;
-    opacity: 0.95;           /* 더 진하게 */
-    z-index: 2;
-  }
-  .media::after{
-    content: "";
-    position: absolute;
-    left: 0.88rem;
-    top: 1.15rem;
-    bottom: -0.5rem;
-    width: 2px;
-    background: rgba(255,255,255,.22); /* 라인 좀 더 선명 */
-    z-index: 1;
-  }
-
-  /* 수상 리스트 여백 */
-  ul, ol { margin-top: .35rem; margin-bottom: .35rem; }
-  li { margin: .18rem 0; }
-
-  /* 좌우 여백이 좁을 때 (모바일) */
-  @media (max-width: 640px){
-    font-size: .97rem;
-    .media { padding-left: 1.5rem; }
-    .media::after { bottom: -0.2rem; }
-  }
-}
-
-/* 섹션 사이 여백(조금만): 너무 벌어지는 것 방지 */
-section.resume-clean { padding-top: 1.8rem; padding-bottom: 1.8rem; }
-
-/* “Accomplishments” 같은 긴 영어 단어의 강제 줄바꿈 최소화 */
-section.resume-clean .section-title { hyphens: auto; overflow-wrap: anywhere; }
-
-/* ===== Resume Clean — v3 (final polish + color accent + hover) ===== */
-section.resume-clean {
-  .container, .page-body, .row {
-    max-width: 880px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* 중앙 제목 */
-  .section-title {
-    text-align: center !important;
-    font-size: clamp(1.5rem, 2.6vw, 2rem) !important;
-    font-weight: 800;
-    line-height: 1.25;
-    margin: 0 0 1.2rem;
-    letter-spacing: .2px;
-    word-break: keep-all;
-    color: var(--theme-accent, #00b5d8);
-  }
-
-  /* 부제목 */
-  .section-subheading {
-    text-align: center;
-    opacity: .8;
-    margin-top: -.3rem;
-    margin-bottom: 1.2rem;
-  }
-
-  /* 기본 텍스트 조정 */
-  font-size: 0.96rem;
-  line-height: 1.55;
-  color: rgba(255, 255, 255, 0.92);
-
-  /* 아이템 컨테이너 리셋 */
-  .media, .media.stream-item, .card, .article-style {
-    background: transparent !important;
-    border: 0 !important;
-    box-shadow: none !important;
-    margin: 0 0 1.1rem 0;
-    padding: 0 0 0.2rem 0;
-  }
-
-  /* 제목 (항목명) */
-  .media .article-title, .media h3, .media h4 {
-    font-weight: 700;
-    font-size: 1.05rem;
-    margin: 0 0 0.2rem;
-    transition: color 0.2s ease;
-  }
-  .media .article-title:hover {
-    color: var(--theme-accent, #00b5d8); /* hover시 파란색 포인트 */
-  }
-
-  /* 메타(소속/기간) */
-  .media .article-metadata, .media .meta, .media .article-date {
-    opacity: .85;
-    font-size: .9rem;
-    margin-bottom: .25rem;
-  }
-
-  /* 본문 */
-  .media p { margin: .25rem 0; opacity: 0.92; }
-  .media ul { margin: .25rem 0 .25rem 1.2rem; }
-
-  /* === 타임라인 스타일 === */
-  .media, .media.stream-item {
-    position: relative;
-    padding-left: 1.9rem;
-  }
-  .media::before {
-    content: "";
-    position: absolute;
-    left: 0.5rem;
-    top: 0.5rem;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: var(--theme-accent, #00b5d8);
-    box-shadow: 0 0 6px rgba(0,181,216,0.4);
-    transition: transform 0.2s ease;
-  }
-  .media:hover::before {
-    transform: scale(1.3);
-    box-shadow: 0 0 10px rgba(0,181,216,0.6);
-  }
-  .media::after {
-    content: "";
-    position: absolute;
-    left: 0.88rem;
-    top: 1.2rem;
-    bottom: -0.5rem;
-    width: 2px;
-    background: rgba(255,255,255,0.15);
-  }
-
-  /* 수상/리스트 */
-  ul, ol { margin-top: .35rem; margin-bottom: .35rem; }
-  li { margin: .18rem 0; }
-
-  /* 작은 화면 대응 */
-  @media (max-width: 640px) {
-    .media { padding-left: 1.5rem; }
-    .media::after { bottom: -0.2rem; }
-  }
-}
-
-/* 섹션 간격 */
-section.resume-clean { padding-top: 2rem; padding-bottom: 2rem; }
-
-/* 색상 변수 (기본 파랑 accent, 테마에 따라 바꾸려면 이 값만 변경) */
-:root {
-  --theme-accent: #00b5d8; /* 밝은 파랑 */
-}
-.dark {
-  --theme-accent: #38bdf8; /* 다크모드용 시안톤 */
-}
-
-/* ===== Compact Resume Fix (글씨 크기 줄이기 + 줄바꿈 방지) ===== */
-
-/* 섹션 제목 크기 줄이기 & 줄바꿈 방지 */
+/* 제목(섹션 타이틀) — 가운데, 작게, 줄바꿈 금지 */
 .home-section.wg-accomplishments .section-title,
-.home-section.wg-education .section-title,
 .home-section.wg-experience .section-title {
-  font-size: clamp(1.3rem, 2vw, 1.8rem) !important;
-  font-weight: 700 !important;
-  text-align: center;
-  word-break: keep-all; /* 단어 단위로 줄바꿈 방지 */
+  text-align: center !important;
+  font-size: clamp(1.3rem, 2.1vw, 1.8rem) !important;
+  font-weight: 800 !important;
+  margin: 0 0 0.9rem;
+  word-break: keep-all;   /* 단어 단위 줄바꿈 방지 */
   white-space: normal;
   hyphens: none;
-  margin-bottom: 0.8rem;
 }
 
-/* 내용 폰트 크기와 간격 정돈 */
+/* 섹션 기본 폰트/줄간격 축소 */
 .home-section.wg-accomplishments,
-.home-section.wg-education,
 .home-section.wg-experience {
   font-size: 0.92rem !important;
   line-height: 1.5;
 }
 
-.home-section.wg-accomplishments li,
-.home-section.wg-education li,
-.home-section.wg-experience li {
-  margin-bottom: 0.25rem;
+/* 컨테이너 폭 살짝 좁게 */
+.home-section.wg-accomplishments .container,
+.home-section.wg-experience .container {
+  max-width: 880px;
 }
 
-/* 하위 항목(학교, 날짜 등) 정돈 */
-.home-section.wg-experience .article-metadata,
-.home-section.wg-education .article-metadata {
-  font-size: 0.85rem;
-  opacity: 0.85;
-  margin-bottom: 0.2rem;
-}
-
-/* 항목 제목 크기 줄이기 */
-.home-section.wg-experience .article-title,
-.home-section.wg-education .article-title {
+/* 항목 제목/메타/본문 간격 정돈 */
+.home-section.wg-experience .media .article-title {
   font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 0.2rem;
+  font-weight: 650;
+  margin-bottom: .2rem;
+}
+.home-section.wg-experience .article-metadata {
+  font-size: .86rem;
+  opacity: .85;
+  margin-bottom: .18rem;
+}
+.home-section.wg-experience .media { margin-bottom: 1rem; }
+
+/* 수상 리스트 간격 */
+.home-section.wg-accomplishments li { margin: .22rem 0; }
+
+/* (선택) 타임라인 느낌: 왼쪽 점 + 세로선 */
+.home-section.wg-experience .media {
+  position: relative;
+  padding-left: 1.7rem;
+}
+.home-section.wg-experience .media::before {
+  content: "";
+  position: absolute;
+  left: .48rem; top: .5rem;
+  width: 8px; height: 8px; border-radius: 50%;
+  background: currentColor; opacity: .9;
+}
+.home-section.wg-experience .media::after {
+  content: "";
+  position: absolute;
+  left: .86rem; top: 1.1rem; bottom: -.4rem;
+  width: 2px; background: rgba(255,255,255,.18);
 }
 
-/* 항목 간 여백 */
-.home-section.wg-experience .media,
-.home-section.wg-accomplishments .card,
-.home-section.wg-education .card {
-  margin-bottom: 1rem;
-}
-
-/* 긴 영어 단어 자동 줄바꿈 방지 */
-.home-section.wg-accomplishments,
-.home-section.wg-education,
-.home-section.wg-experience {
-  overflow-wrap: normal;
-  word-break: keep-all;
-  white-space: normal;
+/* 모바일 보정 */
+@media (max-width: 640px){
+  .home-section.wg-experience .media { padding-left: 1.4rem; }
+  .home-section.wg-experience .media::after { bottom: -.2rem; }
 }
