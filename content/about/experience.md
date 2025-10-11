@@ -19,6 +19,18 @@ experience:
       - Alpha-Beta Pruning으로 탐색 최적화
       - Python / NumPy / Pygame
 
+experience:
+  - company: "Alps"
+    company_url: ""
+    company_logo: ""
+    location: ""
+    position: "코딩 동아리"
+    date_start: "2024-04-01"
+    date_end: "2024-06-30"
+    description: |-
+      - 자료구조 및 알고리즘 학습 목표 학부 학술 동아리
+      - C++
+
   - company: "Fake Review Detection"
     company_url: ""
     company_logo: ""
