@@ -1,6 +1,6 @@
 main:
   - name: "Home"
-    url: "/"
+    page_ref: "home"
     weight: 10
 
   - name: "Projects"
