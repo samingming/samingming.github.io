@@ -78,3 +78,41 @@ ul.network-icon .big-icon {
 .home-section header {
   margin-bottom: 1em;
 }
+
+/* --- About(education/experience) polish --- */
+
+/* 섹션 폭 살짝 좁게 & 제목 간격 */
+.home-section.wg-experience .container { max-width: 980px; }
+.home-section.wg-experience .section-title { margin-bottom: .6rem; }
+.home-section.wg-experience .section-subheading { margin-top: -.2rem; }
+
+/* 카드 여백/그림자/모서리 */
+.home-section.wg-experience .card {
+  margin-bottom: 1.25rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.18);
+}
+
+/* 타임라인 점·선 (조금 작고 선명하게) */
+.home-section.wg-experience .media {
+  position: relative; padding-left: 1.8rem;
+}
+.home-section.wg-experience .media::before {
+  content:""; position:absolute; left:.5rem; top:.6rem;
+  width:8px; height:8px; border-radius:50%;
+  background:#38bdf8; box-shadow:0 0 8px rgba(56,189,248,.5);
+}
+.home-section.wg-experience .media::after {
+  content:""; position:absolute; left:.88rem; top:1.2rem; bottom:-.4rem;
+  width:2px; background:rgba(255,255,255,.22);
+}
+
+/* 카드 내부 타이틀/메타 간격 */
+.home-section.wg-experience .article-title { margin-bottom:.2rem; font-weight:700; }
+.home-section.wg-experience .article-metadata { font-size:.9rem; opacity:.85; margin-bottom:.2rem; }
+
+/* 모바일 보정 */
+@media (max-width:640px){
+  .home-section.wg-experience .media { padding-left:1.5rem; }
+  .home-section.wg-experience .media::after { bottom:-.2rem; }
+}

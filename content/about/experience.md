@@ -12,7 +12,7 @@ experience:
     company_url: ""
     company_logo: ""
     location: ""
-    position: "오목 AI 프로젝트"
+    position: "cookie-run 프로젝트"
     date_start: "2024-04-01"
     date_end: "2024-06-30"
     description: |-
