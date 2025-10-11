@@ -532,3 +532,64 @@ section.resume-clean { padding-top: 2rem; padding-bottom: 2rem; }
 .dark {
   --theme-accent: #38bdf8; /* 다크모드용 시안톤 */
 }
+
+/* ===== Compact Resume Fix (글씨 크기 줄이기 + 줄바꿈 방지) ===== */
+
+/* 섹션 제목 크기 줄이기 & 줄바꿈 방지 */
+.home-section.wg-accomplishments .section-title,
+.home-section.wg-education .section-title,
+.home-section.wg-experience .section-title {
+  font-size: clamp(1.3rem, 2vw, 1.8rem) !important;
+  font-weight: 700 !important;
+  text-align: center;
+  word-break: keep-all; /* 단어 단위로 줄바꿈 방지 */
+  white-space: normal;
+  hyphens: none;
+  margin-bottom: 0.8rem;
+}
+
+/* 내용 폰트 크기와 간격 정돈 */
+.home-section.wg-accomplishments,
+.home-section.wg-education,
+.home-section.wg-experience {
+  font-size: 0.92rem !important;
+  line-height: 1.5;
+}
+
+.home-section.wg-accomplishments li,
+.home-section.wg-education li,
+.home-section.wg-experience li {
+  margin-bottom: 0.25rem;
+}
+
+/* 하위 항목(학교, 날짜 등) 정돈 */
+.home-section.wg-experience .article-metadata,
+.home-section.wg-education .article-metadata {
+  font-size: 0.85rem;
+  opacity: 0.85;
+  margin-bottom: 0.2rem;
+}
+
+/* 항목 제목 크기 줄이기 */
+.home-section.wg-experience .article-title,
+.home-section.wg-education .article-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+/* 항목 간 여백 */
+.home-section.wg-experience .media,
+.home-section.wg-accomplishments .card,
+.home-section.wg-education .card {
+  margin-bottom: 1rem;
+}
+
+/* 긴 영어 단어 자동 줄바꿈 방지 */
+.home-section.wg-accomplishments,
+.home-section.wg-education,
+.home-section.wg-experience {
+  overflow-wrap: normal;
+  word-break: keep-all;
+  white-space: normal;
+}
