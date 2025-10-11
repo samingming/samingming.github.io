@@ -1,6 +1,7 @@
 ---
 widget: accomplishments
 headless: true
+active: true
 weight: 20
 title: "Accomplishments"
 subtitle: "수상 및 자격증"

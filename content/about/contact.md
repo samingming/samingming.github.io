@@ -1,15 +1,16 @@
 ---
 widget: contact
 headless: true
+active: true
 weight: 50
 title: "Contact"
 subtitle: "연락하기"
 content:
   autolink: true
   form:
-    provider: ""
+    provider: ""   # GitHub Pages면 폼 비활성
 design:
-  columns: '1'
+  columns: "1"
 ---
 📧 **Email:** my-juliana@naver.com  
 🏫 **소속:** 전북대학교 컴퓨터인공지능학부  

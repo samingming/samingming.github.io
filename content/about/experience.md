@@ -1,6 +1,7 @@
 ---
 widget: experience
 headless: true
+active: true
 weight: 30
 title: "Experience"
 subtitle: "프로젝트 및 활동"

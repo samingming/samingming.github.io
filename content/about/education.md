@@ -1,6 +1,7 @@
 ---
 widget: education
 headless: true
+active: true
 weight: 25
 title: "Education"
 subtitle: "학력"
