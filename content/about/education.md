@@ -5,8 +5,6 @@ active: true
 weight: 25
 title: "Education"
 subtitle: "학력"
-design:
-  css_class: resume-clean
 ---
 
 - 🎓 **전북대학교 (Jeonbuk National University)** — 컴퓨터인공지능학부 (재학)

@@ -6,8 +6,6 @@ weight: 20
 title: "Certificates"
 subtitle: "수상 및 자격증"
 lang: ko
-design:
-  css_class: resume-clean
 ---
 
 - 🏅 **토익 성적 향상** — 2025년  

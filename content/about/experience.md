@@ -6,8 +6,6 @@ weight: 30
 title: "Experience"
 subtitle: "프로젝트 및 활동"
 lang: ko
-design:
-  css_class: resume-clean
 ---
 
 - 🤖 **AI Game Development Project** — 2024년  
