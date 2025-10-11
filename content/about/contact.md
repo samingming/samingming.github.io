@@ -18,9 +18,9 @@ content:
 
   # Email form provider
   form:
-    provider: netlify
+    provider: formspree
     formspree:
-      id:
+      id: my-juliana@naver.com
     netlify:
       # Enable CAPTCHA challenge to reduce spam?
       captcha: false
@@ -28,3 +28,4 @@ content:
 design:
   columns: '1'
 ---
+
