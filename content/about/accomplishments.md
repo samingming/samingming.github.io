@@ -3,7 +3,7 @@ widget: accomplishments
 headless: true
 active: true
 weight: 20
-title: "Accomplishments"
+title: "Certificates"
 subtitle: "수상 및 자격증"
 lang: ko
 design:
