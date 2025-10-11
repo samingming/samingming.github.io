@@ -1,73 +1,69 @@
 ---
 # Display name
-title: 정사임(Jeong Saim)
+title: "정사임(Jeong Saim)"
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position
-role: ''
+role: "전북대학교 컴퓨터인공지능학부 3학년"
 
 # Status emoji
 status:
   icon: 🐶
 
-# Organizations/Affiliations
-#organizations:
-#- name: 腾讯
-#  url: ""
+# Organization
+organizations:
+  - name: "전북대학교"
+    url: "https://www.jbnu.ac.kr/"
 
-# Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+# Short bio (카드/푸터 등에 노출)
+bio: "웹/데이터 프로젝트와 공부 기록을 공유합니다."
 
-#interests:
-#- Artificial Intelligence
-#- Computational Linguistics
-#- Information Retrieval
+# 관심 분야(원하면 추가/수정)
+interests:
+  - AI Game Development
+  - Image Generation
+  - Fake Review Detection
+  - Data
+  - Web
 
-#education:
-#  courses:
-#  - course: PhD in Artificial Intelligence
-#    institution: Stanford University
-#    year: 2012
-#  - course: MEng in Artificial Intelligence
-#    institution: Massachusetts Institute of Technology
-#    year: 2009
-#  - course: BSc in Artificial Intelligence
-#    institution: Massachusetts Institute of Technology
-#    year: 2008
+# 학력(간단 표기)
+education:
+  courses:
+    - course: "컴퓨터인공지능학부 (재학)"
+      institution: "전북대학교"
 
-# Social/Academic Networking
-# For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
-#   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
-#   form "mailto:your-email@example.com" or "#contact" for contact widget.
+# 아바타 이미지 (authors/admin 폴더 안의 avatar.jpg 사용)
+avatar:
+  image: "avatar.jpg"          # ← 절대경로(/) 말고 파일명만!
+  alt_text: "정사임 프로필 사진"
+
+# 소셜/링크
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'about/#contact' # For a direct email link, use "mailto:test@example.org".
-  - icon: twitter
+    link: "mail to:my-juliana@naver.com"   # 연락처 메일
+  - icon: github
     icon_pack: fab
-    link: https://twitter.com/wowchemy
+    link: "https://github.com/samingming"
   - icon: instagram
     icon_pack: fab
-    link: https://instagram.com/geocushen
-# Uncomment below for Github link
-#- icon: github
-#  icon_pack: fab
-#  link: https://github.com/gcushen
+    link: "https://instagram.com/wjdtkdla"
+  - icon: file-pdf
+    icon_pack: fas
+    link: "/files/resume.pdf"            # 이력서 PDF (static/files/resume.pdf)
 
-# Link to a PDF of your resume/CV from the About widget.
-# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# - icon: cv
-#   icon_pack: ai
-#   link: files/cv.pdf
-
-# Enter email to display Gravatar (if Gravatar enabled in Config)
-#email: ""
+# Gravatar 사용 안 할 때는 email 생략 가능
+# email: ""
 ---
 
-Alice Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+안녕하세요! **정사임**입니다.  
+전북대학교 **컴퓨터인공지능학부** 3학년으로, 웹/데이터 프로젝트와 공부 기록을 꾸준히 공유하고 있어요.  
+관심 분야는 **AI Game Development**, **Image Generation**, **Fake Review Detection** 등입니다.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+- 📧 이메일: my-juliana@naver.com  
+- 🏫 소속: 전북대학교 컴퓨터인공지능학부  
+- 🔗 GitHub: https://github.com/samingming
 
-{{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}} my resumé as a PDF.
+[📄 이력서 다운로드](/files/resume.pdf)
