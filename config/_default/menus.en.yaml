@@ -1,11 +1,37 @@
 main:
-  - name: home
-    url: /
+  - name: "Home"
+    url: "/"
     weight: 10
 
-  - name: projects
-    url: /project/
+  - name: "Projects"
+    identifier: "projects"
+    page_ref: "project"
     weight: 20
+
+  - name: "AI Game"
+    parent: "projects"
+    page_ref: "project/game"
+    weight: 21
+
+  - name: "Image Gen"
+    parent: "projects"
+    page_ref: "project/AI"
+    weight: 22
+
+  - name: "Review"
+    parent: "projects"
+    page_ref: "project/Review"
+    weight: 23
+
+  - name: "Data"
+    parent: "projects"
+    page_ref: "project/data"
+    weight: 24
+
+  - name: "Web"
+    parent: "projects"
+    page_ref: "project/web"
+    weight: 25
 
   - name: gallery
     url: /gallery/

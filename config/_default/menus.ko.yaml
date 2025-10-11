@@ -1,61 +1,63 @@
 main:
-  - name: 홈
-    url: /
+  - name: "홈"
+    url: "/"
     weight: 10
 
-  - name: 프로젝트
-    url: /project/
+  # 상위 메뉴: 식별자 필수!
+  - name: "프로젝트"
+    identifier: "projects"
+    page_ref: "project"
     weight: 20
 
-  - name: AI Game
-    parent: projects
-    page_ref: project/game
+  # 하위 메뉴들: parent 는 위 식별자 "projects"
+  - name: "AI Game"
+    parent: "projects"
+    page_ref: "project/game"
     weight: 21
 
-  - name: Image Gen
-    parent: projects
-    page_ref: project/AI
+  - name: "Image Gen"
+    parent: "projects"
+    page_ref: "project/AI"  
     weight: 22
 
-  - name: Review
-    parent: projects
-    page_ref: project/Review
+  - name: "Review"
+    parent: "projects"
+    page_ref: "project/Review"      
     weight: 23
 
-  - name: Data
-    parent: projects
-    page_ref: project/data
+  - name: "Data"
+    parent: "projects"
+    page_ref: "project/data"
     weight: 24
 
-  - name: Web
-    parent: projects
-    page_ref: project/web
+  - name: "Web"
+    parent: "projects"
+    page_ref: "project/web"
     weight: 25
 
-
-  - name: 갤러리
-    url: /gallery/
+  - name: "갤러리"
+    url: "/gallery/"
     weight: 30
 
-  - name: 이력
-    url: /about/
+  - name: "이력"
+    url: "/about/"
     weight: 40
 
-  - name: 블로그
-    url: /blog/
+  - name: "블로그"
+    url: "/blog/"
     weight: 50
 
-  - name: 연락처
-    url: /contact/
+  - name: "연락처"
+    identifier: "contact"
+    url: "/contact/"
     weight: 60
-    identifier: contact
 
-  - name: 연락처 정보
-    parent: contact
-    url: /contact/
+  - name: "연락처 정보"
+    parent: "contact"
+    url: "/contact/"
     weight: 61
 
-  - name: 오시는 길
-    parent: contact
-    url: /contact/location/
+  - name: "오시는 길"
+    parent: "contact"
+    url: "/contact/location/"
     weight: 62
