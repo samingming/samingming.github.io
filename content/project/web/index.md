@@ -4,6 +4,7 @@ summary: "이 프로젝트는 포트폴리오 웹사이트를 구축한 과정�
 tags: ["WP"]
 date: 2025-10-09
 draft: false
+aliases: ["/ko/project/web/", "/en/project/web/"]
 featured: true
 image:
   filename: "featured.jpg"

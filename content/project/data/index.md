@@ -5,6 +5,7 @@ tags: ["DP"]
 date: 2025-10-09
 featured: true
 draft: false
+aliases: ["/ko/project/data/", "/en/project/data/"]
 image:
   filename: "featured.jpg"
   focal_point: "Center"

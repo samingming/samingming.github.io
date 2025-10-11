@@ -4,6 +4,7 @@ summary: "강화학습과 간단한 게임 엔진을 이용해 AI 캐릭터를 �
 tags: ["AG"]
 date: 2025-10-09
 draft: false
+aliases: ["/ko/project/game/", "/en/project/game/"]
 featured: true
 image:
   filename: "featured.jpg"

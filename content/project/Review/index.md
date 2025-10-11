@@ -4,6 +4,7 @@ summary: "전자상거래 리뷰 데이터를 분석해 허위 후기 여부를 
 tags: ["FR"]
 date: 2025-10-09
 draft: false
+aliases: ["/ko/project/Review/", "/en/project/Review/"]
 featured: true
 image:
   filename: "featured.jpg"
