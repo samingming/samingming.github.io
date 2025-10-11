@@ -38,7 +38,7 @@ main:
     weight: 30
 
   - name: "about"
-    page ref: "about"
+    page_ref: "about"
     weight: 40
 
   - name: blog
@@ -48,3 +48,14 @@ main:
   - name: contact
     url: /contact/
     weight: 60
+      
+  - name: "info"
+    parent: "contact"
+    url: "/contact/"
+    weight: 61
+
+  - name: "location"
+    parent: "contact"
+    url: "/contact/location/"
+    weight: 62
+
