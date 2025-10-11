@@ -1,5 +1,7 @@
 ---
 type: widget_page
+design:
+  css_class: resume-clean
 title: "이력서"
 subtitle: "정사임(Jeong Saim)의 포트폴리오 및 소개"
 headless: false
