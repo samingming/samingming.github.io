@@ -115,3 +115,77 @@ ul.network-icon .big-icon {
 .wg-about .portrait-title h3 {
   font-size: 0.8rem;
 }
+/* ===== Resume tidy ===== */
+.resume-tidy .section-heading,
+.resume-tidy .section-title {
+  text-align: center;
+}
+
+.resume-tidy h2, .resume-tidy h3, .resume-tidy h4 {
+  margin-top: .25rem;
+  margin-bottom: .35rem;
+  font-weight: 700;
+}
+
+/* 카드(항목) 여백/배경 정리 */
+.resume-tidy .card,
+.resume-tidy .article-style,
+.resume-tidy .media.stream-item {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  margin-bottom: .9rem;
+  padding: .4rem 0 .4rem 0;
+}
+
+/* 타임라인 느낌의 왼쪽 줄 & 점 */
+.resume-tidy .card,
+.resume-tidy .media.stream-item {
+  position: relative;
+  padding-left: 1.1rem;
+}
+.resume-tidy .card::before,
+.resume-tidy .media.stream-item::before {
+  content: '';
+  position: absolute;
+  left: 0.2rem;
+  top: .6rem;
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: .7;
+}
+.resume-tidy .card::after,
+.resume-tidy .media.stream-item::after {
+  content: '';
+  position: absolute;
+  left: 0.45rem;
+  top: 1.4rem;
+  bottom: -.6rem;
+  width: 2px;
+  background: rgba(255,255,255,.15);
+}
+
+/* 리스트(성취 등)도 간격만 정돈 */
+.resume-tidy ul { margin: .25rem 0 .25rem 1rem; }
+.resume-tidy li { margin: .15rem 0; }
+
+/* Skills 2열 */
+.resume-tidy .skills-grid{
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 1.25rem;
+}
+.resume-tidy .clean-list{
+  list-style: none;
+  padding-left: 0;
+  margin: .25rem 0 0 0;
+}
+.resume-tidy .clean-list li{ margin: .3rem 0; }
+
+/* 모바일에서는 1열 */
+@media (max-width: 640px){
+  .resume-tidy .skills-grid{ grid-template-columns: 1fr; }
+  .resume-tidy .card::after,
+  .resume-tidy .media.stream-item::after { bottom: -.2rem; }
+}
