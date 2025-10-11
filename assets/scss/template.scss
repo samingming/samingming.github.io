@@ -212,3 +212,323 @@ section.resume-clean {
 
 /* 섹션 사이 간격 살짝 줄이기(선택) */
 section.resume-clean { padding-top: 2.2rem; padding-bottom: 2.2rem; }
+
+/* ===== Resume Clean — v3 (final polish + color accent + hover) ===== */
+section.resume-clean {
+  .container, .page-body, .row {
+    max-width: 880px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* 중앙 제목 */
+  .section-title {
+    text-align: center !important;
+    font-size: clamp(1.5rem, 2.6vw, 2rem) !important;
+    font-weight: 800;
+    line-height: 1.25;
+    margin: 0 0 1.2rem;
+    letter-spacing: .2px;
+    word-break: keep-all;
+    color: var(--theme-accent, #00b5d8);
+  }
+
+  /* 부제목 */
+  .section-subheading {
+    text-align: center;
+    opacity: .8;
+    margin-top: -.3rem;
+    margin-bottom: 1.2rem;
+  }
+
+  /* 기본 텍스트 조정 */
+  font-size: 0.96rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.92);
+
+  /* 아이템 컨테이너 리셋 */
+  .media, .media.stream-item, .card, .article-style {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    margin: 0 0 1.1rem 0;
+    padding: 0 0 0.2rem 0;
+  }
+
+  /* 제목 (항목명) */
+  .media .article-title, .media h3, .media h4 {
+    font-weight: 700;
+    font-size: 1.05rem;
+    margin: 0 0 0.2rem;
+    transition: color 0.2s ease;
+  }
+  .media .article-title:hover {
+    color: var(--theme-accent, #00b5d8); /* hover시 파란색 포인트 */
+  }
+
+  /* 메타(소속/기간) */
+  .media .article-metadata, .media .meta, .media .article-date {
+    opacity: .85;
+    font-size: .9rem;
+    margin-bottom: .25rem;
+  }
+
+  /* 본문 */
+  .media p { margin: .25rem 0; opacity: 0.92; }
+  .media ul { margin: .25rem 0 .25rem 1.2rem; }
+
+  /* === 타임라인 스타일 === */
+  .media, .media.stream-item {
+    position: relative;
+    padding-left: 1.9rem;
+  }
+  .media::before {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    top: 0.5rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--theme-accent, #00b5d8);
+    box-shadow: 0 0 6px rgba(0,181,216,0.4);
+    transition: transform 0.2s ease;
+  }
+  .media:hover::before {
+    transform: scale(1.3);
+    box-shadow: 0 0 10px rgba(0,181,216,0.6);
+  }
+  .media::after {
+    content: "";
+    position: absolute;
+    left: 0.88rem;
+    top: 1.2rem;
+    bottom: -0.5rem;
+    width: 2px;
+    background: rgba(255,255,255,0.15);
+  }
+
+  /* 수상/리스트 */
+  ul, ol { margin-top: .35rem; margin-bottom: .35rem; }
+  li { margin: .18rem 0; }
+
+  /* 작은 화면 대응 */
+  @media (max-width: 640px) {
+    .media { padding-left: 1.5rem; }
+    .media::after { bottom: -0.2rem; }
+  }
+}
+
+/* 섹션 간격 */
+section.resume-clean { padding-top: 2rem; padding-bottom: 2rem; }
+
+/* 색상 변수 (기본 파랑 accent, 테마에 따라 바꾸려면 이 값만 변경) */
+:root {
+  --theme-accent: #00b5d8; /* 밝은 파랑 */
+}
+.dark {
+  --theme-accent: #38bdf8; /* 다크모드용 시안톤 */
+}
+
+/* ===== Resume Clean — polish v2 (strong overrides) ===== */
+section.resume-clean {
+  /* 중앙 폭 & 여백 */
+  .container, .page-body, .row { max-width: 860px; margin-left: auto; margin-right: auto; }
+
+  /* 섹션 제목(가운데, 더 작게) */
+  .section-title, .section-heading, h1.section-title {
+    text-align: center !important;
+    font-size: clamp(1.5rem, 2.6vw, 2rem) !important;
+    line-height: 1.25;
+    font-weight: 800;
+    margin: 0 0 1.1rem 0;
+    letter-spacing: .2px;
+    word-break: keep-all;   /* 한글 단어 깨짐 방지 */
+  }
+  .section-subheading { text-align: center; opacity:.85; margin: -.2rem 0 1.1rem; }
+
+  /* 본문 기본값(조금 작게/단정하게) */
+  font-size: 0.98rem;   /* 섹션 전체 기본 폰트 축소 */
+  line-height: 1.55;
+
+  /* 항목 카드 리셋 */
+  .media, .media.stream-item, .card, .article-style {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    margin: 0 0 .9rem 0;
+    padding: 0;
+  }
+
+  /* 타이틀/메타/문단 */
+  .media .article-title, .media .media-heading, .media h3, .media h4 {
+    margin: 0 0 .25rem 0;
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 1.05rem;              /* 항목 제목 크기 축소 */
+    word-break: keep-all;
+  }
+  .media .article-metadata, .media .meta, .media .article-date {
+    opacity: .85; font-size: .92rem; margin-bottom: .15rem;
+  }
+  .media p { margin: .25rem 0; }
+  .media ul { margin: .25rem 0 .25rem 1.1rem; }
+
+  /* ==== 타임라인: 점 + 세로선(강하게 보이도록) ==== */
+  .media, .media.stream-item { position: relative; padding-left: 1.9rem; }
+  .media::before{
+    content: "";
+    position: absolute;
+    left: 0.42rem;
+    top: 0.45rem;
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: currentColor;
+    opacity: 0.95;           /* 더 진하게 */
+    z-index: 2;
+  }
+  .media::after{
+    content: "";
+    position: absolute;
+    left: 0.88rem;
+    top: 1.15rem;
+    bottom: -0.5rem;
+    width: 2px;
+    background: rgba(255,255,255,.22); /* 라인 좀 더 선명 */
+    z-index: 1;
+  }
+
+  /* 수상 리스트 여백 */
+  ul, ol { margin-top: .35rem; margin-bottom: .35rem; }
+  li { margin: .18rem 0; }
+
+  /* 좌우 여백이 좁을 때 (모바일) */
+  @media (max-width: 640px){
+    font-size: .97rem;
+    .media { padding-left: 1.5rem; }
+    .media::after { bottom: -0.2rem; }
+  }
+}
+
+/* 섹션 사이 여백(조금만): 너무 벌어지는 것 방지 */
+section.resume-clean { padding-top: 1.8rem; padding-bottom: 1.8rem; }
+
+/* “Accomplishments” 같은 긴 영어 단어의 강제 줄바꿈 최소화 */
+section.resume-clean .section-title { hyphens: auto; overflow-wrap: anywhere; }
+
+/* ===== Resume Clean — v3 (final polish + color accent + hover) ===== */
+section.resume-clean {
+  .container, .page-body, .row {
+    max-width: 880px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* 중앙 제목 */
+  .section-title {
+    text-align: center !important;
+    font-size: clamp(1.5rem, 2.6vw, 2rem) !important;
+    font-weight: 800;
+    line-height: 1.25;
+    margin: 0 0 1.2rem;
+    letter-spacing: .2px;
+    word-break: keep-all;
+    color: var(--theme-accent, #00b5d8);
+  }
+
+  /* 부제목 */
+  .section-subheading {
+    text-align: center;
+    opacity: .8;
+    margin-top: -.3rem;
+    margin-bottom: 1.2rem;
+  }
+
+  /* 기본 텍스트 조정 */
+  font-size: 0.96rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.92);
+
+  /* 아이템 컨테이너 리셋 */
+  .media, .media.stream-item, .card, .article-style {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    margin: 0 0 1.1rem 0;
+    padding: 0 0 0.2rem 0;
+  }
+
+  /* 제목 (항목명) */
+  .media .article-title, .media h3, .media h4 {
+    font-weight: 700;
+    font-size: 1.05rem;
+    margin: 0 0 0.2rem;
+    transition: color 0.2s ease;
+  }
+  .media .article-title:hover {
+    color: var(--theme-accent, #00b5d8); /* hover시 파란색 포인트 */
+  }
+
+  /* 메타(소속/기간) */
+  .media .article-metadata, .media .meta, .media .article-date {
+    opacity: .85;
+    font-size: .9rem;
+    margin-bottom: .25rem;
+  }
+
+  /* 본문 */
+  .media p { margin: .25rem 0; opacity: 0.92; }
+  .media ul { margin: .25rem 0 .25rem 1.2rem; }
+
+  /* === 타임라인 스타일 === */
+  .media, .media.stream-item {
+    position: relative;
+    padding-left: 1.9rem;
+  }
+  .media::before {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    top: 0.5rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--theme-accent, #00b5d8);
+    box-shadow: 0 0 6px rgba(0,181,216,0.4);
+    transition: transform 0.2s ease;
+  }
+  .media:hover::before {
+    transform: scale(1.3);
+    box-shadow: 0 0 10px rgba(0,181,216,0.6);
+  }
+  .media::after {
+    content: "";
+    position: absolute;
+    left: 0.88rem;
+    top: 1.2rem;
+    bottom: -0.5rem;
+    width: 2px;
+    background: rgba(255,255,255,0.15);
+  }
+
+  /* 수상/리스트 */
+  ul, ol { margin-top: .35rem; margin-bottom: .35rem; }
+  li { margin: .18rem 0; }
+
+  /* 작은 화면 대응 */
+  @media (max-width: 640px) {
+    .media { padding-left: 1.5rem; }
+    .media::after { bottom: -0.2rem; }
+  }
+}
+
+/* 섹션 간격 */
+section.resume-clean { padding-top: 2rem; padding-bottom: 2rem; }
+
+/* 색상 변수 (기본 파랑 accent, 테마에 따라 바꾸려면 이 값만 변경) */
+:root {
+  --theme-accent: #00b5d8; /* 밝은 파랑 */
+}
+.dark {
+  --theme-accent: #38bdf8; /* 다크모드용 시안톤 */
+}
