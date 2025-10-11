@@ -115,77 +115,100 @@ ul.network-icon .big-icon {
 .wg-about .portrait-title h3 {
   font-size: 0.8rem;
 }
-/* ===== Resume tidy ===== */
-.resume-tidy .section-heading,
-.resume-tidy .section-title {
-  text-align: center;
+
+/* ==== Resume Clean (Hugo Blox v5) ======================================= */
+section.resume-clean {
+  /* 섹션 최대폭 & 가운데 정렬 */
+  .container, .page-body, .row {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* 큰 중앙 제목 */
+  .section-heading, .section-title, h1.section-title {
+    text-align: center !important;
+    margin-bottom: 1.25rem;
+  }
+  .section-title {
+    font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+    font-weight: 800;
+    letter-spacing: 0.2px;
+  }
+  .section-subheading {
+    text-align: center;
+    opacity: .8;
+    margin-top: -.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  /* 장문의 영어 단어 줄바꿈 방지 (Accomplishments가 줄바꿈되는 문제 해결) */
+  .section-title, .section-subheading {
+    word-break: keep-all;
+    hyphens: auto;
+  }
+
+  /* 카드/아이템 기본 여백 리셋 */
+  .media, .media.stream-item, .card, .article-style {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    margin: 0 0 1.1rem 0;
+    padding: 0;
+  }
+
+  /* ==== 타임라인 (experience 위젯에 맞춤) ==== */
+  /* experience 항목 왼쪽에 점 + 세로선 */
+  .media, .media.stream-item {
+    position: relative;
+    padding-left: 1.75rem; /* 아이콘/점 여백 */
+  }
+  .media::before {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    top: 0.45rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: currentColor;
+    opacity: .85;
+  }
+  .media::after {
+    content: "";
+    position: absolute;
+    left: 0.88rem;
+    top: 1.1rem;
+    bottom: -0.6rem;
+    width: 2px;
+    background: rgba(255,255,255,.18);
+  }
+
+  /* 아이템 제목/부제/기간 정돈 */
+  .media .article-title, .media .media-heading, .media h3, .media h4 {
+    margin: 0 0 .25rem 0;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+  .media .article-metadata, .media .meta, .media .article-date {
+    opacity: .85;
+    font-size: .95rem;
+    margin-bottom: .25rem;
+  }
+  .media p, .media ul {
+    margin: .25rem 0;
+  }
+  .media ul { padding-left: 1.1rem; }
+
+  /* 수상 리스트 간격 */
+  ul, ol { margin-top: .4rem; margin-bottom: .4rem; }
+  li { margin: .2rem 0; }
+
+  /* 모바일에서 세로선 길이 조정 */
+  @media (max-width: 640px){
+    .media::after { bottom: -0.2rem; }
+  }
 }
 
-.resume-tidy h2, .resume-tidy h3, .resume-tidy h4 {
-  margin-top: .25rem;
-  margin-bottom: .35rem;
-  font-weight: 700;
-}
-
-/* 카드(항목) 여백/배경 정리 */
-.resume-tidy .card,
-.resume-tidy .article-style,
-.resume-tidy .media.stream-item {
-  background: transparent !important;
-  border: 0 !important;
-  box-shadow: none !important;
-  margin-bottom: .9rem;
-  padding: .4rem 0 .4rem 0;
-}
-
-/* 타임라인 느낌의 왼쪽 줄 & 점 */
-.resume-tidy .card,
-.resume-tidy .media.stream-item {
-  position: relative;
-  padding-left: 1.1rem;
-}
-.resume-tidy .card::before,
-.resume-tidy .media.stream-item::before {
-  content: '';
-  position: absolute;
-  left: 0.2rem;
-  top: .6rem;
-  width: 8px; height: 8px;
-  border-radius: 50%;
-  background: currentColor;
-  opacity: .7;
-}
-.resume-tidy .card::after,
-.resume-tidy .media.stream-item::after {
-  content: '';
-  position: absolute;
-  left: 0.45rem;
-  top: 1.4rem;
-  bottom: -.6rem;
-  width: 2px;
-  background: rgba(255,255,255,.15);
-}
-
-/* 리스트(성취 등)도 간격만 정돈 */
-.resume-tidy ul { margin: .25rem 0 .25rem 1rem; }
-.resume-tidy li { margin: .15rem 0; }
-
-/* Skills 2열 */
-.resume-tidy .skills-grid{
-  display: grid;
-  grid-template-columns: repeat(2,minmax(0,1fr));
-  gap: 1.25rem;
-}
-.resume-tidy .clean-list{
-  list-style: none;
-  padding-left: 0;
-  margin: .25rem 0 0 0;
-}
-.resume-tidy .clean-list li{ margin: .3rem 0; }
-
-/* 모바일에서는 1열 */
-@media (max-width: 640px){
-  .resume-tidy .skills-grid{ grid-template-columns: 1fr; }
-  .resume-tidy .card::after,
-  .resume-tidy .media.stream-item::after { bottom: -.2rem; }
-}
+/* 섹션 사이 간격 살짝 줄이기(선택) */
+section.resume-clean { padding-top: 2.2rem; padding-bottom: 2.2rem; }

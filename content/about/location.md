@@ -5,6 +5,8 @@ active: true
 weight: 55
 title: "Location"
 lang: ko
+design:
+  css_class: resume-clean
 ---
 <iframe
   src="https://www.google.com/maps?q=전북대학교&output=embed"

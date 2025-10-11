@@ -12,6 +12,8 @@ content:
     provider: ""   # GitHub Pages면 폼 비활성
 design:
   columns: "1"
+  css_class: resume-clean
+
 ---
 📧 **Email:** my-juliana@naver.com  
 🏫 **소속:** 전북대학교 컴퓨터인공지능학부  

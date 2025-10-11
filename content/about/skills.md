@@ -5,7 +5,7 @@ active: true
 weight: 45
 title: "기술 & 취미"
 design:
-  css_class: resume-tidy
+  css_class: resume-clean
 ---
 
 <div class="skills-grid">
