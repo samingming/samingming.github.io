@@ -1,4 +1,4 @@
----
+﻿---
 widget: portfolio
 headless: true
 weight: 20
@@ -10,7 +10,7 @@ content:
   count: 9
   filter_default: 0
   filters:
-    folders: ["project"]   # content/project�??�시
+    folders: ["project"]   # content/project留??쒖떆
     featured_only: false
   filter_field: "tags"
   filter_default: 0
@@ -30,7 +30,7 @@ content:
 
 
 design:
-  columns: 3               # ?�자 3
+  columns: 3               # ?レ옄 3
   view: masonry
   flip_alt_rows: false
   background: {}
@@ -38,3 +38,5 @@ design:
   options:
     justify: center
 ---
+
+
