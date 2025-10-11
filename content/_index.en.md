@@ -15,14 +15,14 @@ blocks:
 
         - title: "AI Image Generation"
           cta_label: "보러가기"
-          cta_url: "{{< relref "project/generation" >}}"
+          cta_url: "{{< relref "project/AI" >}}"
           image:
             filename: "/media/slide-2.jpg"
             focal_point: "center"
 
         - title: "Fake Review Detection"
           cta_label: "보러가기"
-          cta_url: "{{< relref "project/review" >}}"
+          cta_url: "{{< relref "project/Review" >}}"
           image:
             filename: "/media/slide-3.jpg"
             focal_point: "center"
