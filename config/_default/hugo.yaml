@@ -71,7 +71,9 @@ related:
     - name: categories
       weight: 70
 security:
-  _merge: deep
+  changefreq: monthly
+  priority: 0.5
+  filename: sitemap.xml
 sitemap:
   _merge: deep
 minify:
