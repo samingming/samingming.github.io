@@ -122,4 +122,4 @@ site:
 images: ["https://samingming.github.io/preview.png"]
 
 custom_css:
-  - css/custom.css
+  - "css/custom.css?v=14"
