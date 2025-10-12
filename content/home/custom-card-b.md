@@ -5,7 +5,6 @@ weight: 26
 title: 기술 스택
 ---
 
-{{< rawhtml >}}
 <div class="viewB-wrap">
   <div class="viewB">
     <div class="ic">🧠</div>
@@ -23,4 +22,3 @@ title: 기술 스택
     <p>Pandas, ETL</p>
   </div>
 </div>
-{{< /rawhtml >}}
