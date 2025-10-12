@@ -38,7 +38,7 @@ main:
     weight: 30
 
   - name: "about"
-    pageref: "en/about/index"
+    url: "/en/about/index/"
     weight: 40
 
   - name: blog
