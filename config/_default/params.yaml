@@ -112,3 +112,12 @@ extensions:
     local_backend: false
   academicons:
     enable: false
+
+site:
+  title: "정사임(Jeong Saim) | Portfolio"
+  description: "전북대학교 컴퓨터인공지능학부 정사임 포트폴리오 — 프로젝트, 경력, 연락처"
+  keywords: ["정사임","Jeong Saim","전북대학교","컴퓨터인공지능학부","포트폴리오"]
+
+# Open Graph/Twitter 대표 이미지
+images: ["preview.png"]
+
