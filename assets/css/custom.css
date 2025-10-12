@@ -1,0 +1,8 @@
+/* 버튼 hover */
+.btn:hover { opacity: .92; transform: translateY(-1px); transition: all .2s ease; }
+
+/* 카드 hover */
+.card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,.15); transition: all .25s ease; }
+
+/* 양쪽 정렬용 (다음 단계에서 씀) */
+.justify { text-align: justify; }

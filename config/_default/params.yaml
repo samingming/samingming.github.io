@@ -121,3 +121,5 @@ site:
 # Open Graph/Twitter 대표 이미지
 images: ["preview.png"]
 
+custom_css:
+  - css/custom.css
