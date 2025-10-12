@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="/css/custom.css?v=1">
 ---
 type: widget_page
 design:
