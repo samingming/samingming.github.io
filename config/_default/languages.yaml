@@ -9,13 +9,19 @@ ko:
   contentDir: "content"
   weight: 1
   languagedirection: "ltr"
+  title: "정사임(Jeong Saim) | Portfolio"
+  params:
+    description: "전북대학교 컴퓨터인공지능학부 정사임의 포트폴리오 — 프로젝트, 경력, 연락처"
+
 
 en:
   languageName: "English"
   weight: 2
   contentDir: "content"
   languagedirection: "ltr"
-
+  title: "Jeong Saim | Portfolio"
+  params:
+    description: "Portfolio of Jeong Saim — projects, education, contact"
 # Uncomment the lines below to configure your website in a second language.
 #zh:
 #  languageCode: zh-Hans

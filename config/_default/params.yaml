@@ -119,7 +119,7 @@ site:
   keywords: ["정사임","Jeong Saim","전북대학교","컴퓨터인공지능학부","포트폴리오"]
 
 # Open Graph/Twitter 대표 이미지
-images: ["preview.png"]
+images: ["https://samingming.github.io/preview.png"]
 
 custom_css:
   - css/custom.css
