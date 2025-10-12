@@ -1,0 +1,51 @@
+/* === 전역 메뉴(네비게이션) hover === */
+header .navbar .nav-link {
+  transition: color .15s ease, background-color .15s ease, box-shadow .15s ease;
+}
+header .navbar .nav-link:hover {
+  color: #ff6b00 !important;
+  background: rgba(255,107,0,.12) !important;
+  border-radius: .5rem;
+  box-shadow: 0 4px 14px rgba(0,0,0,.08);
+}
+header .navbar .nav-link.active,
+header .navbar .nav-link[aria-current="page"] {
+  color: #ff6b00 !important;
+}
+header .navbar .nav-link:focus-visible {
+  outline: 2px solid #ff6b00 !important;
+  outline-offset: 2px;
+  border-radius: .5rem;
+}
+.dark header .navbar .nav-link:hover,
+[data-theme="dark"] header .navbar .nav-link:hover {
+  color: #ffd166 !important;
+  background: rgba(255,209,102,.12) !important;
+  box-shadow: 0 4px 14px rgba(0,0,0,.25);
+}
+
+/* === 버튼 공통 hover === */
+a:hover,
+button:hover,
+.btn:hover,
+.btn-primary:hover,
+.btn-slide:hover {
+  transform: translateY(-2px) scale(1.04) !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,.18) !important;
+  transition: transform .12s ease, box-shadow .12s ease !important;
+}
+
+/* === 카드류 hover === */
+[class*="card"]:hover,
+.article-card:hover,
+.project-card:hover,
+.publication-card:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 16px 40px rgba(0,0,0,.18) !important;
+}
+.dark [class*="card"]:hover {
+  box-shadow: 0 16px 40px rgba(255,255,255,.1) !important;
+}
+
+/* (임시 확인용) 아래 한 줄을 넣으면 전역 적용 여부가 바로 보임 — 적용되면 페이지에 아주 얇은 보라 테두리 생김. 확인 후 지워도 됨 */
+html { outline: 2px solid rgba(180,0,255,.15); }
