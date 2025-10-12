@@ -38,7 +38,7 @@ main:
     weight: 30
 
   - name: "about"
-    url: "/en/about/index/"
+    url: "/en/about/"
     weight: 40
 
   - name: blog
