@@ -18,16 +18,25 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'A highly-customizable Hugo blog theme powered by Wowchemy website builder.'
-    twitter: 'GetResearchDev'
+    description: '전북대학교 컴퓨터인공지능학부 정사임의 포트폴리오 — 프로젝트, 경력, 연락처'
+    twitter: ''
   analytics:
     google_analytics: ''
     baidu_tongji: ''
     google_tag_manager: ''
     microsoft_clarity: ''
   verification:
-    google: ''
-    baidu: ''
+    google: "imgsnoJoKrJNDEjMQU8gJzxcgUQSflHfnbp8imYKXKQ"   # (파일 인증 쓸 예정이면 비워두기)
+
+site:
+  title: "정사임(Jeong Saim) | 전북대학교 컴퓨터인공지능학부 포트폴리오"
+  description: "전북대학교 컴퓨터인공지능학부 정사임 포트폴리오 — 프로젝트, 경력, 연락처"
+  keywords: ["정사임","Jeong Saim","전북대학교","Jeonbuk National University","컴퓨터인공지능학부","포트폴리오"]
+
+images: ["https://samingming.github.io/preview.png"]
+
+custom_css:
+  - "css/custom.css?v=14"
 
 # Site header
 

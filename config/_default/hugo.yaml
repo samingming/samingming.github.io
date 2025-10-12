@@ -25,6 +25,7 @@ cascade:
 ############################
 
 defaultContentLanguage: ko
+canonifyURLs: true
 hasCJKLanguage: true
 defaultContentLanguageInSubdir: false
 removePathAccents: true
