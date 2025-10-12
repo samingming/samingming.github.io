@@ -31,3 +31,20 @@ img:hover {
 
 /* 링크는 밑줄도 강제 */
 a:hover { text-decoration: underline !important; }
+
+/* View A: 가로 카드 */
+.viewA{display:flex;gap:16px;align-items:flex-start;border:1px solid var(--bs-border-color);
+  border-radius:14px;padding:16px;transition:.2s ease;box-shadow:0 2px 10px rgba(0,0,0,.04)}
+.viewA:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.08)}
+.viewA img{width:120px;height:80px;object-fit:cover;border-radius:10px}
+.viewA h3{margin:0 0 6px;font-size:1.05rem}
+.viewA p{margin:0 0 10px}
+
+/* View B: 아이콘 카드 3열 */
+.viewB-wrap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.viewB{border:1px solid var(--bs-border-color);border-radius:14px;padding:18px;text-align:center;
+  transition:.2s ease}
+.viewB:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.08)}
+.viewB .ic{font-size:28px;margin-bottom:6px}
+.viewB h4{margin:6px 0 4px;font-size:1rem}
+.viewB p{margin:0;font-size:.9rem;opacity:.85}
