@@ -6,33 +6,33 @@ main:
   # 상위 메뉴: 식별자 필수!
   - name: "프로젝트"
     identifier: "projects"
-    page_ref: "project"
+    pageref: "project"
     weight: 20
 
   # 하위 메뉴들: parent 는 위 식별자 "projects"
   - name: "AI Game"
     parent: "projects"
-    page_ref: "project/game"
+    pageref: "project/game"
     weight: 21
 
   - name: "Image Gen"
     parent: "projects"
-    page_ref: "project/AI"  
+    pageref: "project/AI"  
     weight: 22
 
   - name: "Review"
     parent: "projects"
-    page_ref: "project/Review"      
+    pageref: "project/Review"      
     weight: 23
 
   - name: "Data"
     parent: "projects"
-    page_ref: "project/data"
+    pageref: "project/data"
     weight: 24
 
   - name: "Web"
     parent: "projects"
-    page_ref: "project/web"
+    pageref: "project/web"
     weight: 25
 
   - name: "갤러리"
