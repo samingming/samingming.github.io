@@ -59,8 +59,6 @@ taxonomies:
   tag: tags
   category: categories
   author: authors
-markup:
-  _merge: deep
 related:
   threshold: 80
   includeNewer: true
@@ -71,14 +69,25 @@ related:
     - name: categories
       weight: 70
 security:
+  enableInlineShortcodes: false
+  exec:
+    allow: ['^(dart-)?sass(-embedded)?$', '^go$', '^npx$', '^postcss$']
+    osEnv: ['(?i)^((HTTPS?|NO)_PROXY|PATH(EXT)?|APPDATA|TE?MP|TERM|GO\\w+|(XDG_CONFIG_)?HOME|USERPROFILE|SSH_AUTH_SOCK|DISPLAY|LANG|SYSTEMDRIVE)$']
+  funcs:
+    # ★ 에러 해결 핵심: WC_POST_CSS 허용
+    getenv: ['^HUGO_', '^CI$', '^WC_POST_CSS$']
+  http:
+    methods: ['(?i)GET|POST']
+    urls: ['.*']
+
+sitemap:
   changefreq: monthly
   priority: 0.5
   filename: sitemap.xml
-sitemap:
-  _merge: deep
 minify:
   _merge: deep
 markup:
+  _merge: deep
   goldmark:
     renderer:
       unsafe: true
