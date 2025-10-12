@@ -15,12 +15,12 @@ main:
 
   - name: "Image Gen"
     parent: "projects"
-    pageref: "project/AI"
+    pageref: "project/ai"
     weight: 22
 
   - name: "Review"
     parent: "projects"
-    pageref: "project/Review"
+    pageref: "project/review"
     weight: 23
 
   - name: "Data"

@@ -21,7 +21,7 @@ design:
   <div>
     <h3>Fake Review Detection</h3>
     <p>가짜 리뷰 탐색기.</p>
-    <a class="btn btn-primary btn-sm" href='{{< relref "project/Ai" >}}'>자세히 보기</a>
+    <a class="btn btn-primary btn-sm" href='{{< relref "project/ai" >}}'>자세히 보기</a>
 
   </div>
 </div>

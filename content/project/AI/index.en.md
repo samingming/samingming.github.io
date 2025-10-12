@@ -4,7 +4,7 @@ summary: "텍스트 입력으로 이미지를 생성하는 딥러닝 기반 이�
 tags: ["AI"]
 date: 2025-10-09
 draft: false
-aliases: ["/ko/project/AI/", "/en/project/AI/"]
+aliases: ["/ko/project/ai/", "/en/project/ai/"]
 featured: true
 image:
   filename: "featured.jpg"
