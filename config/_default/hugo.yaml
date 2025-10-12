@@ -86,6 +86,8 @@ sitemap:
   filename: sitemap.xml
 minify:
   _merge: deep
+  xml:
+      keepWhitespace: true
 markup:
   _merge: deep
   goldmark:
