@@ -1,25 +1,23 @@
 # SITE SETUP
 # Guide: https://docs.hugoblox.com/tutorial/
 # Documentation: https://docs.hugoblox.com/
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+# YAML syntax: https://learnxinyminutes.com/docs/yaml/
 
 # Appearance
-
 appearance:
   theme_day: custom
   theme_night: custom
   font: minimal
   font_size: L
 
-
-# SEO
-
+# SEO / Marketing
 marketing:
   seo:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: '전북대학교 컴퓨터인공지능학부 정사임의 포트폴리오 — 프로젝트, 경력, 연락처'
+    # 핵심: "전북대 정사임"과 "전북대학교 정사임"을 모두 포함
+    description: "전북대 정사임 | 전북대학교(전북대) 컴퓨터인공지능학부 정사임의 포트폴리오 — 프로젝트, 경력, 연락처"
     twitter: ''
   analytics:
     google_analytics: ''
@@ -27,20 +25,32 @@ marketing:
     google_tag_manager: ''
     microsoft_clarity: ''
   verification:
-    google: "imgsnoJoKrJNDEjMQU8gJzxcgUQSflHfnbp8imYKXKQ"   # (파일 인증 쓸 예정이면 비워두기)
+    # HTML 태그 인증을 쓸 때만 값 유지. 파일 인증(HTML 업로드)을 쓸 거면 비워두세요.
+    google: "imgsnoJoKrJNDEjMQU8gJzxcgUQSflHfnbp8imYKXKQ"
 
+# Site meta (중복 제거, 단일 블록만 유지)
 site:
-  title: "정사임(Jeong Saim) | 전북대학교 컴퓨터인공지능학부 포트폴리오"
-  description: "전북대학교 컴퓨터인공지능학부 정사임 포트폴리오 — 프로젝트, 경력, 연락처"
-  keywords: ["정사임","Jeong Saim","전북대학교","Jeonbuk National University","컴퓨터인공지능학부","포트폴리오"]
+  title: "전북대 정사임 | Jeong Saim (Jeonbuk National University)"
+  description: "전북대 정사임 | 전북대학교(전북대) 컴퓨터인공지능학부 정사임의 포트폴리오 — 프로젝트, 경력, 연락처"
+  keywords:
+    - "전북대 정사임"
+    - "전북대학교 정사임"
+    - "Jeong Saim"
+    - "Jeonbuk National University"
+    - "컴퓨터인공지능학부"
+    - "포트폴리오"
 
-images: ["https://samingming.github.io/preview.png"]
+# Open Graph / Twitter 대표 이미지
+images:
+  - "https://samingming.github.io/preview.png"
 
+# Custom assets (중복 제거)
 custom_css:
-  - "css/custom.css?v=16"
+  - "css/custom.css?v=25"
+custom_js:
+  - "js/center-filters.js?v=1"
 
-# Site header
-
+# Header
 header:
   navbar:
     enable: true
@@ -52,29 +62,29 @@ header:
     highlight_active_link: false
     show_title: false
 
-
+# Footer
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: "© {year} Me. This work is licensed under {license}"
     license:
       enable: true
       allow_derivatives: false
       share_alike: true
       allow_commercial: false
+
+# Logo
 logo:
-    image: "logo.png"
-    alt_text: "홈으로"        
-    link: "/"              
-    width: 96
+  image: "logo.png"
+  alt_text: "홈으로"
+  link: "/"
+  width: 96
 
 # Localization
-
 locale:
-  date_format: 'Jan 2, 2006'
-  time_format: '3:04 PM'
+  date_format: "Jan 2, 2006"
+  time_format: "3:04 PM"
 
-# Site features
-
+# Features
 features:
   syntax_highlighter:
     enable: true
@@ -86,7 +96,7 @@ features:
   privacy_pack:
     enable: false
   repository:
-    url: 'https://github.com/<username>/<repository>'
+    url: "https://github.com/<username>/<repository>"
     content_dir: content
     branch: main
   avatar:
@@ -122,18 +132,3 @@ extensions:
     local_backend: false
   academicons:
     enable: false
-
-site:
-  title: "정사임(Jeong Saim) | Portfolio"
-  description: "전북대학교 컴퓨터인공지능학부 정사임 포트폴리오 — 프로젝트, 경력, 연락처"
-  keywords: ["정사임","Jeong Saim","전북대학교","컴퓨터인공지능학부","포트폴리오"]
-
-# Open Graph/Twitter 대표 이미지
-images: ["https://samingming.github.io/preview.png"]
-
-custom_css:
-  - "css/custom.css?v=25"
-
-custom_js:
-  - "js/center-filters.js?v=1"
-
