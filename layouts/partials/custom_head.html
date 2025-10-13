@@ -1,3 +1,16 @@
+<!-- Canonical & robots: 색인 허용 신호 강화 -->
+<link rel="canonical" href="{{ .Permalink }}">
+<meta name="robots"
+      content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:large">
+
+<!-- (다국어 쓰면 권장) hreflang -->
+<link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+{{ with .Translations }}
+  {{ range . }}
+    <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+  {{ end }}
+{{ end }}
+
 <style>
 /* == 양쪽 정렬 전역 적용 (Wowchemy 기본 좌측정렬을 이김) == */
 body .home-section .article-style p,
@@ -16,15 +29,15 @@ body .markdown p {
 
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"Person",
-  "name":"Jeong Saim",
-  "alternateName":["정사임","전북대 정사임","전북대학교 정사임"],
-  "url":"https://samingming.github.io/",
-  "affiliation":{
-    "@type":"CollegeOrUniversity",
-    "name":"전북대학교",
-    "alternateName":["전북대","JBNU","Jeonbuk National University"]
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Jeong Saim",
+  "alternateName": ["정사임", "전북대 정사임", "전북대학교 정사임"],
+  "url": "https://samingming.github.io/",
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "전북대학교",
+    "alternateName": ["전북대", "JBNU", "Jeonbuk National University"]
   }
 }
 </script>
