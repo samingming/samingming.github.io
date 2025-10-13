@@ -65,3 +65,13 @@ section#portfolio .project-filters .btn-toolbar .btn-group{
 }
 
 section#portfolio .project-filters{ width:100% !important; }
+
+/* 본문 단락/프로젝트 카드 설명을 양쪽정렬 */
+.home-section p,
+.article-style p,
+.project-card p,
+.card-text,
+.section-subheading {
+  text-align: justify;
+  text-justify: inter-word; /* 지원 브라우저에서 간격 품질 개선 */
+}
