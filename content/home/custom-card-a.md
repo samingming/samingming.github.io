@@ -6,4 +6,4 @@ title: 추천 프로젝트
 design:
   columns: "1"
 ---
-{{< partials "custom-card-a.html" >}}
+{{< custom-card-a >}}
