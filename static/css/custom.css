@@ -215,3 +215,35 @@ section#portfolio .project-filters [class*="btn-"]{
   margin-left: 0 !important;
 }
 
+/* === Portfolio 필터바: 화면 기준 완전 중앙 & 풀블리드 === */
+section#portfolio .project-filters{
+  /* 카드 그리드(container)의 좌우 여백 영향에서 빼내기 */
+  width: 100vw;               /* 화면 너비 꽉 채우기 */
+  margin-left: 50%;           /* 컨테이너 기준에서 화면 기준으로 이동 */
+  transform: translateX(-50%);/* 정확히 가운데 정렬 */
+  padding: .25rem 0;
+  background: transparent;    /* 필요하면 배경 지정 가능 */
+  text-align: center;         /* 내부 툴바를 중앙에 놓기 */
+}
+
+/* 툴바를 inline-flex로 만들어 중앙에 고정 */
+section#portfolio .project-filters .btn-toolbar{
+  display: inline-flex !important;
+  justify-content: center !important;
+  align-items: center;
+  gap: .5rem;
+  float: none !important;
+  margin: 0 auto !important;
+}
+
+/* 일부 테마에서 왼쪽으로 당기는 유틸리티(예: .me-auto) 무력화 */
+section#portfolio .project-filters .btn-toolbar .btn-group{
+  display: inline-flex;
+  margin: 0 !important;
+}
+
+/* 혹시 남아있는 좌측 여백 클래스 제거 효과 */
+section#portfolio .project-filters [class*="me-"],
+section#portfolio .project-filters [style*="margin-left"]{
+  margin-left: 0 !important;
+}
