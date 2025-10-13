@@ -51,36 +51,33 @@ a:hover { text-decoration: underline !important; }
 
 * { outline: 2px solid magenta !important; }
 
-/* ===== Force-center filter bar on the portfolio home section ===== */
-section#portfolio.home-section .section-content { 
-  text-align: center !important; 
+/* --- Force-center portfolio filter bar --- */
+
+/* 글 영역을 중앙 기준으로 */
+.home-section .section-content{ text-align:center !important; }
+
+/* 필터 컨테이너 후보들(테마 버전별 클래스 전부 커버) */
+.home-section .isotope-filters,
+.home-section .filter-button-group,
+.home-section .portfolio-filters,
+.home-section .project-filters,
+.home-section .js-isotope-filter,
+.home-section .project-toolbar,
+.home-section .filters-toolbar {
+  display:inline-flex !important;
+  justify-content:center !important;
+  align-items:center !important;
+  flex-wrap:wrap !important;
+  gap:.5rem !important;
+  width:max-content !important;     /* 버튼 묶음 길이만큼만 */
+  margin:1rem auto 1.5rem auto !important;
+  padding-left:0 !important;
 }
 
-/* 최신/구버전 마크업 모두 커버: 가장 강한 셀렉터들 */
-section#portfolio.home-section .isotope-filters,
-section#portfolio.home-section .filter-button-group,
-section#portfolio.home-section .portfolio-filters,
-section#portfolio.home-section .project-filters,
-section#portfolio.home-section .js-isotope-filter {
-  display: inline-flex !important;       /* 부모 text-align:center와 조합 */
-  justify-content: center !important;
-  align-items: center !important;
-  flex-wrap: wrap !important;
-  gap: .5rem !important;
-  width: max-content !important;         /* 내용만큼만 폭 차지 → 눈으로도 딱 중앙 */
-  margin: 1rem auto 1.5rem auto !important;
-  padding-left: 0 !important;
-}
-
-/* ul/li 기반이면 왼쪽 들여쓰기/불릿 제거 */
-section#portfolio.home-section .isotope-filters ul,
-section#portfolio.home-section .filter-button-group ul,
-section#portfolio.home-section .portfolio-filters ul {
-  padding-left: 0 !important;
-  margin: 0 !important;
-}
-section#portfolio.home-section .isotope-filters li,
-section#portfolio.home-section .filter-button-group li,
-section#portfolio.home-section .portfolio-filters li {
-  list-style: none !important;
-}
+/* ul/li 기반일 때 들여쓰기/불릿 제거 */
+.home-section .isotope-filters ul,
+.home-section .filter-button-group ul,
+.home-section .portfolio-filters ul { padding-left:0 !important; margin:0 !important; }
+.home-section .isotope-filters li,
+.home-section .filter-button-group li,
+.home-section .portfolio-filters li { list-style:none !important; }
