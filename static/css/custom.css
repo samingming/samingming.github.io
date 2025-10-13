@@ -186,3 +186,32 @@ section#portfolio .project-filters .btn-toolbar .btn-group {
 @media (min-width: 1200px) {
   section#portfolio .project-toolbar { max-width: 760px !important; }
 }
+
+/* Portfolio 필터바 중앙 정렬 고정 */
+section#portfolio .project-filters{
+  display: flex;
+  justify-content: center;
+}
+
+/* 툴바 자체를 중앙으로 */
+section#portfolio .project-filters .btn-toolbar{
+  display: flex;
+  justify-content: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100%;
+}
+
+/* 버튼 묶음이 왼쪽으로 붙는 현상 방지 */
+section#portfolio .project-filters .btn-toolbar .btn-group{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  gap: .5rem;            /* 버튼 사이 여백(원하면 조절) */
+  justify-content: center;
+}
+
+/* 혹시 남아있는 음수 마진/패딩을 무력화 */
+section#portfolio .project-filters [class*="btn-"]{
+  margin-left: 0 !important;
+}
+

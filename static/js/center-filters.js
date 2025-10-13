@@ -41,3 +41,11 @@
   // 이소토프/필터 초기화가 늦게 되는 경우를 대비해 한 번 더
   window.addEventListener('load', () => setTimeout(() => centerFilters(document), 200));
 })();
+
+window.addEventListener('load', ()=>{
+  const tb = document.querySelector('section#portfolio .project-filters .btn-toolbar');
+  if (tb) {
+    tb.classList.add('d-flex');
+    tb.style.justifyContent = 'center';
+  }
+});
