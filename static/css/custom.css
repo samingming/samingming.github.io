@@ -49,21 +49,53 @@ a:hover { text-decoration: underline !important; }
 .viewB h4{margin:6px 0 4px;font-size:1rem}
 .viewB p{margin:0;font-size:.9rem;opacity:.85}
 
-/* --- 프로젝트 필터바 가운데 정렬 --- */
+/* ===== Center the portfolio filter bar (All / AI ... / Data) ===== */
+
+/* 1) 섹션 본문을 가운데 정렬 */
+.home-section .section-content {
+  text-align: center !important;
+}
+
+/* 2) 필터 컨테이너를 내용폭으로 줄여 중앙 배치 (최신 브라우저 호환) */
+.home-section .section-content > div:has([data-filter]),
+.home-section .section-content > div:has(.isotope-filters),
+.home-section .section-content > div:has(.portfolio-filters),
+.home-section .section-content > div:has(.filter-button-group) {
+  display: inline-flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: .5rem !important;
+  width: max-content !important;
+  margin: 1rem auto 1.5rem auto !important;
+  padding-left: 0 !important;
+}
+
+/* 3) 구(舊) 테마/마크업 호환 셀렉터들 */
 .home-section .isotope-filters,
+.home-section .portfolio-filters,
 .home-section .filter-button-group,
 .home-section .project-filters,
-.home-section .portfolio-filters,
 .home-section .js-isotope-filter {
   display: inline-flex !important;
   justify-content: center !important;
   align-items: center !important;
   flex-wrap: wrap !important;
-  gap: 0.5rem !important;
+  gap: .5rem !important;
   width: max-content !important;
   margin: 1rem auto 1.5rem auto !important;
+  padding-left: 0 !important;
 }
 
-.home-section .section-content {
-  text-align: center !important;
+/* 4) 기본 들여쓰기/불릿 제거(테마마다 ul/li가 섞임) */
+.home-section .isotope-filters ul,
+.home-section .portfolio-filters ul,
+.home-section .filter-button-group ul {
+  padding-left: 0 !important;
+  margin: 0 !important;
+}
+.home-section .isotope-filters li,
+.home-section .portfolio-filters li,
+.home-section .filter-button-group li {
+  list-style: none !important;
 }
