@@ -20,6 +20,7 @@ It assumes a topic related to computer vision such as image classification and o
 
 <div style="display: flex; flex-direction: column; gap: 1rem;">
 
-<img src="https://images.unsplash.com/photo-1581091012184-7af80e69a0a8?auto=format&fit=crop&w=1200&q=60" alt="Computer Vision Image" style="width:100%; border-radius: 8px;">
+<img src="https://images.unsplash.com/photo-1581091012184-7af80e69a0a8" alt="Computer Vision Image" style="width:100%; border-radius:8px;">
+
 
 </div>
