@@ -1,27 +1,37 @@
 # data/themes/custom.toml
+# Starter Blog 기반 — 버튼, 텍스트 색 유지 / 배경만 변경
 
 name = "Starter Blog"
 
 [light]
-  # 🥑 Avocado tone background
-  background = "#E9F5D0"          # 전체 배경 (연한 아보카도 톤)
-  home_section_odd = "#E9F5D0"    # 짝수 섹션
-  home_section_even = "#E9F5D0"   # 홀수 섹션
-  menu_primary = "#E9F5D0"        # 메뉴 바 배경도 동일하게
-  menu_text = "#2b2b2b"
-  menu_text_active = "#6EA83C"
+  # 버튼/링크 색은 그대로
+  primary = "#2962ff"
+  link = "#2962ff"
+  link_hover = "#0039cb"
+
+  # 메뉴 (상단바)
+  menu_primary = "#E9F5D0"        # 메뉴바 배경을 아보카도빛으로
+  menu_text = "#34495e"
+  menu_text_active = "#2962ff"
   menu_title = "#2b2b2b"
 
-  # 포인트 색 (버튼, 링크 등)
-  primary = "#8CC84B"
-  link = "#8CC84B"
-  link_hover = "#6EA83C"
+  # 페이지 배경
+  background = "#E9F5D0"          # ✅ 전체 배경색 (연한 아보카도)
+  home_section_odd = "#E9F5D0"
+  home_section_even = "#E9F5D0"
 
 [dark]
-  primary = "#A6E17E"
-  link = "#A6E17E"
-  link_hover = "#C0F49A"
-  background = "rgb(26, 32, 44)"
-  home_section_odd = "rgb(26, 32, 44)"
-  home_section_even = "rgb(26, 32, 44)"
-  menu_primary = "rgb(26, 32, 44)"
+  primary = "#bbdefb"
+  link = "#bbdefb"
+  link_hover = "#bbdefb"
+
+  # 메뉴 (상단바)
+  menu_primary = "#101A14"        # ✅ 어두운 아보카도톤 네이비 대체
+  menu_text = "#e5e7eb"
+  menu_text_active = "#ffffff"
+  menu_title = "#ffffff"
+
+  # 페이지 배경
+  background = "#101A14"          # ✅ 전체 배경 변경 (짙은 아보카도색)
+  home_section_odd = "#101A14"
+  home_section_even = "#101A14"
