@@ -3,22 +3,22 @@
 name = "Starter Blog"
 
 [light]
-  # 🥑 Primary: 아보카도 톤
-  primary = "#8CC84B"          # 메인 색상 (아보카도 그린)
-  link = "#8CC84B"             # 링크 색상
-  link_hover = "#6EA83C"       # 링크 hover 시 조금 진하게
-  menu_text_active = "#8CC84B" # 메뉴 활성 링크 색상
-
-  # 기본 톤 유지
-  menu_primary = "rgb(247, 250, 252)"
-  menu_text = "#34495e"
+  # 🥑 Avocado tone background
+  background = "#E9F5D0"          # 전체 배경 (연한 아보카도 톤)
+  home_section_odd = "#E9F5D0"    # 짝수 섹션
+  home_section_even = "#E9F5D0"   # 홀수 섹션
+  menu_primary = "#E9F5D0"        # 메뉴 바 배경도 동일하게
+  menu_text = "#2b2b2b"
+  menu_text_active = "#6EA83C"
   menu_title = "#2b2b2b"
-  home_section_odd = "rgb(247, 250, 252)"
-  home_section_even = "rgb(247, 250, 252)"
+
+  # 포인트 색 (버튼, 링크 등)
+  primary = "#8CC84B"
+  link = "#8CC84B"
+  link_hover = "#6EA83C"
 
 [dark]
-  # 🌙 다크 모드 색상은 기존 유지 또는 약간 맞춤
-  primary = "#A6E17E"          # 어두운 배경에 잘 보이는 연아보카도색
+  primary = "#A6E17E"
   link = "#A6E17E"
   link_hover = "#C0F49A"
   background = "rgb(26, 32, 44)"
