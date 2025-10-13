@@ -1,5 +1,5 @@
 ---
-title: "연락처"
+title: "Contact INfo"
 ---
 
 📧 **Email**: my-juliana@naver.com

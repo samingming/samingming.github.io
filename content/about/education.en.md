@@ -4,19 +4,26 @@ headless: true
 active: true
 weight: 30
 title: "Education"
-subtitle: "학력"
+subtitle: "Academic Background"
 design:
   columns: "1"
-  # style: card  # (주석 유지해도 카드로 렌더됨)
+
 experience:
-  - company: "전북대학교"
+  - company: "Jeonbuk National University"
     company_url: "https://www.jbnu.ac.kr/"
-    company_logo: ""
-    location: "전주, 대한민국"
-    position: "컴퓨터인공지능학부 (학사)"
+    location: "Jeonju, South Korea"
+    position: "B.S. in Computer and Artificial Intelligence"
     date_start: "2023-03-01"
     date_end: ""
     description: |-
-      - 주요 과목: 알고리즘, 인공지능, 운영체제, 데이터베이스, 웹 프로그래밍
-      - 활동: 스터디/프로젝트 참여
+      - Major Courses: Algorithms, Artificial Intelligence, Operating Systems, Databases, Web Programming  
+      - Activities: Participated in ALPS academic club and multiple AI/DB development projects
+
+  - company: "Geunyeong Girls’ High School"
+    location: "Jeonju, South Korea"
+    position: "High School Diploma"
+    date_start: "2020-03-01"
+    date_end: "2023-02-01"
+    description: |-
+      - Focused on science and computer-related courses  
 ---

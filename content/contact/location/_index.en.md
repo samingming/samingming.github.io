@@ -1,9 +1,9 @@
 ---
-title: "오시는 길"
+title: "location"
 type: page
 ---
 
-## 📍 전북대학교 공대 7호관
+## 📍 Jeonbuk National University  (College of enginnering)
 
 <div style="position:relative;padding-bottom:56%;height:0;overflow:hidden;border-radius:12px;">
   <iframe

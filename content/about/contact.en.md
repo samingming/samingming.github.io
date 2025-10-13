@@ -4,7 +4,7 @@ headless: true
 active: true
 weight: 50
 title: "Contact"
-subtitle: "연락하기"
+subtitle: "Contact Info"
 lang: ko
 content:
   autolink: true
@@ -14,5 +14,5 @@ design:
   columns: "1"
 ---
 📧 **Email:** my-juliana@naver.com  
-🏫 **소속:** 전북대학교 컴퓨터인공지능학부  
-📍 **위치:** 전라북도 전주시 덕진구 백제대로 567  
+🏫 **Affiliation**: Department of Computer and Artificial Intelligence, Jeonbuk National University
+📍 **Location**: 567 Baekje-daero, Deokjin-gu, Jeonju-si, Jeollabuk-do, South Korea

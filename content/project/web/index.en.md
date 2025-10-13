@@ -1,21 +1,41 @@
 ---
 title: "Web Project"
-summary: "이 프로젝트는 포트폴리오 웹사이트를 구축한 과정과 기술을 다룹니다."
+summary: "A personal portfolio website built with Hugo and GitHub Pages, featuring custom design, multilingual support, and SEO optimization."
 tags: ["WP"]
 date: 2025-10-09
 draft: false
-aliases: ["/ko/project/web/", "/en/project/web/"]
+aliases: ["/en/project/web/"]
 featured: true
 image:
   filename: "featured.jpg"
   focal_point: "Center"
 ---
 
-### 프로젝트 개요
-이 프로젝트는 Hugo와 GitHub Pages를 이용해 만든 개인 포트폴리오 사이트입니다.  
-사이트 구성, 테마 커스터마이징, SEO 설정 등을 포함합니다.
+### 🌐 Overview  
+This project is a personal **portfolio website** developed using the **Hugo static site generator** and **GitHub Pages**.  
+Beyond basic theme setup, it includes **custom design modification**, **bilingual structure (Korean/English)**, and **SEO optimization** for improved visibility on search engines.  
+The site was designed not only as a portfolio but also as a **personal branding platform** to showcase academic projects and creative work in one place.
 
-### 사용 기술
-- Hugo
-- GitHub Pages
-- YAML 설정
+### ⚙️ Key Features  
+- **Hugo Blox Theme Customization:**  
+  Modified menus, portfolio sections, sliders, buttons, and card layouts for a cohesive design  
+- **Multilingual System Setup:**  
+  Configured `languages.yaml` to support seamless **Korean-English language switching**  
+  Ensured synchronization across all content sections (project, experience, education, etc.)  
+- **SEO & Indexing Optimization:**  
+  Improved visibility via `robots.txt`, `sitemap.xml`, and meta tags;  
+  Verified and submitted the site to **Google Search Console** for indexing  
+- **Automated Deployment (CI/CD):**  
+  Implemented **GitHub Actions** for continuous integration and deployment  
+  Fixed Hugo extended build issues to ensure stable deployment  
+- **Design Consistency:**  
+  Applied **custom CSS** for consistent color palette, layout, and button styles  
+  Enhanced user experience with responsive design for mobile and desktop
+
+### 🧩 Tech Stack  
+Hugo · GitHub Pages · YAML · HTML/CSS · JavaScript · Git · Google Search Console
+
+### 💡 Outcome & Learnings  
+- Gained hands-on experience in **end-to-end web development and deployment**  
+- Learned key practices in **SEO, multilingual support, and build automation**  
+- Built a fully functional **UI/UX-focused portfolio site** integrating both design and technical skills
