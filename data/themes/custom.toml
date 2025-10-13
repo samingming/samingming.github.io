@@ -1,24 +1,26 @@
-# Essentially Minimal theme but with constant home section bg color.
+# data/themes/custom.toml
+
 name = "Starter Blog"
 
 [light]
-  # Primary
-  primary = "#2962ff"
+  # 🥑 Primary: 아보카도 톤
+  primary = "#8CC84B"          # 메인 색상 (아보카도 그린)
+  link = "#8CC84B"             # 링크 색상
+  link_hover = "#6EA83C"       # 링크 hover 시 조금 진하게
+  menu_text_active = "#8CC84B" # 메뉴 활성 링크 색상
 
-  # Menu
+  # 기본 톤 유지
   menu_primary = "rgb(247, 250, 252)"
   menu_text = "#34495e"
-  menu_text_active = "#2962ff"
   menu_title = "#2b2b2b"
-
-  # Home sections
   home_section_odd = "rgb(247, 250, 252)"
   home_section_even = "rgb(247, 250, 252)"
 
 [dark]
-  primary = "#bbdefb"
-  link = "#bbdefb"
-  link_hover = "#bbdefb"
+  # 🌙 다크 모드 색상은 기존 유지 또는 약간 맞춤
+  primary = "#A6E17E"          # 어두운 배경에 잘 보이는 연아보카도색
+  link = "#A6E17E"
+  link_hover = "#C0F49A"
   background = "rgb(26, 32, 44)"
   home_section_odd = "rgb(26, 32, 44)"
   home_section_even = "rgb(26, 32, 44)"
