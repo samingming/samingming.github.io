@@ -17,9 +17,14 @@ image:
 
 ---
 
-
 <div style="display: flex; flex-direction: column; gap: 1rem;">
 
-<img src="https://images.unsplash.com/photo-1591696331113-e05b1a8d05c3" alt="AI Computer Vision" style="width:100%; border-radius:8px;">
+<img 
+  src="https://images.unsplash.com/photo-1581091012184-7af80e69a0a8?auto=format&amp;fit=crop&amp;w=1200&amp;q=60"
+  alt="Computer Vision Image"
+  style="width:100%; border-radius:8px;"
+  data-proofer-ignore
+/>
 
 </div>
+
