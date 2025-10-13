@@ -38,22 +38,19 @@ design:
   options:
     justify: center
 ---
-<!-- ↓↓↓ 필터 바 가운데 정렬 전용 스타일 (CSS 파일 없이 적용) ↓↓↓ -->
 <style>
-  /* 필터 바를 강제로 가운데 정렬 */
-  .home-section .isotope-filters,
-  .home-section .portfolio-filters,
-  .home-section .project-filter,
-  .home-section .filter-buttons,
-  .home-section .js-isotope-filter {
+  /* 필터 바 폭을 내용만큼만 줄이고, 정확히 가운데 */
+  .home-section .isotope-filters {
     display: flex !important;
     justify-content: center !important;
+    align-items: center !important;
     flex-wrap: wrap !important;
-    gap: 0.5rem !important;
+    gap: .5rem !important;
+    width: max-content !important;   /* ← 핵심 */
     margin: 1rem auto 1.5rem auto !important;
+    padding-left: 0 !important;      /* ul 기본 들여쓰기 제거 대비 */
   }
+  .home-section .isotope-filters ul { padding-left: 0 !important; margin: 0 !important; }
+  .home-section .isotope-filters li { list-style: none !important; }
 </style>
-<style>
-  .home-section .section-content { text-align: center !important; }
-  .home-section .isotope-filters { display: inline-flex !important; }
-</style>
+
