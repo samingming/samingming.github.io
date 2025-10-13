@@ -17,11 +17,14 @@ It assumes a topic related to computer vision such as image classification and o
 
 ---
 
+<div style="display:flex;flex-direction:column;gap:1rem;">
 
-<div style="display: flex; flex-direction: column; gap: 1rem;">
-
-<img src="https://images.unsplash.com/photo-1591696331113-e05b1a8d05c3" alt="AI Computer Vision" style="width:100%; border-radius:8px;">
-
-
+<img
+  src="https://images.unsplash.com/photo-1603791452906-b8cf1f92ce93"
+  alt="Server / Deep Learning Rig"
+  style="width:100%;border-radius:8px;"
+  loading="lazy"
+  referrerpolicy="no-referrer"
+/>
 
 </div>
