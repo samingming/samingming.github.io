@@ -1,30 +1,19 @@
 ---
 title: "Computer Vision Project"
-summary: "이 파일은 과제 요건(카드/Unsplash 이미지)을 확인하기 위한 허구의 예시입니다."
+summary: "이미지 분류와 객체 탐지를 다루는 허구의 컴퓨터 비전 프로젝트입니다. 이 과제의 카드 수 요건(9개)을 채우기 위한 예시용 프로젝트입니다."
 date: 2025-01-01
 type: project
 draft: false
 featured: false
-tags: ["AI","CV"]
+tags: ["AI", "CV"]
 categories: ["Projects"]
 image:
   filename: "cv-thumb.jpg"
   focal_point: "center"
 ---
 
-아래 이미지는 **Unsplash 원본 URL**을 쓰는, 가장 단순하고 안전한 예제입니다.  
-의도: _cv 페이지만 안 보이는 문제를 재현/차단._
+이 프로젝트는 실제로 진행된 것이 아니라, 포트폴리오 메인 화면에서 9개의 프로젝트 카드를 보여주기 위한 예시용입니다.  
+컴퓨터 비전 기술(이미지 분류, 객체 탐지 등)을 다룬다고 가정한 내용입니다.
 
-## 📸 Unsplash 이미지 (파라미터 없음, HTML 한 장)
+---
 
-<div style="display:flex;flex-direction:column;gap:1rem;">
-
-<img
-  src="https://images.unsplash.com/photo-1603791452906-b8cf1f92ce93"
-  alt="Server / Deep Learning Rig"
-  style="width:100%;border-radius:8px;"
-  loading="lazy"
-  referrerpolicy="no-referrer"
-/>
-
-</div>
