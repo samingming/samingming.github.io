@@ -247,3 +247,37 @@ section#portfolio .project-filters [class*="me-"],
 section#portfolio .project-filters [style*="margin-left"]{
   margin-left: 0 !important;
 }
+
+/* === 강제로 화면 중앙 배치 (컨테이너 영향 무시) === */
+section#portfolio .project-filters{
+  display:block !important;
+  width:100% !important;
+  text-align:center !important;
+  margin:0 auto !important;
+  padding: .25rem 0;
+}
+
+section#portfolio .project-filters .btn-toolbar{
+  display:inline-flex !important;
+  justify-content:center !important;
+  align-items:center !important;
+  gap:.5rem;
+  float:none !important;
+  margin:0 auto !important;
+  width:auto !important;            /* 좌측으로 쏠리게 하는 width 100% 방지 */
+  max-width:100% !important;
+}
+
+section#portfolio .project-filters .btn-toolbar .btn-group{
+  display:inline-flex !important;
+  margin:0 !important;
+  float:none !important;
+}
+
+/* 부트스트랩 유틸로 왼쪽 밀리는 경우 차단 */
+section#portfolio .project-filters .me-auto,
+section#portfolio .project-filters [class*="ms-"],
+section#portfolio .project-filters [class*="me-"]{
+  margin-left:0 !important;
+  margin-right:0 !important;
+}
