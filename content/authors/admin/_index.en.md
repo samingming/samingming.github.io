@@ -53,7 +53,12 @@ social:
   - icon: file-pdf
     icon_pack: fas
     link: "/files/resume.pdf"            # 이력서 PDF (static/files/resume.pdf)
-
+  - icon: youtube
+    icon_pack: fab
+    link: 'https://www.youtube.com/@정사밍'   
+  - icon: discord
+    icon_pack: fab
+    link: 'https://discord.gg/mhpqPVD2'     
 # Gravatar 사용 안 할 때는 email 생략 가능
 # email: ""
 ---

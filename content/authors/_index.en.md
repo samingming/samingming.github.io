@@ -32,10 +32,17 @@ social:
     link: https://github.com/samingming
   - icon: globe
     icon_pack: fas
-    link: https://samingming.github.io/en/
+    link: https://samingming.github.io/
   - icon: envelope
     icon_pack: fas
     link: "mailto:my-juliana@naver.com"
+  
+  - icon: youtube
+    icon_pack: fab
+    link: 'https://www.youtube.com/@정사밍'   
+  - icon: discord
+    icon_pack: fab
+    link: 'https://discord.gg/mhpqPVD2'    
 ---
 
 👋 Hello! I’m **Jeong Saim**, a junior majoring in **Computer & Artificial Intelligence at Jeonbuk National University (JBNU)**.  

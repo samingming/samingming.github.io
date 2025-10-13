@@ -24,7 +24,7 @@ organizations:
   - name: "전북대학교 (Jeonbuk National University, JBNU)"
     url: "https://www.jbnu.ac.kr/"
 avatar: "avatar.jpg"  # /content/authors/admin/avatar.jpg 있으면 자동 표시
-email: "kakmsya66@gmail.com"
+email: "my-juliana@naver.com"
 
 # === 링크(필요한 부분만 수정) ===
 social:
@@ -40,10 +40,10 @@ social:
   
   - icon: youtube
     icon_pack: fab
-    link: 'https://www.youtube.com/@정사밍'   # 👉 네 유튜브 채널 주소로 변경
+    link: 'https://www.youtube.com/@정사밍'   
   - icon: discord
     icon_pack: fab
-    link: 'https://discord.gg/mhpqPVD2'       # 👉 네 디스코드 초대 링크로 변경
+    link: 'https://discord.gg/mhpqPVD2'       
 
 ---
 
