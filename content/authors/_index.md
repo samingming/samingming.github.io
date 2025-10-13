@@ -37,6 +37,14 @@ social:
   - icon: envelope
     icon_pack: fas
     link: "mailto:my-juliana@naver.com"
+  
+  - icon: youtube
+    icon_pack: fab
+    link: 'https://www.youtube.com/@정사밍'   # 👉 네 유튜브 채널 주소로 변경
+  - icon: discord
+    icon_pack: fab
+    link: 'https://discord.gg/mhpqPVD2'       # 👉 네 디스코드 초대 링크로 변경
+
 ---
 
 👋 안녕하세요! 저는 **전북대(전북대학교, JBNU) 컴퓨터인공지능학부 3학년 정사임**입니다.  
