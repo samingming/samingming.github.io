@@ -109,3 +109,12 @@ section#portfolio .project-filters .btn-toolbar .btn-group {
 
 /* (선택) 버튼 간격/모서리 다듬기 */
 section#portfolio .project-filters .btn { border-radius: 8px; }
+
+/* --- FINAL: center portfolio filter bar --- */
+section#portfolio .project-filters { text-align: center !important; }   /* 부모를 중앙 기준으로 */
+section#portfolio .project-filters .btn-toolbar {                       /* 툴바 자체를 인라인 박스로 */
+  display: inline-flex !important; justify-content: center !important; flex-wrap: wrap !important;
+}
+section#portfolio .project-filters .btn-toolbar .btn-group {            /* 버튼 묶음도 인라인 플렉스 */
+  display: inline-flex !important; gap: .5rem !important; margin: 0 auto !important; width: max-content !important;
+}
