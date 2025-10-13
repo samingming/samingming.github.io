@@ -148,3 +148,41 @@ section#portfolio .project-filters .btn-toolbar .btn-group {
 section#portfolio .project-filters .btn-toolbar .btn {
   margin: 0 !important;
 }
+
+/* ===== Make the filter bar the same width as intro text & truly centered ===== */
+
+/* 1) 필터 바 래퍼를 본문(아티클) 폭으로 제한하고 가운데 두기 */
+section#portfolio .project-toolbar {
+  max-width: 720px !important;     /* 소개 문단과 같은 폭(취향에 맞게 700~760px) */
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* 2) 툴바/버튼 묶음은 중앙 정렬 + 음수마진 무력화 */
+section#portfolio .project-filters .btn-toolbar {
+  display: flex !important;
+  justify-content: center !important;
+  flex-wrap: wrap !important;
+  gap: .5rem !important;
+
+  margin: 1rem 0 1.5rem 0 !important;
+  margin-left: 0 !important;   /* bootstrap 기본 음수마진 리셋 */
+  margin-right: 0 !important;
+  padding: 0 !important;
+}
+
+/* 3) 버튼 그룹은 내용만큼만 차지(시각적으로 딱-가운데) */
+section#portfolio .project-filters .btn-toolbar .btn-group {
+  display: inline-flex !important;
+  flex-wrap: wrap !important;
+  gap: .5rem !important;
+  width: max-content !important;
+  margin: 0 auto !important;
+}
+
+/* 4) 반응형에서 조금만 넓혀주고 싶다면 */
+@media (min-width: 1200px) {
+  section#portfolio .project-toolbar { max-width: 760px !important; }
+}
