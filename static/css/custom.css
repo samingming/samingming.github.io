@@ -118,3 +118,33 @@ section#portfolio .project-filters .btn-toolbar {                       /* 툴�
 section#portfolio .project-filters .btn-toolbar .btn-group {            /* 버튼 묶음도 인라인 플렉스 */
   display: inline-flex !important; gap: .5rem !important; margin: 0 auto !important; width: max-content !important;
 }
+
+/* === FINAL fix: center the blue filter bar exactly === */
+/* 1) 부모를 중앙 기준으로 */
+section#portfolio .project-filters { text-align: center !important; }
+
+/* 2) 부트스트랩 툴바의 음수 마진/좌정렬을 모두 리셋하고 중앙 배치 */
+section#portfolio .project-filters .btn-toolbar {
+  display: inline-flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: .5rem !important;
+
+  /* 🔧 핵심: 좌우 음수 마진/패딩 리셋 */
+  margin: 1rem auto 1.5rem auto !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding: 0 !important;
+}
+
+/* 3) 그룹·버튼의 잔여 마진 제거(툴바 gap으로만 간격 유지) */
+section#portfolio .project-filters .btn-toolbar .btn-group {
+  display: inline-flex !important;
+  gap: .5rem !important;
+  margin: 0 !important;
+}
+
+section#portfolio .project-filters .btn-toolbar .btn {
+  margin: 0 !important;
+}
