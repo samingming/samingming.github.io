@@ -38,5 +38,19 @@ design:
   options:
     justify: center
 ---
-
+<!-- ↓↓↓ 필터 바 가운데 정렬 전용 스타일 (CSS 파일 없이 적용) ↓↓↓ -->
+<style>
+  /* 필터 바를 강제로 가운데 정렬 */
+  .home-section .isotope-filters,
+  .home-section .portfolio-filters,
+  .home-section .project-filter,
+  .home-section .filter-buttons,
+  .home-section .js-isotope-filter {
+    display: flex !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 0.5rem !important;
+    margin: 1rem auto 1.5rem auto !important;
+  }
+</style>
 
