@@ -8,3 +8,7 @@ draft: false
 ---
 
 This page summarizes **Jeong Saim’s** affiliation with **Jeonbuk National University (JBNU)**, major projects, and areas of study in Computer & AI.
+
+- profile: [/authors/admin/](/authors/admin/)
+- resume pdf: [/resume/](/resume/)
+- projects: [/project/](/project/)
