@@ -1,6 +1,6 @@
 ---
 title: "Natural Language Processing Project"
-summary: "자연어 처리(NLP)를 주제로 한 허구의 프로젝트입니다. 이 과제 수행(9개 카드/Unsplash 3장 이상) 요건을 충족하기 위한 예시용 콘텐츠입니다."
+summary: "A fictional NLP project created to meet the portfolio assignment requirements (9 cards and 3+ Unsplash images)."
 date: 2025-01-01
 type: project
 draft: false
@@ -12,8 +12,8 @@ image:
   focal_point: "center"
 ---
 
-이 프로젝트는 실제로 존재하지 않습니다.  
-텍스트 분석, 감정 분류, 챗봇 설계 등의 자연어 처리 기술을 가정한 **허구의 예시 프로젝트**로, 과제 요건 충족을 위해 작성되었습니다.
+This project is **not real** — it was written purely to satisfy the assignment.  
+It imagines a topic in natural language processing (NLP), such as sentiment analysis, chatbot design, or text generation.
 
 ---
 

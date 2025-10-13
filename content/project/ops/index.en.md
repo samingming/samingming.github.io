@@ -1,6 +1,6 @@
 ---
 title: "System Operations Project"
-summary: "운영체제/시스템 관리 관련 허구의 프로젝트입니다. 이 과제의 카드 수 및 Unsplash 3장 이상 조건을 충족하기 위한 예시입니다."
+summary: "A fictional project related to system and OS management. This file exists only to meet the assignment requirement (9 cards, 3+ Unsplash images)."
 date: 2025-01-01
 type: project
 draft: false
@@ -12,8 +12,8 @@ image:
   focal_point: "center"
 ---
 
-이 프로젝트는 실제가 아닌 **과제 요건 충족용 예시**입니다.  
-운영체제, 서버 관리, 시스템 최적화 등을 가정한 설명을 포함합니다.
+This is **not an actual project**.  
+It assumes topics like operating systems, server management, or system optimization for demonstration purposes.
 
 ---
 

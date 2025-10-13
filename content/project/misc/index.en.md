@@ -1,6 +1,6 @@
 ---
 title: "Miscellaneous Example Project"
-summary: "기타 주제를 다루는 허구의 예시 프로젝트입니다. 메인 페이지 9개 카드 및 Unsplash 3장 이상 조건을 만족시키기 위한 콘텐츠입니다."
+summary: "A fictional miscellaneous project created only for the assignment requirement (9 cards, 3+ Unsplash images)."
 date: 2025-01-01
 type: project
 draft: false
@@ -12,11 +12,10 @@ image:
   focal_point: "center"
 ---
 
-이 프로젝트는 실제로 존재하지 않으며, **포트폴리오 과제 요건 충족을 위한 더미 콘텐츠**입니다.  
-다양한 주제의 스냅샷을 보여주는 용도로 작성되었습니다.
+This project **does not exist in reality**.  
+It was made as filler content to meet the portfolio requirements and display balanced cards on the home page.
 
 ---
-
 
 <div style="display: flex; flex-direction: column; gap: 1rem;">
 
