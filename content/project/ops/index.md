@@ -22,8 +22,6 @@ image:
 
 <img src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68?auto=format&fit=crop&w=1200&q=60" alt="Ops Image 1" style="width:100%; border-radius: 8px;">
 
-<img src="https://images.unsplash.com/photo-1603791452906-b8cf1f92ce93?auto=format&fit=crop&w=1200&q=60" alt="Ops Image 2" style="width:100%; border-radius: 8px;">
-
 <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=60" alt="Ops Image 3" style="width:100%; border-radius: 8px;">
 
 </div>
