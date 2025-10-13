@@ -6,8 +6,8 @@
 # Appearance
 
 appearance:
-  theme_day: custom
-  theme_night: custom
+  theme_day: avocado
+  theme_night: chocolate
   font: minimal
   font_size: L
 
