@@ -132,7 +132,7 @@ site:
 images: ["https://samingming.github.io/preview.png"]
 
 custom_css:
-  - "css/custom.css?v=21"
+  - "css/custom.css?v=22"
 
 custom_js:
   - "js/center-filters.js?v=1"

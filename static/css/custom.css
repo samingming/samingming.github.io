@@ -81,3 +81,31 @@ a:hover { text-decoration: underline !important; }
 .home-section .isotope-filters li,
 .home-section .filter-button-group li,
 .home-section .portfolio-filters li { list-style:none !important; }
+
+/* === Center the portfolio filter bar (WOWCHEMY) === */
+/* 섹션 안의 텍스트 기준을 중앙으로 */
+section#portfolio.home-section .section-content { text-align: center !important; }
+
+/* 버튼들을 감싸는 툴바 자체를 중앙 정렬 */
+section#portfolio .project-filters .btn-toolbar {
+  display: flex !important;
+  justify-content: center !important;   /* ← 핵심 */
+  flex-wrap: wrap !important;
+  width: 100% !important;
+  margin: 1rem 0 1.5rem 0 !important;
+}
+
+/* 실제 버튼 묶음(.btn-group)을 내용 폭만큼만 inline 배치 */
+section#portfolio .project-filters .btn-toolbar .btn-group {
+  display: inline-flex !important;      /* 부모 text-align:center와 조합 */
+  justify-content: center !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: .5rem !important;
+  width: max-content !important;
+  margin: 0 auto !important;            /* 가로 중앙 */
+  padding: 0 !important;
+}
+
+/* (선택) 버튼 간격/모서리 다듬기 */
+section#portfolio .project-filters .btn { border-radius: 8px; }
