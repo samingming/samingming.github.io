@@ -1,56 +1,15 @@
-<!-- Force-center portfolio filter bar -->
 <style>
-  /* 섹션 본문을 중앙 정렬 */
-  .home-section .section-content { text-align: center !important; }
-
-  /* 필터 컨테이너를 내용 폭만큼 줄여 중앙 배치 */
-  .home-section .isotope-filters,
-  .home-section .filter-button-group,
-  .home-section .portfolio-filters,
-  .home-section .project-filters,
-  .home-section .js-isotope-filter {
-    display: inline-flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    flex-wrap: wrap !important;
-    gap: .5rem !important;
-    width: max-content !important;
-    margin: 1rem auto 1.5rem auto !important;
-    padding-left: 0 !important;
-  }
-
-  /* ul/li 기반일 때 들여쓰기/불릿 제거 */
-  .home-section .isotope-filters ul,
-  .home-section .filter-button-group ul,
-  .home-section .portfolio-filters ul {
-    padding-left: 0 !important; margin: 0 !important;
-  }
-  .home-section .isotope-filters li,
-  .home-section .filter-button-group li,
-  .home-section .portfolio-filters li {
-    list-style: none !important;
-  }
+/* == 양쪽 정렬 전역 적용 (Wowchemy 기본 좌측정렬을 이김) == */
+body .home-section .article-style p,
+body .home-section p,
+body .article-style p,
+body .project-card p,
+body .card .card-text,
+body .section-subheading,
+body .markdown p {
+  text-align: justify !important;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
 </style>
-
-<script>
-/* CSS가 이겨지면 자바스크립트로 마지막에 한 번 더 강제 */
-document.addEventListener('DOMContentLoaded', function () {
-  const el = document.querySelector(
-    '.home-section .isotope-filters, .home-section .filter-button-group, .home-section .portfolio-filters, .home-section .js-isotope-filter'
-  );
-  if (el) {
-    const p = el.parentElement;
-    if (p) p.style.textAlign = 'center';
-    Object.assign(el.style, {
-      display: 'inline-flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      flexWrap: 'wrap',
-      gap: '8px',
-      width: 'max-content',
-      margin: '16px auto 24px auto',
-      paddingLeft: '0'
-    });
-  }
-});
-</script>
