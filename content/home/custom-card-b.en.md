@@ -2,7 +2,7 @@
 widget: blank
 active: true
 weight: 26
-title: 기술 스택
+title: Tech
 ---
 
 <div class="viewB-wrap">
