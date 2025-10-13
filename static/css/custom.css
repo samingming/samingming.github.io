@@ -49,3 +49,21 @@ a:hover { text-decoration: underline !important; }
 .viewB h4{margin:6px 0 4px;font-size:1rem}
 .viewB p{margin:0;font-size:.9rem;opacity:.85}
 
+/* --- 프로젝트 필터바 가운데 정렬 --- */
+.home-section .isotope-filters,
+.home-section .filter-button-group,
+.home-section .project-filters,
+.home-section .portfolio-filters,
+.home-section .js-isotope-filter {
+  display: inline-flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 0.5rem !important;
+  width: max-content !important;
+  margin: 1rem auto 1.5rem auto !important;
+}
+
+.home-section .section-content {
+  text-align: center !important;
+}
