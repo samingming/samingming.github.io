@@ -43,7 +43,7 @@ social:
     link: 'https://www.youtube.com/@정사밍'   
   - icon: discord
     icon_pack: fab
-    link: 'https://discord.gg/mhpqPVD2'       
+    link: 'https://discord.com/users/mxxng0807'       
 
 ---
 

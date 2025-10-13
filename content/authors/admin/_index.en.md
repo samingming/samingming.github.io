@@ -58,7 +58,7 @@ social:
     link: 'https://www.youtube.com/@정사밍'   
   - icon: discord
     icon_pack: fab
-    link: 'https://discord.gg/mhpqPVD2'     
+    link: 'https://discord.com/users/mxxng0807'     
 # Gravatar 사용 안 할 때는 email 생략 가능
 # email: ""
 ---
