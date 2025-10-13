@@ -180,3 +180,34 @@ section#portfolio .project-filters .btn-toolbar,
 section#portfolio .project-filters .btn-group{
   float: none !important;
 }
+/* === Wowchemy 테마에서 왼쪽 정렬되는 필터바 완전 중앙 고정 === */
+body section#portfolio .project-filters,
+body section#portfolio .project-filters .btn-toolbar,
+body section#portfolio .project-filters .btn-toolbar .btn-group {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  float: none !important;
+  flex-wrap: wrap !important;
+}
+
+/* 버튼 그룹 좌우 여백 초기화 */
+body section#portfolio .project-filters .btn-toolbar .btn-group > a.btn {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* 혹시 .me-auto 같은 부트스트랩 클래스가 있으면 제거 */
+body section#portfolio .project-filters .me-auto {
+  margin: 0 !important;
+}
+
+/* 컨테이너 제한 때문에 왼쪽처럼 보이는 경우 중앙 기준 확실히 맞추기 */
+body section#portfolio .project-filters {
+  width: 100% !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
