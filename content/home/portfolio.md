@@ -53,3 +53,7 @@ design:
     margin: 1rem auto 1.5rem auto !important;
   }
 </style>
+<style>
+  .home-section .section-content { text-align: center !important; }
+  .home-section .isotope-filters { display: inline-flex !important; }
+</style>

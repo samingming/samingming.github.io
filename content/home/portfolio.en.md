@@ -54,3 +54,7 @@ design:
   }
 </style>
 
+<style>
+  .home-section .section-content { text-align: center !important; }
+  .home-section .isotope-filters { display: inline-flex !important; }
+</style>
