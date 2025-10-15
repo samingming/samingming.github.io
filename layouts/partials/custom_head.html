@@ -73,3 +73,36 @@ body .card .card-text {
   -webkit-hyphens: auto;
 }
 </style>
+
+<!-- === 프로젝트 및 소개 페이지 전체 양쪽 정렬 === -->
+<style>
+/* 공통 본문 단락 (모든 페이지) */
+body.page-wrapper p,
+body.page-wrapper .article-style p,
+body.page-wrapper .markdown p {
+  text-align: justify !important;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+/* 프로젝트 본문 (project/ 내부 페이지) 전용 */
+body.page-wrapper .article-project .article-style p,
+body.page-wrapper .article-project .markdown p,
+body.page-wrapper .article-project ul,
+body.page-wrapper .article-project li {
+  text-align: justify !important;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+/* 프로젝트 카드 요약 (홈/목록 섹션 카드용) */
+.project-card p,
+.card .card-text {
+  text-align: justify !important;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+</style>
