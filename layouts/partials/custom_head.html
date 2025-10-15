@@ -64,3 +64,14 @@ article.article.article-project .article-style li {
 */
 </style>
 
+<style>
+/* 영어 페이지에서만: FA 아이콘 대신 🌐 이모지로 보이게 */
+html[lang="en"] .navbar .i18n-dropdown > .nav-link i { display: none !important; }
+html[lang="en"] .navbar .i18n-dropdown > .nav-link::before {
+  content: "🌐";
+  margin-right: .35rem;
+  display: inline-block;
+  line-height: 1;
+  font-size: 1rem;
+}
+</style>
