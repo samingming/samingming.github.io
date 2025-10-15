@@ -1,4 +1,6 @@
 ---
+canonical: "https://samingming.github.io/"
+robots: "noindex, follow"
 title: "Jeonbuk National University (JBNU)"
 summary: "Jeong Saim — Junior in the Department of Computer & AI at JBNU"
 tags: ["Jeong Saim","JBNU","Jeonbuk National University","Computer & AI"]

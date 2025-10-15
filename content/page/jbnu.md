@@ -1,4 +1,6 @@
 ---
+canonical: "https://samingming.github.io/"
+robots: "noindex, follow"
 title: "전북대학교"             # ← 파란 글씨로 이 텍스트가 나옵니다
 summary: "정사임 — 전북대학교(JBNU, Jeonbuk National University) 컴퓨터인공지능학부 3학년 포트폴리오 요약"
 tags: ["정사임","전북대","전북대학교","JBNU","Jeonbuk National University"]

@@ -18,7 +18,7 @@ categories: ["전북대","전북대학교","JBNU"]
 
 # === 프로필 표시 ===
 # 프로필 섹션에서 보여줄 이름, 직책, 조직 등
-name: "정사임 (Jeong Saim)"
+name: "전북대 정사임 (Jeong Saim)"
 role: "전북대학교 컴퓨터인공지능학부 3학년"
 organizations:
   - name: "전북대학교 (Jeonbuk National University, JBNU)"
