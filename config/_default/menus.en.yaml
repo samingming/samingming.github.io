@@ -5,10 +5,10 @@ main:
     identifier: "home"
 
   - name: "About me"
-    pageRef: "about"         # ← content/about/index.md 로 연결
+    pageRef: "aboutme"         # ← content/about/index.md 로 연결
     parent: "home"
     weight: 11
-    
+
   - name: "Projects"
     identifier: "projects"
     pageref: "project"

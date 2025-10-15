@@ -5,7 +5,7 @@ main:
     identifier: "home"
 
   - name: "소개"
-    pageRef: "about"         # ← content/about/index.md 로 연결
+    pageRef: "aboutme"         # ← content/about/index.md 로 연결
     parent: "home"
     weight: 11
 
