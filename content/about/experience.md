@@ -19,7 +19,7 @@ experience:
       - Python, NumPy, Pygame 기반 대전형 인터페이스 완성
       - 프로젝트 보고서에 알고리즘 비교분석 및 시각화 포함
 
-  - company: "Fake Review Detection"
+  - company: "Fake Review Detection" 
     position: "가짜 리뷰 탐지 인공지능"
     date_start: "2025-05-01"
     date_end: "2025-06-30"
@@ -41,6 +41,16 @@ experience:
       - 보고서, .dmd 모델 파일, SQL 스크립트 제출 완료
 
   - company: "Alps"
+    position: "학부 알고리즘 학술 동아리"
+    date_start: "2024-04-01"
+    date_end: "2024-12-31"
+    description: |-
+      - 교내 오케스트라 동아리
+      - 지휘자 선생님과 함께 매주 화요일마다 합주
+      - 여름연주회 참여
+      - 겨울 정기연주회 참여
+    
+    - company: "Brillante"
     position: "학부 알고리즘 학술 동아리"
     date_start: "2024-04-01"
     date_end: "2024-06-30"
