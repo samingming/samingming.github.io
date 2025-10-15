@@ -6,10 +6,10 @@ type: project
 draft: false
 featured: false
 tags: ["AI", "CV"]
-categories: ["Projects"]
+aliases: ["/ko/project/cv/", "/en/project/cv/"]
 image:
-  filename: "cv-thumb.jpg"
-  focal_point: "center"
+  filename: "featured.jpg"
+  focal_point: "Center"
 ---
 
 이 프로젝트는 실제로 진행된 것이 아니라, 포트폴리오 메인 화면에서 9개의 프로젝트 카드를 보여주기 위한 예시용입니다.  
