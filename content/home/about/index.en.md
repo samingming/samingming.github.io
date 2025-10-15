@@ -1,3 +1,13 @@
+---
+title: "About Me"
+type: page
+# 메뉴 등록
+menu:
+  main:
+    parent: home     # 부모 ID는 상단 "홈" 항목의 identifier와 동일해야 함
+    weight: 11
+    name: "about me"
+---
 👋 Hello! My name is Jeong Saim, a junior majoring in Computer & Artificial Intelligence at Jeonbuk National University.
 I aspire to become a developer who never stops learning and growing. I consistently work on web and data-driven projects, applying theoretical knowledge from my coursework to real-world implementations. Beyond writing code that simply runs, I strive to understand the deeper meaning of why and how technology impacts user experience and data value.
 

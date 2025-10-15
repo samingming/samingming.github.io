@@ -1,14 +1,14 @@
 main:
-  - name: "Home"
-    page_ref: "home"
+  - name: "home"
+    url: "/"
     weight: 10
-  - identifier: "home"
-    hasChildren: true
-    children:
-      - name: "소개"
-        url: "/home/about/"
-        weight: 11
-        
+    identifier: "home"   # 부모 메뉴의 고유 ID
+
+  - name: "about me"          # 드롭다운 항목
+    url: "/home/about/"
+    weight: 11
+    parent: "home" 
+
   - name: "Projects"
     identifier: "projects"
     pageref: "project"

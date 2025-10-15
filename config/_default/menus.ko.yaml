@@ -2,18 +2,12 @@ main:
   - name: "홈"
     url: "/"
     weight: 10
-  - identifier: "home"
-    hasChildren: true
-    children:
-      - name: "소개"
-        url: "/home/about/"
-        weight: 11
-        
-  # 상위 메뉴: 식별자 필수!
-  - name: "프로젝트"
-    identifier: "projects"
-    pageref: "project"
-    weight: 20
+    identifier: "home"   # 부모 메뉴의 고유 ID
+
+  - name: "소개"          # 드롭다운 항목
+    url: "/home/about/"
+    weight: 11
+    parent: "home"       # ← children 대신 parent 사용
 
   # 하위 메뉴들: parent 는 위 식별자 "projects"
   - name: "AI Game"
