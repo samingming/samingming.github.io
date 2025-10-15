@@ -31,7 +31,7 @@ main:
 
   - name: "Cloud Computing"
     parent: "projects"
-    pageref: "project/cc"
+    pageref: "project/data"
     weight: 24
 
   - name: "Web"
