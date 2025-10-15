@@ -41,3 +41,35 @@ body .markdown p {
   }
 }
 </script>
+
+<!-- ===== 전역 양쪽 정렬 (소개 + 프로젝트 전부 적용) ===== -->
+<style>
+/* 모든 본문 단락 */
+body .article-style p,
+body .markdown p {
+  text-align: justify !important;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+/* 프로젝트 상세 페이지 본문 전용 */
+body.page-project .article-style p,
+body.page-project .markdown p,
+body.page-project .section-subheading,
+body.page-project .card .card-text {
+  text-align: justify !important;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+/* 프로젝트 카드 요약까지 포함 */
+body .project-card p,
+body .card .card-text {
+  text-align: justify !important;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+</style>
