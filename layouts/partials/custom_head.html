@@ -65,44 +65,51 @@ article.article.article-project .article-style li {
 </style>
 
 <style>
-/* ===== 갤러리 카드 (글씨 보이게 + 이미지 안 자르기) ===== */
+/* 카드 컨테이너 */
 .gcard{
-  background: #11161b;                 /* 다크 카드 배경 */
+  background: #11161b;
   border-radius: 18px;
-  overflow: hidden;                     /* 둥근 모서리 유지 */
+  overflow: hidden;
   box-shadow: 0 10px 24px rgba(0,0,0,.35);
   border: 1px solid rgba(255,255,255,.06);
-  display: flex;                        /* 본문이 가려지지 않게 세로 레이아웃 */
+  display: flex;               /* 본문이 가려지지 않도록 세로로 쌓기 */
   flex-direction: column;
 }
 
-/* 이미지: 자르지 않고 전체 표시 (레터박스 처리) */
+/* 이미지: 일정 비율로 넣고, 본문 영역을 침범하지 않게 고정 높이 사용 */
 .gcard-img{
   width: 100%;
-  background: #0f1418;                  /* 레터박스 배경 */
+  height: 200px;               /* 필요하면 180~240px로 조절 */
+  background: #0f1418;
 }
 .gcard-img img{
   width: 100%;
-  height: auto;                         /* 고정 높이 제거: 본문 안 가려짐 */
-  aspect-ratio: 16/9;                   /* 일정 비율 유지 */
-  object-fit: contain;                  /* 잘리지 않도록 */
+  height: 100%;
+  object-fit: cover;           /* 꽉 차게 (살짝 크롭 가능) */
   display: block;
 }
 
 /* 본문 */
-.gcard-body{ padding: 18px 20px 16px; }
+.gcard-body{
+  display: block;              /* 강제 명시 */
+  padding: 18px 20px 16px;
+}
 .gcard-title{
-  color: #fff; margin: 0 0 8px; font-weight: 800; letter-spacing: .2px;
+  color: #fff;
+  margin: 0 0 8px;
+  font-weight: 800;
+  letter-spacing: .2px;
 }
 .gcard-desc{
-  color: rgba(255,255,255,.78);
+  color: rgba(255,255,255,.82);
   margin: 0;
-  text-align: justify; text-justify: inter-word;
+  text-align: justify;
+  text-justify: inter-word;
   hyphens: auto; -webkit-hyphens: auto;
 }
 
 /* 라이트 테마 대응 */
 html[data-theme="light"] .gcard{ background: #ffffff; border-color: rgba(0,0,0,.06); }
 html[data-theme="light"] .gcard-title{ color:#111; }
-html[data-theme="light"] .gcard-desc{ color: rgba(0,0,0,.72); }
+html[data-theme="light"] .gcard-desc{ color: rgba(0,0,0,.78); }
 </style>
