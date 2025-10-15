@@ -49,6 +49,16 @@ experience:
       - Solved various problems using **C++**: DFS, BFS, sorting, searching, and dynamic programming
       - Conducted team code reviews and prepared for campus algorithm competitions
       - Experienced collaborative coding and version control through GitHub
+    
+  - company: "Brillante"
+    position: "University Orchestra Club"
+    date_start: "2024-04-01"
+    date_end: "2024-06-30"
+    description: |-
+      - Member of the university orchestra club
+      - Participated in weekly rehearsals every Tuesday with the conductor
+      - Performed in the Summer Concert
+      - Participated in the Winter Regular Concert
 
   - company: "Personal Portfolio Website"
     position: "Full-Stack Portfolio Website Development"
