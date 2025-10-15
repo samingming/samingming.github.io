@@ -1,14 +1,14 @@
 main:
-  - name: "home"
+  - name: "Home"
     page_ref: "/"         # 루트
     weight: 10
     identifier: "home"
 
   - name: "About me"
-    page_ref: "page/about"   # ← 여기만 고치면 됨
+    page_ref: "page/about"   
     parent: "home"
     weight: 11
-    
+
   - name: "Projects"
     identifier: "projects"
     pageref: "project"
