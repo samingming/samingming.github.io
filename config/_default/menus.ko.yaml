@@ -1,13 +1,13 @@
 main:
   - name: "홈"
-    url: "/"
+    page_ref: "/"      # 루트
     weight: 10
-    identifier: "home"   # 부모 메뉴의 고유 ID
+    identifier: "home"
 
-  - name: "소개"          # 드롭다운 항목
-    url: "/home/about/"
+  - name: "소개"
+    page_ref: "home/about"  # ← 파일 경로 기준(언어 프리픽스 자동)
+    parent: "home"
     weight: 11
-    parent: "home"       # ← children 대신 parent 사용
 
   # 하위 메뉴들: parent 는 위 식별자 "projects"
   - name: "AI Game"

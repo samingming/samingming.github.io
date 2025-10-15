@@ -2,7 +2,7 @@
 title: "About Me"
 type: page
 draft: false
-url: "/home/about/"
+slug: "about"
 ---
 👋 Hello! My name is Jeong Saim, a junior majoring in Computer & Artificial Intelligence at Jeonbuk National University.
 I aspire to become a developer who never stops learning and growing. I consistently work on web and data-driven projects, applying theoretical knowledge from my coursework to real-world implementations. Beyond writing code that simply runs, I strive to understand the deeper meaning of why and how technology impacts user experience and data value.
