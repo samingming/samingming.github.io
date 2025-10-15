@@ -6,9 +6,9 @@ type: project
 draft: false
 featured: false
 tags: ["System", "OS"]
-categories: ["Projects"]
+aliases: ["/ko/project/ops/", "/en/project/ops/"]
 image:
-  filename: "ops-thumb.jpg"
+  filename: "featured.jpg"
   focal_point: "center"
 ---
 

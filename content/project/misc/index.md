@@ -6,9 +6,9 @@ type: project
 draft: false
 featured: false
 tags: ["Example", "Etc"]
-categories: ["Projects"]
+aliases: ["/ko/project/misc/", "/en/project/misc/"]
 image:
-  filename: "misc-thumb.jpg"
+  filename: "featured.jpg"
   focal_point: "center"
 ---
 

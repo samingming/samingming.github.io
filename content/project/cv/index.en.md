@@ -6,7 +6,7 @@ type: project
 draft: false
 featured: false
 tags: ["AI", "CV"]
-categories: ["Projects"]
+aliases: ["/ko/project/cv/", "/en/project/cv/"]
 image:
   filename: "cv-thumb.jpg"
   focal_point: "center"

@@ -6,9 +6,9 @@ type: project
 draft: false
 featured: false
 tags: ["AI", "NLP"]
-categories: ["Projects"]
+aliases: ["/ko/project/nlp/", "/en/project/nlp/"]
 image:
-  filename: "nlp-thumb.jpg"
+  filename: "featured.jpg"
   focal_point: "center"
 ---
 
