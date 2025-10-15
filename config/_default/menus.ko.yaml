@@ -1,14 +1,14 @@
 main:
   - name: "홈"
-    page_ref: "/"         # 루트
+    pageRef: "/"             # ← 대문자 R (키 교정)
     weight: 10
     identifier: "home"
 
   - name: "소개"
-    page_ref: "page/about"   
+    pageRef: "about"         # ← content/about/index.md 로 연결
     parent: "home"
     weight: 11
-        
+
   # 상위 메뉴: 식별자 필수!
   - name: "프로젝트"
     identifier: "projects"
