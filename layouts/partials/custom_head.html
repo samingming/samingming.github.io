@@ -65,24 +65,28 @@ article.article.article-project .article-style li {
 </style>
 
 <style>
-/* 어두운 카드 스타일 (스크린샷 느낌) */
+/* ===== 갤러리 카드 (글씨 보이게 + 이미지 안 자르기) ===== */
 .gcard{
   background: #11161b;                 /* 다크 카드 배경 */
   border-radius: 18px;
-  overflow: hidden;
+  overflow: hidden;                     /* 둥근 모서리 유지 */
   box-shadow: 0 10px 24px rgba(0,0,0,.35);
   border: 1px solid rgba(255,255,255,.06);
-  transition: transform .15s ease, box-shadow .15s ease;
-}
-.gcard:hover{
-  transform: translateY(-2px);
-  box-shadow: 0 16px 36px rgba(0,0,0,.45);
+  display: flex;                        /* 본문이 가려지지 않게 세로 레이아웃 */
+  flex-direction: column;
 }
 
-/* 카드 이미지: 비율 통일 + 크롭 */
-.gcard-img{ width: 100%; height: 190px; }
+/* 이미지: 자르지 않고 전체 표시 (레터박스 처리) */
+.gcard-img{
+  width: 100%;
+  background: #0f1418;                  /* 레터박스 배경 */
+}
 .gcard-img img{
-  width: 100%; height: 100%; object-fit: cover; display: block;
+  width: 100%;
+  height: auto;                         /* 고정 높이 제거: 본문 안 가려짐 */
+  aspect-ratio: 16/9;                   /* 일정 비율 유지 */
+  object-fit: contain;                  /* 잘리지 않도록 */
+  display: block;
 }
 
 /* 본문 */
@@ -97,7 +101,7 @@ article.article.article-project .article-style li {
   hyphens: auto; -webkit-hyphens: auto;
 }
 
-/* 다크/라이트 자동 대응 */
+/* 라이트 테마 대응 */
 html[data-theme="light"] .gcard{ background: #ffffff; border-color: rgba(0,0,0,.06); }
 html[data-theme="light"] .gcard-title{ color:#111; }
 html[data-theme="light"] .gcard-desc{ color: rgba(0,0,0,.72); }
