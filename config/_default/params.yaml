@@ -77,7 +77,7 @@ logo:
   image: "logo.png"
   alt_text: "홈으로"
   link: "/"
-  width: 96
+  width: 130
 
 # Localization
 locale:
