@@ -25,8 +25,8 @@ content:
       tag: FR
     - name: Web
       tag: WP
-    - name: Data
-      tag: DP
+    - name: Cloud Computing
+      tag: CC
 
 
 design:
