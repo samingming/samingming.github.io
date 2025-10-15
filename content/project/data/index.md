@@ -1,7 +1,7 @@
 ---
 title: "Cloud Computing"
 summary: "클라우드 컴퓨팅을 사용한 택시 카풀 앱"
-tags: ["Carpool", "Mobility", "Cloud"]
+tags: ["Carpool", "Mobility", "Cloud", "CC"]
 date: 2025-10-09
 featured: true
 draft: false
