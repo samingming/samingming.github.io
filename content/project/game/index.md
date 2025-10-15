@@ -33,3 +33,5 @@ image:
 - 평가 함수 \(E(state)\) 로 **열린 2/3/4, 장목·금수 규칙(옵션)** 등을 반영해 점수화 
 ### 2) Alpha-Beta Pruning 
 - 분기 한계치 \( \alpha, \beta \) 관리로 **가지치기** 수행
+
+[📄 프로젝트 보고서 다운로드 (PDF)](/files/game_report.pdf){.btn .btn-primary}
