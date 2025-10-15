@@ -48,6 +48,7 @@ main:
     weight: 40
 
   - name: Contact
+    identifier: "contect"
     url: /contact/
     weight: 60
       
