@@ -10,27 +10,30 @@ image:
   filename: "featured.jpg"
   focal_point: "Center"
 ---
-
-### 🎮 Overview  
-This project focuses on developing a **2D simulation game** where an **AI agent learns to play autonomously** through **reinforcement learning**.  
-The AI interacts with the environment, receives rewards, and gradually learns an optimal strategy without explicit supervision.  
-Both the environment and learning logic were custom-built to visualize the agent’s **training, exploration, and decision-making process**.
+### 🎮 Project Overview  
+- **Improved search efficiency by approximately 40%** through the integration of **Minimax and Alpha-Beta Pruning**  
+- Implemented **game tree structure** and **search depth control** to create a **real-time decision-making AI**  
+- Built an **interactive player-vs-player interface** using **Python, NumPy, and Pygame**  
+- Included **algorithm comparison, analysis, and visualization** in the project report  
 
 ### ⚙️ Key Features and Implementation  
-- **Reinforcement Learning Algorithms:**  
-  Implemented **DQN (Deep Q-Network)** and **PPO (Proximal Policy Optimization)** to enable the agent to learn policies through trial and reward feedback  
-- **Custom Game Engine:**  
-  Built a lightweight 2D engine using **Pygame**, including movement, collision detection, and reward mechanics  
-- **Visualization and Analysis:**  
-  Visualized learning progress and behavior patterns through real-time graphs and animations  
-- **Comparative Experiments:**  
-  Compared performance metrics between algorithms to derive insights into **learning stability and convergence speed**
+- **Look-ahead engine**: Variable search depth, intelligent cutoff, and heuristic evaluation  
+- **Alpha-Beta Pruning**: Eliminates unnecessary branches → significantly reduces node expansion  
+- **Real-time gameplay**: Pygame UI with turn switching, stone placement, and win detection for Omok  
+- **Configurable settings**: Adjustable difficulty (depth), time limit, and player order (AI or human first)  
 
-### 🧩 Tech Stack  
-Python · Pygame · NumPy · Matplotlib · TensorFlow (or PyTorch)
+### 🧩 Technologies Used  
+- **Language/Runtime**: Python 3.x  
+- **Libraries**: NumPy, Pygame  
+- **Structure**: `Board`, `Game`, `Agent (Minimax/AlphaBeta)`, `Evaluator (Heuristic)` modules  
 
-### 💡 Outcome & Learnings  
-- Gained a practical understanding of **exploration vs. exploitation** in reinforcement learning  
-- Observed how agents optimize strategies through continuous interaction with dynamic environments  
-- Combined **game development and AI training** into an interactive and visualized learning system  
-- Explored the creative potential of **AI-driven gameplay and autonomous decision-making**
+### 💡 Algorithm  
+#### 1) Minimax  
+- Implements **adversarial search** assuming win/loss/draw outcomes  
+- Evaluation function \(E(state)\) reflects features such as **open 2/3/4 lines**, and optionally considers **overlines and forbidden moves**  
+
+#### 2) Alpha-Beta Pruning  
+- Controls branch thresholds \( \alpha, \beta \) to perform **effective pruning**  
+- Reduces node expansion by **approximately 40%** compared to baseline Minimax *(see benchmark results in the report)*  
+
+

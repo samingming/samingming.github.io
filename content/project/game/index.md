@@ -10,30 +10,26 @@ image:
   filename: "featured.jpg"
   focal_point: "Center"
 ---
+### 🎮 프로젝트 개요 
+- **Minimax + Alpha-Beta Pruning 적용으로 탐색 효율 약 40% 향상** 
+- **게임 트리 구조 및 탐색 깊이(Depth) 조절**을 통해 **실시간 의사결정 AI** 제작 
+- **Python, NumPy, Pygame** 기반의 **대전형 인터페이스** 구현
+- 프로젝트 보고서에 **알고리즘 비교·분석 및 시각화** 포함 
 
-### 🎮 Project Overview  
-- **Improved search efficiency by approximately 40%** through the integration of **Minimax and Alpha-Beta Pruning**  
-- Implemented **game tree structure** and **search depth control** to create a **real-time decision-making AI**  
-- Built an **interactive player-vs-player interface** using **Python, NumPy, and Pygame**  
-- Included **algorithm comparison, analysis, and visualization** in the project report  
+### ⚙️ 주요 기능 및 구현 내용 
+- **수 읽기(look-ahead) 엔진**: 가변 깊이 탐색, 합리적 컷오프와 휴리스틱 평가 
+- **Alpha-Beta Pruning**: 불필요한 분기 제거 → 노드 전개 수 대폭 감소 
+- **실시간 플레이**: Pygame UI, 턴 전환/돌 배치/승리 판정(오목) 처리 
+- **설정 가능**: 난이도(깊이), 탐색 시간 제한, 선공/후공 선택 
 
-### ⚙️ Key Features and Implementation  
-- **Look-ahead engine**: Variable search depth, intelligent cutoff, and heuristic evaluation  
-- **Alpha-Beta Pruning**: Eliminates unnecessary branches → significantly reduces node expansion  
-- **Real-time gameplay**: Pygame UI with turn switching, stone placement, and win detection for Omok  
-- **Configurable settings**: Adjustable difficulty (depth), time limit, and player order (AI or human first)  
+### 🧩 사용 기술 
+- **Language/Runtime**: Python 3.x 
+- **Libraries**: NumPy, Pygame 
+- **구조**: Board, Game, Agent(Minimax/AlphaBeta), Evaluator(휴리스틱) 모듈
 
-### 🧩 Technologies Used  
-- **Language/Runtime**: Python 3.x  
-- **Libraries**: NumPy, Pygame  
-- **Structure**: `Board`, `Game`, `Agent (Minimax/AlphaBeta)`, `Evaluator (Heuristic)` modules  
-
-### 💡 Algorithm  
-#### 1) Minimax  
-- Implements **adversarial search** assuming win/loss/draw outcomes  
-- Evaluation function \(E(state)\) reflects features such as **open 2/3/4 lines**, and optionally considers **overlines and forbidden moves**  
-
-#### 2) Alpha-Beta Pruning  
-- Controls branch thresholds \( \alpha, \beta \) to perform **effective pruning**  
-- Reduces node expansion by **approximately 40%** compared to baseline Minimax *(see benchmark results in the report)*  
-
+### 💡알고리즘 
+### 1) Minimax 
+- 승패/무승부를 가정한 **대립적 탐색(Adversarial Search)** 
+- 평가 함수 \(E(state)\) 로 **열린 2/3/4, 장목·금수 규칙(옵션)** 등을 반영해 점수화 
+### 2) Alpha-Beta Pruning 
+- 분기 한계치 \( \alpha, \beta \) 관리로 **가지치기** 수행
