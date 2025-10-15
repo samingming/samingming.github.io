@@ -42,62 +42,18 @@ body .markdown p {
 }
 </script>
 
-<!-- ===== 전역 양쪽 정렬 (소개 + 프로젝트 전부 적용) ===== -->
 <style>
-/* 모든 본문 단락 */
-body .article-style p,
-body .markdown p {
+/* === 프로젝트 상세 페이지(모든 언어) 양쪽 정렬 - 최우선 규칙 === */
+article.article.article-project .article-style,
+article.article.article-project .article-style p,
+article.article.article-project .article-style li {
   text-align: justify !important;
   text-justify: inter-word;
   hyphens: auto;
   -webkit-hyphens: auto;
 }
 
-/* 프로젝트 상세 페이지 본문 전용 */
-body.page-project .article-style p,
-body.page-project .markdown p,
-body.page-project .section-subheading,
-body.page-project .card .card-text {
-  text-align: justify !important;
-  text-justify: inter-word;
-  hyphens: auto;
-  -webkit-hyphens: auto;
-}
-
-/* 프로젝트 카드 요약까지 포함 */
-body .project-card p,
-body .card .card-text {
-  text-align: justify !important;
-  text-justify: inter-word;
-  hyphens: auto;
-  -webkit-hyphens: auto;
-}
-</style>
-
-<!-- === 프로젝트 및 소개 페이지 전체 양쪽 정렬 === -->
-<style>
-/* 공통 본문 단락 (모든 페이지) */
-body.page-wrapper p,
-body.page-wrapper .article-style p,
-body.page-wrapper .markdown p {
-  text-align: justify !important;
-  text-justify: inter-word;
-  hyphens: auto;
-  -webkit-hyphens: auto;
-}
-
-/* 프로젝트 본문 (project/ 내부 페이지) 전용 */
-body.page-wrapper .article-project .article-style p,
-body.page-wrapper .article-project .markdown p,
-body.page-wrapper .article-project ul,
-body.page-wrapper .article-project li {
-  text-align: justify !important;
-  text-justify: inter-word;
-  hyphens: auto;
-  -webkit-hyphens: auto;
-}
-
-/* 프로젝트 카드 요약 (홈/목록 섹션 카드용) */
+/* (선택) 프로젝트 카드 요약도 양쪽 정렬하려면 활성화
 .project-card p,
 .card .card-text {
   text-align: justify !important;
@@ -105,4 +61,5 @@ body.page-wrapper .article-project li {
   hyphens: auto;
   -webkit-hyphens: auto;
 }
+*/
 </style>
