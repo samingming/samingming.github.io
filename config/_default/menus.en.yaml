@@ -39,24 +39,24 @@ main:
     pageref: "project/web"
     weight: 25
 
-  - name: gallery
+  - name: Gallery
     url: /gallery/
     weight: 30
 
-  - name: "about"
+  - name: "About"
     url: "/about/"
     weight: 40
 
-  - name: contact
+  - name: Contact
     url: /contact/
     weight: 60
       
-  - name: "info"
+  - name: "Info"
     parent: "contact"
     url: "/contact/"
     weight: 61
 
-  - name: "location"
+  - name: "Location"
     parent: "contact"
     url: "/contact/location/"
     weight: 62
