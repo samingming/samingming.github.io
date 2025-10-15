@@ -56,11 +56,12 @@ header:
     enable: true
     align: r
     show_logo: true
-    show_language_switcher: true
     show_day_night: true
     show_search: true
     highlight_active_link: false
     show_title: false
+    items:
+      - type: languages
 
 # Footer
 footer:
