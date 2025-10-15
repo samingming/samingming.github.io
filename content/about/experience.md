@@ -50,7 +50,7 @@ experience:
       - 여름연주회 참여
       - 겨울 정기연주회 참여
     
-    - company: "Brillante"
+  - company: "Brillante"
     position: "학부 알고리즘 학술 동아리"
     date_start: "2024-04-01"
     date_end: "2024-06-30"
