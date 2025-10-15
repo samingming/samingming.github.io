@@ -2,7 +2,13 @@ main:
   - name: "Home"
     page_ref: "home"
     weight: 10
-
+  - identifier: "home"
+    hasChildren: true
+    children:
+      - name: "소개"
+        url: "/home/about/"
+        weight: 11
+        
   - name: "Projects"
     identifier: "projects"
     pageref: "project"

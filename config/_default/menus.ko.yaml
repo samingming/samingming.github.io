@@ -2,7 +2,13 @@ main:
   - name: "홈"
     url: "/"
     weight: 10
-
+  - identifier: "home"
+    hasChildren: true
+    children:
+      - name: "소개"
+        url: "/home/about/"
+        weight: 11
+        
   # 상위 메뉴: 식별자 필수!
   - name: "프로젝트"
     identifier: "projects"
