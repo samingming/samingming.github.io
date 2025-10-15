@@ -44,7 +44,7 @@ main:
     weight: 30
 
   - name: "about"
-    url: "/en/about/"
+    url: "/about/"
     weight: 40
 
   - name: contact
