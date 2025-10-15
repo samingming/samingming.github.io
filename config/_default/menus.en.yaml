@@ -1,14 +1,14 @@
 main:
   - name: "home"
-    page_ref: "/"      # 루트
+    page_ref: "/"         # 루트
     weight: 10
     identifier: "home"
 
   - name: "About me"
-    page_ref: "home/about"  # ← 파일 경로 기준(언어 프리픽스 자동)
+    page_ref: "page/about"   # ← 여기만 고치면 됨
     parent: "home"
     weight: 11
-
+    
   - name: "Projects"
     identifier: "projects"
     pageref: "project"

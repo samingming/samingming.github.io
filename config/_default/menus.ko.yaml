@@ -1,13 +1,19 @@
 main:
   - name: "홈"
-    page_ref: "/"      # 루트
+    page_ref: "/"         # 루트
     weight: 10
     identifier: "home"
 
   - name: "소개"
-    page_ref: "home/about"  # ← 파일 경로 기준(언어 프리픽스 자동)
+    page_ref: "page/about"   
     parent: "home"
     weight: 11
+        
+  # 상위 메뉴: 식별자 필수!
+  - name: "프로젝트"
+    identifier: "projects"
+    pageref: "project"
+    weight: 20
 
   # 하위 메뉴들: parent 는 위 식별자 "projects"
   - name: "AI Game"
