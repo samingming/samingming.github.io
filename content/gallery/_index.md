@@ -48,6 +48,17 @@ draft: false
           누가, 어디서, 무엇으로? <strong>추리</strong>가 핵심인 보드게임.
           메모하며 가설 세우는 과정이 정말 재밌고, 블러핑 심리전까지 즐길 수 있어요!
           시간 가는 줄 모르고 게임을 하니 나갈 시간이 됐었는데, 급하게 게임을 마무리 하려던 모습이 웃겼어요.
+
+  <div class="col-12 col-md-6 col-lg-4 mb-4">
+    <div class="card h-100 shadow-sm">
+      <img src="/images/gallery/violin.jpg" class="card-img-top" alt="Violin">
+      <div class="card-body">
+        <h5 class="card-title">바이올린 동아리 정기 연주회 (Violin))</h5>
+        <p class="card-text" style="text-align:justify">
+        초등학생때부터 바이올린을 취미로 배우고 오케스트라 활동도 하며 무대에 서는 경험을 여러번 해보았습니다.
+        공부를 하다가 지치면 다른 건전한 활동으로 <strong>머리를 식힐 수 있다</strong>는 것이 장점인 것 같아요.
+        2024년에는 교내 동아리에서 활동하였는데, 이후에는 학업에 집중하기 위해 활동을 중단해서 아쉬움이 큽니다.
+      
         </p>
       </div>
     </div>

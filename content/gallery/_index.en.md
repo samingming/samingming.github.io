@@ -1,7 +1,73 @@
 ---
 title: "Gallery"
+subtitle: "Games I Love to Play"
 type: page
+draft: false
 ---
 
-Welcome to my **Gallery** page.  
-Here I will upload photos and project screenshots.
+<div class="row">
+
+  <!-- Animal Crossing -->
+  <div class="col-12 col-md-6 col-lg-4 mb-4">
+    <div class="card h-100 shadow-sm">
+      <img src="/images/gallery/animal-crossing.jpg" class="card-img-top" alt="Animal Crossing Museum Screenshot">
+      <div class="card-body">
+        <h5 class="card-title">Animal Crossing</h5>
+        <p class="card-text" style="text-align:justify">
+          Healing is everything. I love fishing, digging up fossils, and decorating my island.
+          The <strong>museum</strong> is my favorite part — watching it grow and fill up gives me a deep sense of satisfaction.
+          Every time I see new exhibits, it feels like all the stress from real life melts away.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Human: Fall Flat -->
+  <div class="col-12 col-md-6 col-lg-4 mb-4">
+    <div class="card h-100 shadow-sm">
+      <img src="/images/gallery/human-fall-flat.jpg" class="card-img-top" alt="Human: Fall Flat Funny Moment">
+      <div class="card-body">
+        <h5 class="card-title">Human: Fall Flat</h5>
+        <p class="card-text" style="text-align:justify">
+          It’s like an escape-room puzzle game. Playing with friends means <em>pulling, pushing, and falling together</em>,
+          and the result is always endless laughter 😂.
+          We often end up crying from laughing too hard when someone slips or drops the other off a cliff.
+          Playing over Discord with multiple people helped me connect and make new friends while having fun.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CLUE boardgame -->
+  <div class="col-12 col-md-6 col-lg-4 mb-4">
+    <div class="card h-100 shadow-sm">
+      <img src="/images/gallery/clue.jpg" class="card-img-top" alt="Clue Boardgame Table">
+      <div class="card-body">
+        <h5 class="card-title">Clue (Board Game)</h5>
+        <p class="card-text" style="text-align:justify">
+          Who did it, where, and with what? <strong>Deduction</strong> is the key in this classic mystery board game.
+          I love the process of taking notes, forming hypotheses, and engaging in bluffing battles.
+          One time we were so absorbed in solving the case that we didn’t notice how late it was — 
+          trying to wrap up the game in a hurry ended up being the funniest part.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Violin -->
+  <div class="col-12 col-md-6 col-lg-4 mb-4">
+    <div class="card h-100 shadow-sm">
+      <img src="/images/gallery/violin.jpg" class="card-img-top" alt="Violin">
+      <div class="card-body">
+        <h5 class="card-title">Violin Club Recital</h5>
+        <p class="card-text" style="text-align:justify">
+          I’ve been playing the violin since elementary school and have performed in several orchestral concerts.
+          It’s one of my favorite ways to <strong>refresh my mind</strong> when I’m tired of studying.
+          In 2024, I joined the university’s violin club, and even though I later stopped to focus on my studies,
+          I still miss the experience of performing on stage.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
