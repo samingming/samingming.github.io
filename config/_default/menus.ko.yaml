@@ -43,10 +43,6 @@ main:
     url: "/about/"
     weight: 40
 
-  - name: "블로그"
-    url: "/blog/"
-    weight: 50
-
   - name: "연락처"
     identifier: "contact"
     url: "/contact/"
