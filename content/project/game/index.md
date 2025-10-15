@@ -34,4 +34,4 @@ image:
 ### 2) Alpha-Beta Pruning 
 - 분기 한계치 \( \alpha, \beta \) 관리로 **가지치기** 수행
 
-[📄 프로젝트 보고서 다운로드 (PDF)](/files/game_report.pdf){.btn .btn-primary}
+[📄 프로젝트 보고서 다운로드 (PDF)](/files/hw2.pdf)
