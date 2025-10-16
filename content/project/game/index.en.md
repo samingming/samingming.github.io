@@ -36,5 +36,5 @@ image:
 - Controls branch thresholds \( \alpha, \beta \) to perform **effective pruning**  
 - Reduces node expansion by **approximately 40%** compared to baseline Minimax *(see benchmark results in the report)*  
 
-[📄 project file download (PDF)](/files/game_report.pdf)
+[📄 project file download (PDF)](/files/hw2.pdf)
 
