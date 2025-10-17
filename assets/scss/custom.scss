@@ -107,3 +107,11 @@ section#portfolio .project-filters{ width:100% !important; }
 
 /* Dark/Light theme resilience (Wowchemy 변수 고려) */
 :root.dark .chip-express { color:#eee; }
+
+.chip-icon {
+  font-size: 22px;
+  margin-right: 8px;
+  display: inline-block;
+  width: 26px;
+  text-align: center;
+}
