@@ -5,4 +5,4 @@ active: true
 weight: 24
 title: ""
 ---
-{{< skill-stack >}}
+{{< skill-badges >}}
