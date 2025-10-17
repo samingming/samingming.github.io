@@ -76,3 +76,34 @@ section#portfolio .project-filters{ width:100% !important; }
   text-justify: inter-word; /* 지원 브라우저에서 간격 품질 개선 */
 }
 
+/* === Skill Stack === */
+.skill-wrap { max-width: 980px; margin: 0 auto; padding: 1rem 0 2rem; }
+.skill-title { font-size: 1.9rem; font-weight: 800; margin: 0 0 1rem 0; }
+.skill-cat { margin: 1.6rem 0 .8rem; font-size: 1.2rem; font-weight: 700; opacity: .95; }
+.chip-row { display: flex; flex-wrap: wrap; gap: 18px; }
+
+.chip {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 12px 18px; border-radius: 16px;
+  background: #2b2f3a; /* fallback */
+  box-shadow: 0 8px 18px rgba(0,0,0,.25), inset 0 0 0 1px rgba(255,255,255,.06);
+  color: #fff; font-weight: 700; letter-spacing: .2px;
+  transform: translateY(0); transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+}
+.chip:hover { transform: translateY(-3px); filter: brightness(1.05);
+  box-shadow: 0 14px 28px rgba(0,0,0,.28), inset 0 0 0 1px rgba(255,255,255,.08);
+}
+.chip-icon { display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius: 12px; background: rgba(255,255,255,.18); font-size: .95rem; }
+.chip-label { font-size: .95rem; }
+
+/* Brand-like gradients */
+.chip-react    { background: linear-gradient(135deg, #5dddf4, #8a6afc); }
+.chip-ts       { background: linear-gradient(135deg, #2f74c0, #528cc9); }
+.chip-js       { background: linear-gradient(135deg, #f7df1e, #f2c94c); color: #1f1f1f; }
+.chip-node     { background: linear-gradient(135deg, #067d3d, #33b269); }
+.chip-express  { background: linear-gradient(135deg, #2b2b2b, #444); }
+.chip-firebase { background: linear-gradient(135deg, #ffb300, #ffcc4d); color: #222; }
+.chip-cpp      { background: linear-gradient(135deg, #2b3a67, #5166a9); }
+
+/* Dark/Light theme resilience (Wowchemy 변수 고려) */
+:root.dark .chip-express { color:#eee; }
