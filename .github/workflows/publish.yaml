@@ -29,12 +29,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
+          submodules: true
           # Fetch history for Hugo's .GitInfo and .Lastmod
           fetch-depth: 0
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: ${{ env.WC_HUGO_VERSION }}
+          hugo-version: '0.121.2'
           extended: true
       - uses: actions/cache@v4
         with:
