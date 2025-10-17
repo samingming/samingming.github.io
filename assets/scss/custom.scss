@@ -115,3 +115,18 @@ section#portfolio .project-filters{ width:100% !important; }
   width: 26px;
   text-align: center;
 }
+
+/* Font Awesome Brand 아이콘 색상 커스터마이징 */
+.fab.fa-react { color: #61dafb; }        /* React Blue */
+.fab.fa-js-square { color: #f7df1e; }    /* JavaScript Yellow */
+.fab.fa-node-js { color: #3c873a; }      /* Node.js Green */
+.fab.fa-python { color: #3776ab; }       /* Python Blue */
+.fab.fa-github { color: #fafafa; }       /* GitHub White */
+.fab.fa-figma { color: #a259ff; }        /* Figma Purple */
+.fab.fa-docker { color: #2496ed; }       /* Docker Blue */
+
+/* hover 시 살짝 밝게 */
+.chip:hover .fab {
+  filter: brightness(1.2);
+  transition: 0.2s ease;
+}
