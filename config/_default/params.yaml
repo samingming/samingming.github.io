@@ -133,3 +133,5 @@ extensions:
     local_backend: false
   academicons:
     enable: false
+
+favicon: "images/favicon.png"
