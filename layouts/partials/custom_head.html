@@ -75,3 +75,9 @@ html[lang="en"] .navbar .i18n-dropdown > .nav-link::before {
   font-size: 1rem;
 }
 </style>
+
+{{ $fav := resources.Get "images/favicon.png" | fingerprint }}
+<link rel="icon" href="{{ $fav.RelPermalink }}" sizes="32x32">
+
+{{ $ico := resources.Get "favicon.ico" | fingerprint }}
+<link rel="shortcut icon" href="{{ $ico.RelPermalink }}">
