@@ -137,9 +137,17 @@
         <div class="gallery-stack">
           <img src="/images/gallery/jap.jpg" alt="Tokyo - Your Name Scene" class="stack-img-contain stack-top">
           <div class="gallery-video-wrap stack-bottom">
-            <video class="gallery-video" controls muted playsinline loop>
-              <source src="/videos/gallery/tokyo.mp4" type="video/mp4">
+            <video class="gallery-video"
+                   controls
+                   muted
+                   playsinline
+                   webkit-playsinline
+                   loop
+                   controlsList="nofullscreen"
+                   style="object-fit: contain;">
+             <source src="/videos/gallery/tokyo.mp4" type="video/mp4">
             </video>
+
           </div>
         </div>
         <div class="card-body">
