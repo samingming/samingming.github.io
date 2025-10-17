@@ -133,34 +133,38 @@
       </div>
     </div>
 
-    <div class="col-12">
+<div class="col-12">
   <div class="card flex-md-row shadow-sm h-100">
 
-    <!-- 왼쪽: 사진 + 영상 (세로 스택) -->
+    <!-- 왼쪽: 이미지 + 영상 세로 배치 -->
     <div class="d-flex flex-column" style="width:300px; flex:0 0 300px;">
+
       <!-- 사진 -->
       <img src="/images/gallery/jap.jpg"
            alt="Tokyo - Your Name Scene"
            class="img-fluid rounded-top"
            style="height:200px; object-fit:cover;" loading="lazy">
 
-      <!-- 영상 -->
-      <video controls muted playsinline loop
-             style="width:100%; height:200px; object-fit:cover; border-bottom-left-radius:.375rem;">
-        <source src="/videos/gallery/tokyo.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <!-- 영상 (16:9 비율 유지, 잘림 없음) -->
+      <div style="position:relative; width:100%; padding-top:56.25%; background:#000; border-bottom-left-radius:.375rem; overflow:hidden;">
+        <video controls muted playsinline loop
+               style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:contain;">
+          <source src="/videos/gallery/tokyo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
     </div>
 
-    <!-- 오른쪽: 텍스트 -->
+    <!-- 오른쪽 텍스트 -->
     <div class="card-body">
       <h5 class="card-title">Tokyo Trip</h5>
       <p class="card-text" style="text-align:justify;">
-        A trip to Tokyo with my sister 🇯🇵
-        We visited the location featured in the dating scene of the movie <em>Your Name</em>,
-        where we enjoyed an exhibition and a warm drink — it felt like stepping into a movie scene ☕💫
-        Throughout the trip, our shopping bags kept piling up,
-        and at Disneyland, we spent the entire day laughing and creating unforgettable memories 🎢🎀
+        A trip to Tokyo with my sister 🇯🇵  
+        We visited the location featured in the dating scene of the movie <em>Your Name</em>,  
+        where we enjoyed an exhibition and a warm drink — it felt like stepping into a movie scene ☕💫  
+        Throughout the trip, our shopping bags kept piling up,  
+        and at Disneyland, we spent the entire day laughing and creating unforgettable memories 🎢🎀  
         It was a calm and happy trip, made even more special because we were together 🌸
       </p>
     </div>
@@ -168,6 +172,3 @@
   </div>
 </div>
 
-
-  </div>
-</div>
