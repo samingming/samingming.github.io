@@ -134,4 +134,4 @@ extensions:
   academicons:
     enable: false
 
-favicon: "images/favicon.png"
+favicon: "media/logo.png"
