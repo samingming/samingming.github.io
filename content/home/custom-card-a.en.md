@@ -6,4 +6,4 @@ title: Featured Projects
 design:
   columns: "1"
 ---
-{{< custom-card-a >}}
+{{< custom-card-a-en >}}
