@@ -9,6 +9,19 @@ design:
   columns: "1"
 
 experience:
+
+  - company: "MalaTang Game"
+    position: "MalaTang Ingredient Collection Game with Pygame"
+    date_start: "2023-05-01"
+    date_end: "2023-06-30"
+    description: |-
+      - Developed a Python game using **Pygame** and **Random** modules to collect MalaTang ingredients within a time limit
+      - Implemented item falling mechanics, collision detection, scoring, and level progression systems
+      - Designed a **dynamic difficulty adjustment function** that increases item speed as the level rises
+      - Collaborated with team members by dividing tasks (image processing, scoring logic, success/failure handling) and merging code
+      - Utilized **ChatGPT and Bard** to debug issues and optimize game logic
+
+
   - company: "AI Game Development"
     position: "Cookie-Run AI Project"
     date_start: "2024-04-01"
@@ -18,16 +31,6 @@ experience:
       - Designed a game tree structure for real-time decision-making AI in an Omok (Gomoku)-based game
       - Built an interactive battle interface using **Python, NumPy, and Pygame**
       - Produced a final report including algorithm comparisons and performance visualizations
-
-  - company: "Fake Review Detection"
-    position: "AI for Fake Review Classification"
-    date_start: "2025-05-01"
-    date_end: "2025-06-30"
-    description: |-
-      - Developed a **Selenium-based crawler** to collect product reviews from Coupang and Naver Smartstore
-      - Applied **TF-IDF and CountVectorizer** for text vectorization and trained multiple classifiers
-      - Compared models (Naive Bayes, SVM, Logistic Regression) and achieved **92% accuracy**
-      - Documented results with data visualization and performance evaluation report
 
   - company: "Database Warehouse Rental System"
     position: "Database Design and Implementation"

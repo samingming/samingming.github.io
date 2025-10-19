@@ -9,6 +9,19 @@ design:
   columns: "1"
 
 experience:
+
+  - company: "MalaTang Game"
+    position: "파이게임을 활용한 마라탕 재료 수집 게임"
+    date_start: "2023-05-01"
+    date_end: "2023-06-30"
+    description: |-
+      - **Pygame**과 **Random** 모듈을 활용하여 마라탕 재료를 제한 시간 내 수집하는 게임 개발
+      - 재료 낙하, 충돌 판정, 점수 및 레벨 상승 시스템 구현
+      - 점수에 따라 자동으로 난이도가 증가하도록 **레벨별 속도 조절 함수** 설계
+      - 팀원 간 파트 분업(이미지 처리, 점수 로직, 성공·실패 판정) 및 코드 병합 진행
+      - **ChatGPT와 Bard**를 활용하여 오류 디버깅 및 코드 최적화 아이디어 참고
+
+
   - company: "AI Game Development"
     position: "Cookie-Run AI 프로젝트"
     date_start: "2024-04-01"
@@ -18,16 +31,6 @@ experience:
       - 게임 트리 구조 및 탐색 깊이 조절 구현으로 **실시간 의사결정 AI 제작**
       - Python, NumPy, Pygame 기반 대전형 인터페이스 완성
       - 프로젝트 보고서에 알고리즘 비교분석 및 시각화 포함
-
-  - company: "Fake Review Detection" 
-    position: "가짜 리뷰 탐지 인공지능"
-    date_start: "2025-05-01"
-    date_end: "2025-06-30"
-    description: |-
-      - **Selenium**으로 쿠팡·스마트스토어 리뷰 자동 크롤링 파이프라인 구현
-      - 리뷰 텍스트를 **TF-IDF, CountVectorizer**로 벡터화 후 분류 모델 학습
-      - Naive Bayes, SVM, Logistic Regression 비교 실험 → **정확도 92% 달성**
-      - 데이터 시각화 및 모델 평가 리포트 작성
 
   - company: "Database Warehouse Rental System"
     position: "창고 대여 관리 시스템 개발"
