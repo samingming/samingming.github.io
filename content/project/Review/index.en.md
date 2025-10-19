@@ -1,7 +1,7 @@
 ---
 title: "MalaTang Game"
 summary: "A Python-based game built with Pygame and the Random module, where players collect MalaTang ingredients within a time limit while avoiding obstacles. The game features dynamic difficulty, scoring, and collision detection."
-tags: ["GameDev", "Python", "Pygame"]
+tags: ["GameDev", "Python", "Pygame", "MG"]
 date: 2025-10-19
 draft: false
 aliases: ["/en/project/review/", "/ko/project/review/"]

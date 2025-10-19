@@ -1,7 +1,7 @@
 ---
 title: "마라탕 게임 (MalaTang Game)"
 summary: "파이게임(pygame)과 랜덤 모듈을 활용하여 제한 시간 내에 마라탕 재료를 수집하는 게임으로, 난이도 상승과 충돌 판정 시스템을 구현한 팀 프로젝트입니다."
-tags: ["GameDev", "Python", "Pygame"]
+tags: ["GameDev", "Python", "Pygame", "MG"]
 date: 2025-10-19
 draft: false
 aliases: ["/ko/project/review/", "/en/project/review/"]

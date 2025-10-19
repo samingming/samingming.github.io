@@ -21,8 +21,8 @@ content:
       tag: AG
     - name: AI Image Generation
       tag: AI
-    - name: Fake Review Detection
-      tag: FR
+    - name: Malatang game
+      tag: MG
     - name: Web
       tag: WP
     - name: Cloud Computing
