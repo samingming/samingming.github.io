@@ -26,7 +26,7 @@ main:
     pageref: "project/ai"  
     weight: 22
 
-  - name: "Review"
+  - name: "Malatang game"
     parent: "projects"
     pageref: "project/review"      
     weight: 23
