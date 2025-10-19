@@ -1,40 +1,71 @@
 ---
-title: "Fake Review Detection"
-summary: "A machine learning project for detecting fake reviews in e-commerce platforms by collecting real-world data, preprocessing text, and comparing multiple classification models."
-tags: ["FR"]
-date: 2025-10-09
+title: "MalaTang Game"
+summary: "A Python-based game built with Pygame and the Random module, where players collect MalaTang ingredients within a time limit while avoiding obstacles. The game features dynamic difficulty, scoring, and collision detection."
+tags: ["GameDev", "Python", "Pygame"]
+date: 2025-10-19
 draft: false
-aliases: ["/en/project/review/"]
+aliases: ["/en/project/review/", "/ko/project/review/"]
 featured: true
 image:
   filename: "featured.jpg"
   focal_point: "Center"
 ---
 
-### 🧠 Overview  
-This project focuses on detecting **fake reviews** on **e-commerce platforms** such as Coupang and Amazon.  
-Using natural language processing (NLP) techniques, the system analyzes review text patterns, word frequencies, and linguistic structures to classify reviews as genuine or deceptive.
+### 🧠 Project Overview  
+This project is a **Python game developed with Pygame** titled **“MalaTang Game.”**  
+Players control a character using arrow keys to collect ingredients — **vegetables, noodles, and skewers** — within a limited time.  
+If the player reaches the target number of ingredients, the game displays “clear!”; otherwise, “you fail!” appears.  
+The game integrates time limits, collision detection, scoring, and level-based difficulty adjustment.
 
-### ⚙️ Key Implementation Steps  
-- **Data Collection:**  
-  Collected over **2,000 real reviews** from online shopping platforms using **Selenium-based web crawling**  
-  Stored data in structured CSV format for analysis  
-- **Data Preprocessing:**  
-  Applied stopword removal, lowercasing, tokenization, and lemmatization  
-  Built a **bilingual text-cleaning pipeline** for both Korean and English reviews  
-- **Feature Extraction:**  
-  Generated TF-IDF and CountVectorizer matrices to represent text semantics  
-  Calculated feature ratios such as sentiment word frequency and average word length  
-- **Model Training:**  
-  Trained and compared multiple classifiers — Logistic Regression, SVM, Random Forest, and Naive Bayes  
-  Tuned hyperparameters using **GridSearchCV**, achieving **92% accuracy and 0.89 F1-score**  
-- **Visualization & Evaluation:**  
-  Visualized performance using confusion matrix, precision-recall curve, and word cloud plots
+---
 
-### 🧩 Tech Stack  
-Python · scikit-learn · Pandas · NumPy · Selenium · Matplotlib · NLTK
+### ⚙️ Key Features & Implementation  
+- **Idea & Collaboration:**  
+  - Brainstormed as a team, inspired by a “Sandwich-making” assignment in class, and reimagined it as a **MalaTang ingredient collection game**  
+  - Divided tasks into: image randomization, scoring/level system, and success/failure logic  
+  - Used both in-person and online meetings for **code review, debugging, and integration**
 
-### 💡 Outcome & Learnings  
-- Developed hands-on understanding of **text preprocessing and vectorization techniques**  
-- Built a practical **language-pattern-based fake review detection model**  
-- Completed an **end-to-end machine learning workflow** from data collection to model evaluation
+- **Game Logic:**  
+  - Implemented **player movement** via arrow keys and **ingredient drops** using `pygame`  
+  - Used the `random` module to randomize ingredient type, falling speed, and spawn position  
+  - Added collision handling: each collected ingredient adds +10 to score and +1 to the counter  
+
+- **Level & Difficulty Adjustment:**  
+  - Levels increase at **50, 100, and 150 points**  
+  - `change_difficulty()` dynamically adjusts ingredient speed based on level  
+  - A **15-second timer** determines success or failure depending on target completion  
+
+- **Visual & Interactive Elements:**  
+  - Real-time display of targets (`veges`, `noodle`, `skewer`) and player’s score  
+  - Success screen: “clear!” / Failure screen: “you fail!”  
+  - Countdown animation, color transitions, and level-up effects  
+
+---
+
+### 🧩 Technologies Used  
+Python · Pygame · Random · Sys · Time  
+
+---
+
+### 💡 Achievements & Learnings  
+- **Collaborative Development:**  
+  Learned how to **merge and debug** individual code segments into a cohesive game  
+- **AI Tool Utilization:**  
+  Used ChatGPT and Bard for idea generation and error fixing, but **relied on human verification and experimentation**  
+  → Understood the importance of **critical thinking and human creativity** in programming  
+- **Applied Knowledge:**  
+  Strengthened understanding of **loops, conditions, event handling, and game design** through real implementation  
+- **Teamwork & Communication:**  
+  Enhanced collaboration and problem-solving skills through structured teamwork and discussion  
+
+---
+
+### 🎮 Game Highlights  
+- Time limit: **15 seconds**  
+- Random target counts (1–5 ingredients each)  
+- Score-based level-up system  
+- Collision detection with obstacles  
+- Success/failure evaluation  
+- Automatic difficulty scaling (increasing speed)
+
+[📄 douwnload file (PDF)](/files/hw1.pdf)
