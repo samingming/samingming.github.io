@@ -222,3 +222,36 @@ section#portfolio .project-filters{ width:100% !important; }
   height:100%;
   object-fit:contain;
 }
+
+/* 기본 상태 */
+.btn-slide {
+  display: inline-block;
+  margin-top: 10px;
+  background: #ffb347;   /* 주황빛 계열 */
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+
+/* hover 시 밝게 */
+.btn-slide:hover {
+  background: #ff9234;   /* 더 진한 주황 */
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+
+/* 제목 스타일 */
+.slide-caption h3 {
+  font-family: 'Pretendard', 'Noto Sans KR', sans-serif; /* 원하는 폰트로 교체 */
+  font-weight: 800;           /* 굵기 */
+  font-size: 2rem;            /* 글씨 크기 (기본보다 크게) */
+  color: #ffffff;             /* 글씨 색상 */
+  letter-spacing: 0.5px;      /* 자간 */
+  margin: 0 0 0.7rem 0;       /* 아래쪽 여백 */
+}
