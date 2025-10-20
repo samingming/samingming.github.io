@@ -1,92 +1,179 @@
-﻿<style>
-/* ============ Full-bleed Slider ============ */
+﻿---
+widget: blank
+headless: true
+active: true
+weight: 5
+title: ""
+---
+
+<link rel="stylesheet" href="https://unpkg.com/swiper@10/swiper-bundle.min.css"/>
+
+<section class="slider-section">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <img src="/media/slide-1.jpg" alt="AI Game Development" class="slide-img">
+        <div class="slide-caption">
+          <h3>AI Game Development</h3>
+          <a href="{{< relref "project/game" >}}" class="btn-slide">GO</a>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="/media/slide-2.jpg" alt="AI Image Generation" class="slide-img">
+        <div class="slide-caption">
+          <h3>AI Image Generation</h3>
+          <a href="{{< relref "project/ai" >}}" class="btn-slide">GO</a>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="/media/slide-3.jpg" alt="Fake Review Detection" class="slide-img">
+        <div class="slide-caption">
+          <h3>Malatang game</h3>
+          <a href="{{< relref "project/review" >}}" class="btn-slide">GO</a>
+        </div>
+      </div>
+
+       <div class="swiper-slide">
+        <img src="/media/slide-4.jpg" alt="Cloud Computing" class="slide-img">
+        <div class="slide-caption">
+          <h3>Cloud Computing</h3>
+          <a href="{{< relref "project/data" >}}" class="btn-slide">GO</a>
+        </div>
+      </div>
+
+       <div class="swiper-slide">
+        <img src="/media/slide-5.jpg" alt="Web" class="slide-img">
+        <div class="slide-caption">
+          <h3>Web</h3>
+          <a href="{{< relref "project/web" >}}" class="btn-slide">GO</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+
+<style>
+
 .slider-section{
   position: relative;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;          /* 스크롤바 방지 */
+  width: 100vw;                
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;          
+  background-color: #000;      
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Swiper 자체를 화면(뷰포트) 높이로 */
+
 .slider-section .swiper{
-  width: 100%;
-  height: min(92vh, 900px);  /* 데스크톱: 화면의 92% 높이 (최대 900px) */
+  width: 70%;                 
+  aspect-ratio: 16/9;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* 모바일/태블릿에서 너무 크지 않게 */
-@media (max-width: 1024px){
-  .slider-section .swiper{ height: 80vh; }
-}
-@media (max-width: 640px){
-  .slider-section .swiper{ height: 70vh; }
-}
-
-/* 각 슬라이드: 배경 이미지를 꽉 채움 */
 .slider-section .swiper-slide{
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
 }
 
-/* 이미지를 cover로 꽉 채우기 (여백 제거, 가장자리 약간 크롭될 수 있음) */
+
 .slider-section .slide-img{
-  position: absolute;
-  inset: 0;
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
   height: 100%;
-  object-fit: cover;         /* ✅ 핵심: 여백 없이 꽉 채움 */
+  object-fit: contain;
   display: block;
+  margin: 0 auto;
+  background-color: #000;
 }
 
-/* 캡션: 가운데 하단 */
 .slider-section .slide-caption{
   position: absolute;
   left: 50%;
-  bottom: 7%;
-  transform: translateX(-50%);
-  background: rgba(0,0,0,.45);
-  padding: .9rem 1.2rem;
+  bottom: 8%;
+  transform: translateX(-50%);  
+  background: rgba(0,0,0,0.55);
+  padding: 1rem 1.25rem;
   border-radius: 10px;
-  color: #fff;
+  color: white;
   text-align: center;
-  backdrop-filter: saturate(120%) blur(2px);
 }
 .slider-section .slide-caption h3{
-  margin: 0 0 .3rem 0;
-  font-size: 1.6rem;
+  margin: 0;
+  font-size: 1.5rem;
 }
 .slider-section .btn-slide{
   display: inline-block;
-  margin-top: 8px;
+  margin-top: 10px;
   background: #4ea1f3;
-  color: #fff;
+  color: white;
   padding: 6px 14px;
   border-radius: 6px;
   text-decoration: none;
-  font-size: .95rem;
+  font-size: .9rem;
 }
-.slider-section .btn-slide:hover{ background:#1f78d1; }
+.slider-section .btn-slide:hover{ background: #1f78d1; }
 
-/* 화살표/도트 스타일 */
+
 .slider-section .swiper{ --swiper-navigation-size: 18px; }
 .slider-section .swiper-button-prev,
 .slider-section .swiper-button-next{
-  width: 36px; height: 36px;
-  background: rgba(0,0,0,.35);
+  width: 34px; height: 34px;
+  background: rgba(0,0,0,0.35);
   border-radius: 50%;
-  color: #fff;
+  color: white;
   transition: background .2s;
 }
 .slider-section .swiper-button-prev:hover,
-.slider-section .swiper-button-next:hover{ background: rgba(0,0,0,.6); }
+.slider-section .swiper-button-next:hover{
+  background: rgba(0,0,0,0.65);
+}
+
 
 .slider-section .swiper-pagination-bullet{
   width: 7px; height: 7px;
-  background: #ddd; opacity: .9;
+  background: #ccc;
+  opacity: .9;
 }
-.slider-section .swiper-pagination-bullet-active{ background:#fff; }
+.slider-section .swiper-pagination-bullet-active{ background: #fff; }
 
-/* (선택) 상단 고정 네비바 높이만큼 여백 주고 싶으면 아래 주석 해제
-:root { --nav-h: 64px; }
-.slider-section { margin-top: var(--nav-h); }
-*/
+@media (max-width: 640px){
+  .slider-section .swiper{ width: 95%; aspect-ratio: 4/3; }
+  .slider-section .slide-caption{ font-size:.85rem; bottom:6%; padding:.7rem 1rem; }
+}
 </style>
+
+
+
+<script src="https://unpkg.com/swiper@10/swiper-bundle.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  new Swiper(".swiper", {
+    loop: true,
+    autoplay: { delay: 3000, disableOnInteraction: false },
+    pagination: { el: ".swiper-pagination", clickable: true },
+    navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+    effect: "slide",
+    speed: 700
+  });
+});
+</script>
+
