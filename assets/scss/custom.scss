@@ -246,12 +246,12 @@ section#portfolio .project-filters{ width:100% !important; }
 }
 
 
-/* 제목 스타일 */
+/* 슬라이더 제목 스타일 */
 .slide-caption h3 {
-  font-family: 'Pretendard', 'Noto Sans KR', sans-serif; /* 원하는 폰트로 교체 */
-  font-weight: 800;           /* 굵기 */
-  font-size: 2rem;            /* 글씨 크기 (기본보다 크게) */
-  color: #ffffff;             /* 글씨 색상 */
-  letter-spacing: 0.5px;      /* 자간 */
-  margin: 0 0 0.7rem 0;       /* 아래쪽 여백 */
+  font-family: 'Noto Sans KR', 'Pretendard', sans-serif;
+  font-weight: 400;            /* ← 얇고 자연스러운 두께 */
+  font-size: 1.8rem;           /* 크기는 약간 줄이거나 유지 가능 */
+  color: #ffffff;
+  letter-spacing: 0.3px;       /* 너무 붙지 않게 살짝만 간격 */
+  margin: 0 0 0.7rem 0;
 }
