@@ -62,7 +62,7 @@ social:
 
   - icon: twitter      # X 아이콘. (테마/FA버전에 따라 'x-twitter'를 써야 하면 그렇게 바꿔도 됨)
     icon_pack: fab
-    link: "#" 
+    link: "https://twitter.com/mxxng_0101" 
 
   - icon: neos
     icon_pack: fab
