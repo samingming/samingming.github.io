@@ -255,3 +255,10 @@ section#portfolio .project-filters{ width:100% !important; }
   letter-spacing: 0.3px;       /* 너무 붙지 않게 살짝만 간격 */
   margin: 0 0 0.7rem 0;
 }
+
+a[aria-label="X"],
+a[aria-label="Facebook"],
+a[aria-label="LinkedIn"],
+a[aria-label="WhatsApp"],
+a[aria-label="Email"]{ display:none !important; }
+.page-links .flex [aria-label]{ display:none !important; }
