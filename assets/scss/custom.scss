@@ -256,9 +256,10 @@ section#portfolio .project-filters{ width:100% !important; }
   margin: 0 0 0.7rem 0;
 }
 
-a[aria-label="X (Twitter)"],
-a[aria-label="Facebook"],
-a[aria-label="LinkedIn"],
-a[aria-label="WhatsApp"],
-a[aria-label="Email"]{ display:none !important; }
-.page-links .flex [aria-label]{ display:none !important; }
+/* 소셜 공유 아이콘 숨기기 */
+.page-links,
+.page__links,
+.article-footer .share,
+.article-container .share-box {
+  display: none !important;
+}
