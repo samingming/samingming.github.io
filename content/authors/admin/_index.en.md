@@ -66,7 +66,7 @@ social:
 
   - icon: neos
     icon_pack: fab
-    link: "https://blog.naver.com/my-juliana@naver.com"
+    link: https://blog.naver.com/sa_ming
 
 ---
 Hi! I'm **Jeong Saim**,  
