@@ -67,7 +67,7 @@ social:
 
   - icon: neos
     icon_pack: fab
-    link: https://blog.naver.com/sa_ming
+    link: "https://blog.naver.com/sa_ming"
 
 # Gravatar 사용 안 할 때는 email 생략 가능
 # email: ""
