@@ -63,11 +63,11 @@ social:
   
   - icon: twitter      # X 아이콘. (테마/FA버전에 따라 'x-twitter'를 써야 하면 그렇게 바꿔도 됨)
     icon_pack: fab
-    link: "https://twitter.com/your-handle"   # 실제 계정 없더라도 URL 형태로 넣어두기 추천
+    link: "#"   # 실제 계정 없더라도 URL 형태로 넣어두기 추천
 
   - icon: linkedin
     icon_pack: fab
-    link: "https://www.linkedin.com/in/your-handle/"   
+    link: "#"   
 # Gravatar 사용 안 할 때는 email 생략 가능
 # email: ""
 ---
