@@ -65,9 +65,10 @@ social:
     icon_pack: fab
     link: "#"   # 실제 계정 없더라도 URL 형태로 넣어두기 추천
 
-  - icon: linkedin
+  - icon: neos
     icon_pack: fab
-    link: "#"   
+    link: "https://blog.naver.com/my-juliana"
+
 # Gravatar 사용 안 할 때는 email 생략 가능
 # email: ""
 ---

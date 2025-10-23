@@ -64,9 +64,10 @@ social:
     icon_pack: fab
     link: "#" 
 
-  - icon: linkedin
+  - icon: neos
     icon_pack: fab
-    link: "#"
+    link: "https://blog.naver.com/my-juliana"
+
 ---
 Hi! I'm **Jeong Saim**,  
 a junior majoring in **Computer and Artificial Intelligence** at **Jeonbuk National University**.  
