@@ -135,3 +135,6 @@ extensions:
     enable: false
 
 favicon: "media/logo.png"
+
+customCSS:
+  - css/custom.css
