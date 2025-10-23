@@ -82,3 +82,10 @@ a:hover { text-decoration: underline !important; }
 .home-section .filter-button-group li,
 .home-section .portfolio-filters li { list-style:none !important; }
 
+/* 소셜 공유 아이콘 숨기기 */
+.page-links,
+.page__links,
+.article-footer .share,
+.article-container .share-box {
+  display: none !important;
+}
